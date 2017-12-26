@@ -1,0 +1,147 @@
+/*Hoja de Estilo*/
+/*Desarrollada para el proyecto: Santa Alejandría Hotel
+**Por: Enrique Valerio
+**Diciembre 2017
+*/
+/**********************************************
+Tipografia usada en el proyecto: tipografia.css
+***********************************************/
+/*@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i');*/
+/******************************
+ESTILOS GENERALES: general.css;
+*******************************/
+html {
+	font-size: 10px;
+}
+/**{border: 1px solid red;}*/
+body {
+	font-size: 17px;
+	font-size: 1.7rem;
+	font-family: sans-serif;
+}
+a {
+	cursor: pointer;
+}
+h1,h2,h3 {
+  color: #333;
+  font-family: serif;
+  font-size: 30px;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+h3 {
+	color: #333;
+	font-family: serif;
+	font-size: 25px;
+	font-size: 2.5rem;
+	text-transform: uppercase;
+}
+.animated-1_5 {
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+.animated-2 {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+.animated-2_5 {
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+.animated-3 {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+.animated-4 {
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+.flex-center-v {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.flex-center-vh {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.mb-1 {margin-bottom: 10px;margin-bottom: 1rem;}
+.mt-1 {margin-top: 10px;margin-top: 1rem;}
+.mb-2 {margin-bottom: 20px;margin-bottom: 2rem;}
+.mt-2 {margin-top: 20px;margin-top: 2rem;}
+.mb-3 {margin-bottom: 30px;margin-bottom: 3rem;}
+.mt-3 {margin-top: 30px;margin-top: 3rem;}
+.mb-4 {margin-bottom: 40px;margin-bottom: 4rem;}
+.mt-4 {margin-top: 40px;margin-top: 4rem;}
+.mb-5 {margin-bottom: 50px;margin-bottom: 5rem;}
+.mt-5 {margin-top: 50px;margin-top: 5rem;}
+.mb-6 {margin-bottom: 60px;margin-bottom: 6rem;}
+.mt-6 {margin-top: 60px;margin-top: 6rem;}
+.mb-7 {margin-bottom: 70px;margin-bottom: 7rem;}
+.mt-7 {margin-top: 70px;margin-top: 7rem;}
+.mb-8 {margin-bottom: 80px;margin-bottom: 8rem;}
+.mt-8 {margin-top: 80px;margin-top: 8rem;}
+.mb-9 {margin-bottom: 90px;margin-bottom: 9rem;}
+.mt-9 {margin-top: 90px;margin-top: 9rem;}
+.mb-10 {margin-bottom: 100px;margin-bottom: 10rem;}
+.mt-10 {margin-top: 100px;margin-top: 10rem;}
+.mb-11 {margin-bottom: 110px;margin-bottom: 11rem;}
+.mt-11 {margin-top: 110px;margin-top: 11rem;}
+.mb-12 {margin-bottom: 120px;margin-bottom: 12rem;}
+.mt-12 {margin-top: 120px;margin-top: 12rem;}
+.mb-13 {margin-bottom: 130px;margin-bottom: 13rem;}
+.mt-13 {margin-top: 130px;margin-top: 13rem;}
+.mb-14 {margin-bottom: 140px;margin-bottom: 14rem;}
+.mt-14 {margin-top: 140px;margin-top: 14rem;}
+.mb-15 {margin-bottom: 150px;margin-bottom: 15rem;}
+.mt-15 {margin-top: 150px;margin-top: 15rem;}
+.mb-16 {margin-bottom: 160px;margin-bottom: 16rem;}
+.mt-16 {margin-top: 160px;margin-top: 16rem;}
+.mb-17 {margin-bottom: 170px;margin-bottom: 17rem;}
+.mt-17 {margin-top: 170px;margin-top: 17rem;}
+.mb-18 {margin-bottom: 180px;margin-bottom: 18rem;}
+.mt-18 {margin-top: 180px;margin-top: 18rem;}
+.mb-20 {margin-bottom: 200px;margin-bottom: 20rem;}
+.mt-20 {margin-top: 200px;margin-top: 20rem;}
+.pb-1 {padding-bottom: 10px;padding-bottom: 1rem;}
+.pt-1 {padding-top: 10px;padding-top: 1rem;}
+.pb-2_5 {padding-bottom: 25px;padding-bottom: 2.5rem;}
+.pt-2_5 {padding-top: 25px;padding-top: 2.5rem;}
+.pb-3 {padding-bottom: 30px;padding-bottom: 3rem;}
+.pt-3 {padding-top: 30px;padding-top: 3rem;}
+.pb-5 {padding-bottom: 50px;padding-bottom: 5rem;}
+.pt-5 {padding-top: 50px;padding-top: 5rem;}
+.pb-6 {padding-bottom: 60px;padding-bottom: 6rem}
+.pt-6 {padding-top: 60px;padding-top: 6rem}
+.pb-7 {padding-bottom: 70px;padding-bottom: 7rem}
+.pt-7 {padding-top: 70px;padding-top: 7rem}
+.pb-8 {padding-bottom: 80px;padding-bottom: 8rem}
+.pt-8 {padding-top: 80px;padding-top: 8rem}
+.pb-10 {padding-bottom: 100px;padding-bottom: 10rem;}
+.pt-10 {padding-top: 100px;padding-top: 10rem;}
+/*ESTILOS GENERALES*/
+/******************************
+MEDIA-QUERIS
+*******************************/
+
+
