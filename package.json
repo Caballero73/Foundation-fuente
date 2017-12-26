@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Caballero73/invie-github.git"
+    "url": "git+https://github.com/Caballero73/Platzipalooza"
   },
   "author": "Enrique Valerio",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Caballero73/invie-github/issues"
+    "url": "https://github.com/Caballero73/Platzipalooza/issues"
   },
-  "homepage": "https://github.com/Caballero73/invie-github#readme",
+  "homepage": "https://github.com/Caballero73/Platzipalooza#readme",
   "devDependencies": {
     "autoprefixer": "^7.2.3",
     "browser-sync": "^2.21.0",

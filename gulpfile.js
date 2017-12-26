@@ -4,7 +4,7 @@ var mixins = require('postcss-mixins')
 var atImport = require ('postcss-import')
 var cssnested = require('postcss-nested')
 var mqpacker = require('css-mqpacker')
-//var rucksack = require('rucksack-css')
+var rucksack = require('rucksack-css')
 var cssnext = require('postcss-cssnext')
 var browserSync = require('browser-sync').create()
 
@@ -23,7 +23,7 @@ gulp.task('css', function () {
     mixins(),
     atImport(),
     cssnested,
-    //rucksack(),
+    rucksack(),
     cssnext({browsers:'last 5 versions'}),
     mqpacker
   ]

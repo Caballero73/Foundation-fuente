@@ -1,11 +1,10 @@
-# Santa Alejandría Hotel
-## Las comodidades del siglo XXI evocando las viejas casonas de la Colonia Española
+# Curso de Frontend Desing
+## con Bootstrap y Foundation
 
-Estamos seguros que nuestro profesionalismo y el servicio personalizado que caracteriza a Santa Alejandría Hotel, llenarán sus expectativas.
+La idea de este curso es que aprendamos a trabajar con dos de los frameworks (entorno de trabajo o marco de trabajo) para el diseño frontend (interfaz) más utilizados en la industria actualmente, como lo son Bootstrap y Foundation.
 
 ### Equipo
-* [Enrique Valerio (Front Developer)](https://github.com/Caballero73 "Enrique Valerio - Front Developer")
-* [Pedro Guerra (Front Developer)](https://github.com/pdrowr "Pedro Guerra - Front Developer")
-* [Enmanuel Chirinos (Backen Developer)](https://github.com/EnmChs "Enmanuel Chirinos - Backen Developer")
+* [Enrique Valerio (Cursante)](https://github.com/Caballero73 "Enrique Valerio - Cursante")
+
 
 
