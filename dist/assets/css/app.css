@@ -1,5 +1,5 @@
 /*Hoja de Estilo*/
-/*Desarrollada para el proyecto: Santa Alejandría Hotel
+/*Desarrollada para el proyecto: Cursos de Frontend con Foundatio
 **Por: Enrique Valerio
 **Diciembre 2017
 */
@@ -15,26 +15,16 @@ html {
 }
 /**{border: 1px solid red;}*/
 body {
-	font-size: 17px;
-	font-size: 1.7rem;
+	background-color: #ee3f54;
+  font-size: calc(12.04651px + 0.46512vw);
 	font-family: sans-serif;
 }
 a {
 	cursor: pointer;
 }
 h1,h2,h3 {
-  color: #333;
+  color: #59b5b1;
   font-family: serif;
-  font-size: 30px;
-  font-size: 3rem;
-  text-transform: uppercase;
-}
-h3 {
-	color: #333;
-	font-family: serif;
-	font-size: 25px;
-	font-size: 2.5rem;
-	text-transform: uppercase;
 }
 .animated-1_5 {
   -webkit-animation-duration: 1.5s;
@@ -139,9 +129,55 @@ h3 {
 .pt-8 {padding-top: 80px;padding-top: 8rem}
 .pb-10 {padding-bottom: 100px;padding-bottom: 10rem;}
 .pt-10 {padding-top: 100px;padding-top: 10rem;}
-/*ESTILOS GENERALES*/
+/* /.ESTILOS GENERALES */
 /******************************
-MEDIA-QUERIS
+ESTILOS PROPIOS DEL TEMA
 *******************************/
+#social-container {
+	background-color: #1c3643;
+	padding: 5px;
+	padding: 0.5rem;
+}
+#logo-container .callout {
+		background-color: #ee3f54; 
+	}
+#logo-container .callout h1 {
+			color: white;
+			font-size: calc(2.02326rem + 2.32558vw);
+			font-weight: bold;
+		}
+#menu-container {
+	background-color: #48a19d;
+}
+#menu-container li a {
+			color: white;
+			font-family: serif;
+
+		}
+#menu-container li a:hover {
+			color: #fcf275;
+		}
+/* /.ESTILOS PROPIOS DEL TEMA */
+/******************************
+MEDIA-QUERIES
+*******************************/
+@media screen and (min-width: 1280px) {
+	body {
+		font-size: 18px;
+	}
+	#logo-container .callout h1 {
+		font-size: 50px;
+		font-size: 5rem;
+	}
+}
+@media screen and (max-width: 420px) {
+	body {
+		font-size: 14px;
+	}
+	#logo-container .callout h1 {
+		font-size: 30px;
+		font-size: 3rem;
+	}
+}
 
 

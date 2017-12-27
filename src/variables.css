@@ -1,10 +1,11 @@
 :root{
+--bgColor: #ee3f54;
 --colorGris: silver;
 --colorGrisClaro: #E4E4E4;
---colorPpal: #333;
---colorSec: #999;
+--colorPpal: #59b5b1;
+--colorSec: #fcf275;
 --fontTexto: sans-serif;
---fontTituloReg: serif;
+--fontTitulo: serif;
 --tra35: all .35s ease;
 --tra50: all .5s ease;
 --sombra1: 0rem 0.5rem 1.4rem #333;

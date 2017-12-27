@@ -1,5 +1,5 @@
 /*Hoja de Estilo*/
-/*Desarrollada para el proyecto: Santa Alejandría Hotel
+/*Desarrollada para el proyecto: Cursos de Frontend con Foundatio
 **Por: Enrique Valerio
 **Diciembre 2017
 */
@@ -9,9 +9,52 @@
 @import 'tipografia.css';
 @import 'general.css';
 
+/******************************
+ESTILOS PROPIOS DEL TEMA
+*******************************/
+#social-container {
+	background-color: #1c3643;
+	padding: 0.5rem;
+
+	& a:hover {
+			color: var(--colorSec);
+	}
+}
+
+#logo-container {
+
+	& .callout {
+		background-color: var(--bgColor);
+
+		& h1 {
+			color: white;
+			font-size: responsive 3rem 5rem;
+			font-weight: bold;
+		} 
+	}
+}
+
+#menu-container {
+	background-color: #48a19d;
+
+	& li {
+		
+		& a {
+			color: white;
+			font-family: var(--fontTitulo);
+
+		}
+
+		& a:hover {
+			color: var(--colorSec);
+		}
+	}
+}
+/* /.ESTILOS PROPIOS DEL TEMA */
+
 
 /******************************
-MEDIA-QUERIS
+MEDIA-QUERIES
 *******************************/
 
 
