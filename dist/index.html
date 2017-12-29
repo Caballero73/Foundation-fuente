@@ -11,6 +11,12 @@
     
   </head>
   <body>
+    <!-- /////// Botón para ir al principio -->
+    <a class="hidden-xs hidden-sm" href="#inicio">
+      <i class="fa fa-chevron-circle-up fa-2x ir-arriba"></i>
+    </a>
+    <!-- */Botón para ir al principio -->
+
     <!-- SOCIAL -->
     <section id="social-container">
       <div class="row align-center text-center">
@@ -38,9 +44,14 @@
     <!-- MENU -->
     <section id="menu-container">
       <div class="">
-        <ul class="menu align-center">
+        <ul class="menu dropdown align-center" data-dropdown-menu>
           <li><a href="grilla.html" title="Grilla">Grilla</a></li>
-          <li><a href="menu.html" title="Grilla">Menú</a></li>
+          <li><a href="#" title="Navegación">Navegación</a>
+            <ul class="menu">
+              <li><a href="menu.html" title="Menú">Menú</a></li>
+              <li><a href="menu-desplegable.html" title="Menú Desplegable">Menú Desplegable</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
     </section>

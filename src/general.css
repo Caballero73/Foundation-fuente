@@ -32,6 +32,9 @@ h1 {
 h2 {
   font-size: responsive 2.5rem 3.5rem;
 }
+h3 {
+  font-size: responsive 1.8rem 2.8rem;
+}
 .animated-1_5 {
   animation-duration: 1.5s;
   animation-fill-mode: both;
@@ -52,14 +55,43 @@ h2 {
   animation-duration: 4s;
   animation-fill-mode: both;
 }
-.flex-center-v {
-  display: flex;
-  align-items: center;
+.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+  right: 1px;
+  left: auto;
+  margin-top: -3px;
 }
-.flex-center-vh {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.ir-arriba {
+  border-radius: 0.4rem;
+  display:none;
+  padding:0.7rem;
+  background:var(--colorPpal);
+  color:#fff;
+  cursor:pointer;
+  position: fixed;
+  bottom:2rem;
+  right:1rem;
+  transition: var(--tra50);
+  z-index: 100;
+}
+.ir-arriba:hover {
+  background: var(--colorSec);
+  transition: var(--tra50);
+}
+.menu-btn {
+  border-radius: 0.4rem;
+  padding:0.7rem;
+  background:var(--colorPpal);
+  color:#fff;
+  cursor:pointer;
+  position: fixed;
+  top:2rem;
+  right:1rem;
+  transition: var(--tra50);
+  z-index: 100;
+}
+.menu-btn:hover {
+  background: var(--colorSec);
+  transition: var(--tra50);
 }
 .mb-1 {margin-bottom: 1rem;}
 .mt-1 {margin-top: 1rem;}

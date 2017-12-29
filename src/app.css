@@ -59,6 +59,10 @@ ESTILOS PROPIOS DEL TEMA
 #menu-container {
 	background-color: #48a19d;
 
+	& .is-dropdown-submenu > li {
+	width: 100%;
+	background: #48a19d;
+}
 	& li {
 		
 		& a {
@@ -69,6 +73,12 @@ ESTILOS PROPIOS DEL TEMA
 		& a:hover {
 			color: var(--colorSec);
 		}
+	}
+}
+
+#menu-offcanvas {
+	& a {
+		font-size: responsive 1.4rem 1.6rem;
 	}
 }
 /* /.ESTILOS PROPIOS DEL TEMA */

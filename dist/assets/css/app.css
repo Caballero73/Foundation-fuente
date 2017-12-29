@@ -42,6 +42,9 @@ h1 {
 h2 {
   font-size: calc(2.01163rem + 1.16279vw);
 }
+h3 {
+  font-size: calc(1.31163rem + 1.16279vw);
+}
 .animated-1_5 {
   -webkit-animation-duration: 1.5s;
           animation-duration: 1.5s;
@@ -72,24 +75,57 @@ h2 {
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
-.flex-center-v {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.dropdown.menu > li.is-dropdown-submenu-parent > a:after {
+  right: 1px;
+  left: auto;
+  margin-top: -3px;
 }
-.flex-center-vh {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.ir-arriba {
+  border-radius: 0.4rem;
+  display:none;
+  padding:7px;
+  padding:0.7rem;
+  background:#4682B4;
+  color:#fff;
+  cursor:pointer;
+  position: fixed;
+  bottom:20px;
+  bottom:2rem;
+  right:10px;
+  right:1rem;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+  z-index: 100;
+}
+.ir-arriba:hover {
+  background: #FFD700;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+.menu-btn {
+  border-radius: 0.4rem;
+  padding:7px;
+  padding:0.7rem;
+  background:#4682B4;
+  color:#fff;
+  cursor:pointer;
+  position: fixed;
+  top:20px;
+  top:2rem;
+  right:10px;
+  right:1rem;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+  z-index: 100;
+}
+.menu-btn:hover {
+  background: #FFD700;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
 }
 .mb-1 {margin-bottom: 10px;margin-bottom: 1rem;}
 .mt-1 {margin-top: 10px;margin-top: 1rem;}
@@ -187,6 +223,10 @@ ESTILOS PROPIOS DEL TEMA
 #menu-container {
 	background-color: #48a19d;
 }
+#menu-container .is-dropdown-submenu > li {
+	width: 100%;
+	background: #48a19d;
+}
 #menu-container li a {
 			color: white;
 			font-family: serif;
@@ -194,6 +234,9 @@ ESTILOS PROPIOS DEL TEMA
 #menu-container li a:hover {
 			color: #FFD700;
 		}
+#menu-offcanvas a {
+		font-size: calc(1.30233rem + 0.23256vw);
+	}
 /* /.ESTILOS PROPIOS DEL TEMA */
 /******************************
 MEDIA-QUERIES
@@ -211,9 +254,17 @@ MEDIA-QUERIES
 		font-size: 35px;
 		font-size: 3.5rem;
 	}
+	h3 {
+		font-size: 28px;
+		font-size: 2.8rem;
+	}
 	#logo-container .callout h1 {
 		font-size: 50px;
 		font-size: 5rem;
+	}
+	#menu-offcanvas a {
+		font-size: 16px;
+		font-size: 1.6rem;
 	}
 }
 @media screen and (max-width: 420px) {
@@ -229,9 +280,17 @@ MEDIA-QUERIES
 		font-size: 25px;
 		font-size: 2.5rem;
 	}
+	h3 {
+		font-size: 18px;
+		font-size: 1.8rem;
+	}
 	#logo-container .callout h1 {
 		font-size: 30px;
 		font-size: 3rem;
+	}
+	#menu-offcanvas a {
+		font-size: 14px;
+		font-size: 1.4rem;
 	}
 }
 
