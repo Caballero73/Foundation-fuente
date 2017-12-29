@@ -2679,9 +2679,9 @@ Drilldown.defaults = {
    * Markup used for JS generated back button. Prepended  or appended (see backButtonPosition) to submenu lists and deleted on `destroy` method, 'js-drilldown-back' class required. Remove the backslash (`\`) if copy and pasting.
    * @option
    * @type {string}
-   * @default '<li class="js-drilldown-back"><a tabindex="0">Back</a></li>'
+   * @default '<li class="js-drilldown-back"><a tabindex="0">Volver</a></li>'
    */
-  backButton: '<li class="js-drilldown-back"><a tabindex="0">Back</a></li>',
+  backButton: '<li class="js-drilldown-back"><a tabindex="0">Volver</a></li>',
   /**
    * Position the back button either at the top or bottom of drilldown submenus. Can be `'left'` or `'bottom'`.
    * @option

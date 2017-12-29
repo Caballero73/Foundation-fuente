@@ -5,7 +5,7 @@
 --colorPpal: #4682B4;
 --colorSec: #FFD700;
 --fontTexto: sans-serif;
---fontTitulo: serif;
+--fontTitulo: 'ubuntu_reg',serif;
 --tra35: all .35s ease;
 --tra50: all .5s ease;
 --sombra1: 0rem 0.5rem 1.4rem #333;
