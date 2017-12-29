@@ -1,9 +1,9 @@
 :root{
---bgColor: #ee3f54;
+--colorBg: #F5FFFA;
 --colorGris: silver;
 --colorGrisClaro: #E4E4E4;
---colorPpal: #59b5b1;
---colorSec: #fcf275;
+--colorPpal: #4682B4;
+--colorSec: #FFD700;
 --fontTexto: sans-serif;
 --fontTitulo: serif;
 --tra35: all .35s ease;

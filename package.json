@@ -1,7 +1,7 @@
 {
-  "name": "Platzipalooza",
+  "name": "Frontend con Foundation",
   "version": "1.0.0",
-  "description": "Frontend con Bootstrap y Foundation",
+  "description": "Ejercicio para curso de diseño frontend con Foundation",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

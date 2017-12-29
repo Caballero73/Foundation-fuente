@@ -1,5 +1,5 @@
 /*Hoja de Estilo*/
-/*Desarrollada para el proyecto: Cursos de Frontend con Foundatio
+/*Desarrollada para el proyecto: Ejemplo de Frontend con Foundation
 **Por: Enrique Valerio
 **Diciembre 2017
 */
@@ -12,6 +12,26 @@
 /******************************
 ESTILOS PROPIOS DEL TEMA
 *******************************/
+#grilla{
+
+	& .row {
+	  background: lightcyan;
+	  border: 1px solid cadetblue;
+	  padding: 1rem;
+	}
+	& .columns,.column{
+	  background: paleturquoise;
+	  border: 1px solid navy;
+	  padding: 1rem;
+	}
+}
+#menu {
+	& pre {
+		background: lightcyan;
+	  border: 1px solid cadetblue;
+	  padding: 1rem;
+	}
+}
 #social-container {
 	background-color: #1c3643;
 	padding: 0.5rem;
@@ -24,7 +44,9 @@ ESTILOS PROPIOS DEL TEMA
 #logo-container {
 
 	& .callout {
-		background-color: var(--bgColor);
+		background-color: var(--colorPpal);
+		margin: 0;
+	
 
 		& h1 {
 			color: white;
@@ -42,7 +64,6 @@ ESTILOS PROPIOS DEL TEMA
 		& a {
 			color: white;
 			font-family: var(--fontTitulo);
-
 		}
 
 		& a:hover {
