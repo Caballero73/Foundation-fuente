@@ -30,6 +30,13 @@ ESTILOS PROPIOS DEL TEMA
 		color: #fefefe;
 	}
 }
+#barra,#grilla,#menu,#sticky {
+	& pre {
+		background: lightcyan;
+	  	border: 1px solid cadetblue;
+	  	padding: 1rem;
+	}
+}
 #grilla{
 
 	& .row {
@@ -58,10 +65,10 @@ ESTILOS PROPIOS DEL TEMA
 	}
 }
 #menu {
-	& pre {
-		background: lightcyan;
-	  	border: 1px solid cadetblue;
-	  	padding: 1rem;
+	& .dropdown.menu.medium-horizontal > li.is-dropdown-submenu-parent > a::after {
+		right: 0px;
+		left: auto;
+		margin-top: -3px;
 	}
 }
 #menu-container {

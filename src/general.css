@@ -55,6 +55,9 @@ h3 {
   animation-duration: 4s;
   animation-fill-mode: both;
 }
+cite {
+  font-size: responsive 1rem 1.4rem;
+}
 .dropdown.menu > li.is-dropdown-submenu-parent > a::after {
   right: 0px;
   left: auto;

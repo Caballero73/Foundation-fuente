@@ -84,6 +84,9 @@ h3 {
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
+cite {
+  font-size: calc(0.80465rem + 0.46512vw);
+}
 .dropdown.menu > li.is-dropdown-submenu-parent > a:after {
   right: 0px;
   left: auto;
@@ -212,6 +215,12 @@ ESTILOS PROPIOS DEL TEMA
 		background: #4682B4;
 		color: #fefefe;
 	}
+#barra pre, #grilla pre, #menu pre, #sticky pre {
+		background: lightcyan;
+	  	border: 1px solid cadetblue;
+	  	padding: 10px;
+	  	padding: 1rem;
+	}
 #grilla .row {
 	  background: lightcyan;
 	  border: 1px solid cadetblue;
@@ -233,11 +242,10 @@ ESTILOS PROPIOS DEL TEMA
 			font-size: calc(2.02326rem + 2.32558vw);
 			font-weight: bold;
 		}
-#menu pre {
-		background: lightcyan;
-	  	border: 1px solid cadetblue;
-	  	padding: 10px;
-	  	padding: 1rem;
+#menu .dropdown.menu.medium-horizontal > li.is-dropdown-submenu-parent > a:after {
+		right: 0px;
+		left: auto;
+		margin-top: -3px;
 	}
 #menu-container {
 	background-color: #48a19d;
@@ -285,6 +293,10 @@ MEDIA-QUERIES
 		font-size: 28px;
 		font-size: 2.8rem;
 	}
+	cite {
+		font-size: 14px;
+		font-size: 1.4rem;
+	}
 	#logo-container .callout h1 {
 		font-size: 50px;
 		font-size: 5rem;
@@ -310,6 +322,10 @@ MEDIA-QUERIES
 	h3 {
 		font-size: 18px;
 		font-size: 1.8rem;
+	}
+	cite {
+		font-size: 10px;
+		font-size: 1rem;
 	}
 	#logo-container .callout h1 {
 		font-size: 30px;
