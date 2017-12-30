@@ -12,6 +12,24 @@
 /******************************
 ESTILOS PROPIOS DEL TEMA
 *******************************/
+#barra {
+	& .menu a, .menu .button {
+		line-height: 1;
+		text-decoration: none;
+		display: block;
+		padding: 0.7rem 1rem;
+		margin-top: 0.2rem;
+	}
+	& .dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+		right: -2px;
+		left: auto;
+		margin-top: -3px;
+	}
+	.title-bar {
+		background: var(--colorPpal);
+		color: #fefefe;
+	}
+}
 #grilla{
 
 	& .row {
@@ -25,22 +43,6 @@ ESTILOS PROPIOS DEL TEMA
 	  padding: 1rem;
 	}
 }
-#menu {
-	& pre {
-		background: lightcyan;
-	  border: 1px solid cadetblue;
-	  padding: 1rem;
-	}
-}
-#social-container {
-	background-color: #1c3643;
-	padding: 0.5rem;
-
-	& a:hover {
-			color: var(--colorSec);
-	}
-}
-
 #logo-container {
 
 	& .callout {
@@ -55,7 +57,13 @@ ESTILOS PROPIOS DEL TEMA
 		} 
 	}
 }
-
+#menu {
+	& pre {
+		background: lightcyan;
+	  	border: 1px solid cadetblue;
+	  	padding: 1rem;
+	}
+}
 #menu-container {
 	background-color: #48a19d;
 
@@ -81,6 +89,16 @@ ESTILOS PROPIOS DEL TEMA
 		font-size: responsive 1.4rem 1.6rem;
 	}
 }
+#social-container {
+	background-color: #1c3643;
+	padding: 0.5rem;
+
+	& a:hover {
+			color: var(--colorSec);
+	}
+}
+
+
 /* /.ESTILOS PROPIOS DEL TEMA */
 
 

@@ -85,7 +85,7 @@ h3 {
           animation-fill-mode: both;
 }
 .dropdown.menu > li.is-dropdown-submenu-parent > a:after {
-  right: 1px;
+  right: 0px;
   left: auto;
   margin-top: -3px;
 }
@@ -194,6 +194,24 @@ h3 {
 /******************************
 ESTILOS PROPIOS DEL TEMA
 *******************************/
+#barra .menu a, #barra .menu .button {
+		line-height: 1;
+		text-decoration: none;
+		display: block;
+		padding: 7px 10px;
+		padding: 0.7rem 1rem;
+		margin-top: 2px;
+		margin-top: 0.2rem;
+	}
+#barra .dropdown.menu > li.is-dropdown-submenu-parent > a:after {
+		right: -2px;
+		left: auto;
+		margin-top: -3px;
+	}
+#barra .title-bar {
+		background: #4682B4;
+		color: #fefefe;
+	}
 #grilla .row {
 	  background: lightcyan;
 	  border: 1px solid cadetblue;
@@ -206,20 +224,6 @@ ESTILOS PROPIOS DEL TEMA
 	  padding: 10px;
 	  padding: 1rem;
 	}
-#menu pre {
-		background: lightcyan;
-	  border: 1px solid cadetblue;
-	  padding: 10px;
-	  padding: 1rem;
-	}
-#social-container {
-	background-color: #1c3643;
-	padding: 5px;
-	padding: 0.5rem;
-}
-#social-container a:hover {
-			color: #FFD700;
-	}
 #logo-container .callout {
 		background-color: #4682B4;
 		margin: 0; 
@@ -229,6 +233,12 @@ ESTILOS PROPIOS DEL TEMA
 			font-size: calc(2.02326rem + 2.32558vw);
 			font-weight: bold;
 		}
+#menu pre {
+		background: lightcyan;
+	  	border: 1px solid cadetblue;
+	  	padding: 10px;
+	  	padding: 1rem;
+	}
 #menu-container {
 	background-color: #48a19d;
 }
@@ -245,6 +255,14 @@ ESTILOS PROPIOS DEL TEMA
 		}
 #menu-offcanvas a {
 		font-size: calc(1.30233rem + 0.23256vw);
+	}
+#social-container {
+	background-color: #1c3643;
+	padding: 5px;
+	padding: 0.5rem;
+}
+#social-container a:hover {
+			color: #FFD700;
 	}
 /* /.ESTILOS PROPIOS DEL TEMA */
 /******************************
