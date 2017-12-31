@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/css/foundation.css">
     <link rel="stylesheet" href="assets/css/app.css">
   </head>
-  <body>
+  <body class="contenedor">
     <!-- /////// Botón para ir al principio -->
     <a class="hidden-xs hidden-sm" href="#inicio">
       <i class="fa fa-chevron-circle-up fa-2x ir-arriba"></i>
@@ -39,7 +39,7 @@
 <div id="menu" class="off-canvas-content mt-3" data-off-canvas-content>
 
   <center id="basico"><h3>Básico</h3></center>
-  <pre class="row">
+  <pre>
   &lt;ul class="vertical menu drilldown" data-drilldown&gt;
     &lt;li&gt;&lt;a href="#"&gt;Uno&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="#"&gt;Dos&lt;/a&gt;&lt;/li&gt;
@@ -52,40 +52,54 @@
   &lt;/ul&gt;
   </pre>
   <br>
-  <div class="row">
-    <ul class="vertical menu drilldown" data-drilldown style="width: 150px;">
-      <li><a href="javascript:void(0);">Uno</a></li>
-      <li><a href="javascript:void(0);">Dos</a>
-        <ul class="menu vertical nested">
-          <li><a href="javascript:void(0);">Alfa</a></li>
-          <li><a href="javascript:void(0);">Beta</a></li>
-        </ul>
-      </li>
-      <li><a href="javascript:void(0);">Tres</a></li>
-      <li><a href="javascript:void(0);">Cuatro</a></li>
-    </ul>
-  </div>
+  <ul class="vertical menu drilldown" data-drilldown style="width: 150px;">
+    <li><a href="javascript:void(0);">Uno</a></li>
+    <li><a href="javascript:void(0);">Dos</a>
+      <ul class="menu vertical nested">
+        <li><a href="javascript:void(0);">Alfa</a></li>
+        <li><a href="javascript:void(0);">Beta</a></li>
+      </ul>
+    </li>
+    <li><a href="javascript:void(0);">Tres</a></li>
+    <li><a href="javascript:void(0);">Cuatro</a></li>
+  </ul>
   <br>
   <hr>
 
   <center id="autoheight"><h3>Alto automático / autoHeight</h3></center>
-  <pre class="row">
+  <pre>
   &lt;ul class="vertical menu drilldown" data-drilldown data-auto-height="true" data-animate-height="true"&gt;
     &lt;!-- /// Menú ///  --&gt;
   &lt;/ul&gt;
   </pre>
   <br>
-  <div class="row">
-    <ul class="vertical menu drilldown" data-drilldown data-auto-height="true" data-animate-height="true" style="width: 150px;">
-      <li><a href="javascript:void(0);">Uno</a>
-        <ul class="menu vertical nested">
-          <li><a href="javascript:void(0);">Alfa</a></li>
-          <li><a href="javascript:void(0);">Beta</a></li>
-          <li><a href="javascript:void(0);">Gamma</a></li>
-          <li><a href="javascript:void(0);">Delta</a></li>
-        </ul>
-      </li>
-      <li><a href="javascript:void(0);">Dos</a>
+  <ul class="vertical menu drilldown" data-drilldown data-auto-height="true" data-animate-height="true" style="width: 150px;">
+    <li><a href="javascript:void(0);">Uno</a>
+      <ul class="menu vertical nested">
+        <li><a href="javascript:void(0);">Alfa</a></li>
+        <li><a href="javascript:void(0);">Beta</a></li>
+        <li><a href="javascript:void(0);">Gamma</a></li>
+        <li><a href="javascript:void(0);">Delta</a></li>
+      </ul>
+    </li>
+    <li><a href="javascript:void(0);">Dos</a>
+      <ul class="menu vertical nested">
+        <li><a href="javascript:void(0);">Alfa</a></li>
+        <li><a href="javascript:void(0);">Beta</a></li>
+        <li><a href="javascript:void(0);">Gamma</a></li>
+        <li><a href="javascript:void(0);">Delta</a></li>
+        <li><a href="javascript:void(0);">Dseta</a></li>
+        <li><a href="javascript:void(0);">Eta</a></li>
+        <li><a href="javascript:void(0);">Theta</a></li>
+        <li><a href="javascript:void(0);">Iota</a></li>
+        <li><a href="javascript:void(0);">Kappa</a></li>
+        <li><a href="javascript:void(0);">Lambda</a></li>
+        <li><a href="javascript:void(0);">Mi</a></li>
+        <li><a href="javascript:void(0);">Ni</a></li>
+        <li><a href="javascript:void(0);">Xi</a></li>
+      </ul>
+    </li>
+    <li><a href="javascript:void(0);">Tres</a>
         <ul class="menu vertical nested">
           <li><a href="javascript:void(0);">Alfa</a></li>
           <li><a href="javascript:void(0);">Beta</a></li>
@@ -94,54 +108,52 @@
           <li><a href="javascript:void(0);">Dseta</a></li>
           <li><a href="javascript:void(0);">Eta</a></li>
           <li><a href="javascript:void(0);">Theta</a></li>
-          <li><a href="javascript:void(0);">Iota</a></li>
-          <li><a href="javascript:void(0);">Kappa</a></li>
-          <li><a href="javascript:void(0);">Lambda</a></li>
-          <li><a href="javascript:void(0);">Mi</a></li>
-          <li><a href="javascript:void(0);">Ni</a></li>
-          <li><a href="javascript:void(0);">Xi</a></li>
         </ul>
-      </li>
-      <li><a href="javascript:void(0);">Tres</a>
-          <ul class="menu vertical nested">
-            <li><a href="javascript:void(0);">Alfa</a></li>
-            <li><a href="javascript:void(0);">Beta</a></li>
-            <li><a href="javascript:void(0);">Gamma</a></li>
-            <li><a href="javascript:void(0);">Delta</a></li>
-            <li><a href="javascript:void(0);">Dseta</a></li>
-            <li><a href="javascript:void(0);">Eta</a></li>
-            <li><a href="javascript:void(0);">Theta</a></li>
-          </ul>
-      </li>
-      <li><a href="javascript:void(0);">Cuatro</a>
-        <ul class="menu vertical nested">
-          <li><a href="javascript:void(0);">Alfa</a></li>
-          <li><a href="javascript:void(0);">Beta</a></li>
-        </ul>
-      </li>
-    </ul>
-  </div>
+    </li>
+    <li><a href="javascript:void(0);">Cuatro</a>
+      <ul class="menu vertical nested">
+        <li><a href="javascript:void(0);">Alfa</a></li>
+        <li><a href="javascript:void(0);">Beta</a></li>
+      </ul>
+    </li>
+  </ul>
   <br>
   <hr>
 
   <center id="scrolltop"><h3>Ir arriba / ScrollTop</h3></center>
-  <pre class="row">
+  <pre>
   &lt;ul class="vertical menu drilldown" data-drilldown data-auto-height="true" data-animate-height="true"&gt;
     &lt;!-- /// Menú ///  --&gt;
   &lt;/ul&gt;
   </pre>
   <br>
-  <div class="row">
-    <ul class="vertical menu drilldown" data-drilldown data-scroll-top="true" style="width: 150px;">
-      <li><a href="javascript:void(0);">Uno</a>
-        <ul class="menu vertical nested">
-          <li><a href="javascript:void(0);">Alfa</a></li>
-          <li><a href="javascript:void(0);">Beta</a></li>
-          <li><a href="javascript:void(0);">Gamma</a></li>
-          <li><a href="javascript:void(0);">Delta</a></li>
-        </ul>
-      </li>
-      <li><a href="javascript:void(0);">Dos</a>
+  <ul class="vertical menu drilldown" data-drilldown data-scroll-top="true" style="width: 150px;">
+    <li><a href="javascript:void(0);">Uno</a>
+      <ul class="menu vertical nested">
+        <li><a href="javascript:void(0);">Alfa</a></li>
+        <li><a href="javascript:void(0);">Beta</a></li>
+        <li><a href="javascript:void(0);">Gamma</a></li>
+        <li><a href="javascript:void(0);">Delta</a></li>
+      </ul>
+    </li>
+    <li><a href="javascript:void(0);">Dos</a>
+      <ul class="menu vertical nested">
+        <li><a href="javascript:void(0);">Alfa</a></li>
+        <li><a href="javascript:void(0);">Beta</a></li>
+        <li><a href="javascript:void(0);">Gamma</a></li>
+        <li><a href="javascript:void(0);">Delta</a></li>
+        <li><a href="javascript:void(0);">Dseta</a></li>
+        <li><a href="javascript:void(0);">Eta</a></li>
+        <li><a href="javascript:void(0);">Theta</a></li>
+        <li><a href="javascript:void(0);">Iota</a></li>
+        <li><a href="javascript:void(0);">Kappa</a></li>
+        <li><a href="javascript:void(0);">Lambda</a></li>
+        <li><a href="javascript:void(0);">Mi</a></li>
+        <li><a href="javascript:void(0);">Ni</a></li>
+        <li><a href="javascript:void(0);">Xi</a></li>
+      </ul>
+    </li>
+    <li><a href="javascript:void(0);">Tres</a>
         <ul class="menu vertical nested">
           <li><a href="javascript:void(0);">Alfa</a></li>
           <li><a href="javascript:void(0);">Beta</a></li>
@@ -150,40 +162,20 @@
           <li><a href="javascript:void(0);">Dseta</a></li>
           <li><a href="javascript:void(0);">Eta</a></li>
           <li><a href="javascript:void(0);">Theta</a></li>
-          <li><a href="javascript:void(0);">Iota</a></li>
-          <li><a href="javascript:void(0);">Kappa</a></li>
-          <li><a href="javascript:void(0);">Lambda</a></li>
-          <li><a href="javascript:void(0);">Mi</a></li>
-          <li><a href="javascript:void(0);">Ni</a></li>
-          <li><a href="javascript:void(0);">Xi</a></li>
         </ul>
-      </li>
-      <li><a href="javascript:void(0);">Tres</a>
-          <ul class="menu vertical nested">
-            <li><a href="javascript:void(0);">Alfa</a></li>
-            <li><a href="javascript:void(0);">Beta</a></li>
-            <li><a href="javascript:void(0);">Gamma</a></li>
-            <li><a href="javascript:void(0);">Delta</a></li>
-            <li><a href="javascript:void(0);">Dseta</a></li>
-            <li><a href="javascript:void(0);">Eta</a></li>
-            <li><a href="javascript:void(0);">Theta</a></li>
-          </ul>
-      </li>
-      <li><a href="javascript:void(0);">Cuatro</a>
-        <ul class="menu vertical nested">
-          <li><a href="javascript:void(0);">Alfa</a></li>
-          <li><a href="javascript:void(0);">Beta</a></li>
-        </ul>
-      </li>
-    </ul>
-  </div>
+    </li>
+    <li><a href="javascript:void(0);">Cuatro</a>
+      <ul class="menu vertical nested">
+        <li><a href="javascript:void(0);">Alfa</a></li>
+        <li><a href="javascript:void(0);">Beta</a></li>
+      </ul>
+    </li>
+  </ul>
   <br>
   <hr>
 
   <center id="personalizado"><h3>Estilo personalizado</h3></center>
-  <div class="row">
-    <p>El complemento Drilldown agrega automáticamente un botón “Back” a la parte superior de cada menú anidado. Para dar tu propio diseño a este control modifica la clase <code>.js-drilldown-back</code> .<p>    
-  </div>
+  <p>El complemento Drilldown agrega automáticamente un botón “Back” a la parte superior de cada menú anidado. Para dar tu propio diseño a este control modifica la clase <code>.js-drilldown-back</code> .<p>    
   <br>
   <hr>   
 

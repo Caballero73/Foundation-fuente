@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/css/foundation.css">
     <link rel="stylesheet" href="assets/css/app.css">
   </head>
-  <body>
+  <body class="contenedor">
     <!-- /////// Botón para ir al principio -->
     <a class="hidden-xs hidden-sm" href="#inicio">
       <i class="fa fa-chevron-circle-up fa-2x ir-arriba"></i>
@@ -37,7 +37,7 @@
 <div id="menu" class="off-canvas-content mt-3" data-off-canvas-content>
 
   <center id="horizontal"><h3>Horizontal</h3></center>
-  <pre class="row">
+  <pre>
   &lt;ul class="dropdown menu" data-dropdown-menu&gt;
     &lt;li&gt;&lt;a href="#"&gt;Uno&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="#"&gt;Dos&lt;/a&gt;&lt;/li&gt;
@@ -50,7 +50,7 @@
   &lt;/ul&gt;
   </pre>
   <br>
-  <ul class="dropdown menu row" data-dropdown-menu>
+  <ul class="dropdown menu" data-dropdown-menu>
     <li><a href="javascript:void(0);">Uno</a></li>
     <li><a href="javascript:void(0);">Dos</a>
       <ul class="menu">
@@ -65,7 +65,7 @@
   <hr>
 
   <center id="vertical"><h3>Vertical</h3></center>
-  <pre class="row">
+  <pre>
   &lt;ul class="dropdown vertical menu" data-dropdown-menu style="max-width: 200px;"&gt;
     &lt;li&gt;&lt;a href="#"&gt;Uno&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="#"&gt;Dos&lt;/a&gt;&lt;/li&gt;
@@ -78,19 +78,17 @@
   &lt;/ul&gt;
   </pre>
   <br>
-  <div class="row">
-    <ul class="dropdown vertical menu" data-dropdown-menu style="max-width: 200px;">
-      <li><a href="javascript:void(0);">Uno</a></li>
-      <li><a href="javascript:void(0);">Dos</a>
-        <ul class="menu">
-          <li><a href="javascript:void(0);">Alfa</a></li>
-          <li><a href="javascript:void(0);">Beta</a></li>
-        </ul>
-      </li>
-      <li><a href="javascript:void(0);">Tres</a></li>
-      <li><a href="javascript:void(0);">Cuatro</a></li>
-    </ul>
-  </div>
+  <ul class="dropdown vertical menu" data-dropdown-menu style="max-width: 200px;">
+    <li><a href="javascript:void(0);">Uno</a></li>
+    <li><a href="javascript:void(0);">Dos</a>
+      <ul class="menu">
+        <li><a href="javascript:void(0);">Alfa</a></li>
+        <li><a href="javascript:void(0);">Beta</a></li>
+      </ul>
+    </li>
+    <li><a href="javascript:void(0);">Tres</a></li>
+    <li><a href="javascript:void(0);">Cuatro</a></li>
+  </ul>
   <br>
   <hr>
 </div><!-- /.id menu -->

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/css/foundation.css">
     <link rel="stylesheet" href="assets/css/app.css">
   </head>
-  <body>
+  <body class="contenedor">
     <!-- /////// Botón para ir al principio -->
     <a class="hidden-xs hidden-sm" href="#inicio">
       <i class="fa fa-chevron-circle-up fa-2x ir-arriba"></i>
@@ -44,7 +44,7 @@
 <div id="menu" class="off-canvas-content" data-off-canvas-content>
 
   <center id="basico" class="mt-3"><h3>Menú básico</h3></center>
-  <pre class="row">
+  <pre>
     &lt;ul class="menu"&gt;
       &lt;li&gt;&lt;a href="#"&gt;Uno&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href="#"&gt;Dos&lt;/a&gt;&lt;/li&gt;
@@ -53,7 +53,7 @@
     &lt;/ul&gt;
   </pre>
       <br>
-        <ul class="menu row">
+        <ul class="menu">
           <li><a href="javascript:void(0);">Uno</a></li>
           <li><a href="javascript:void(0);">Dos</a></li>
           <li><a href="javascript:void(0);">Tres</a></li>
@@ -63,7 +63,7 @@
       <hr>
 
   <center id="alineacion"><h3>Alineación del elemento</h3></center>
-  <pre class="row">
+  <pre>
   &lt;ul class="menu align-right"&gt;
     &lt;li&gt;&lt;a href="#"&gt;Uno&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="#"&gt;Dos&lt;/a&gt;&lt;/li&gt;
@@ -81,33 +81,31 @@
   &lt;/ul&gt;
   </pre>
       <br>
-      <ul class="menu align-right row">
+      <ul class="menu align-right">
         <li><a href="javascript:void(0);">Uno</a></li>
         <li><a href="javascript:void(0);">Dos</a></li>
         <li><a href="javascript:void(0);">Tres</a></li>
         <li><a href="javascript:void(0);">Cuatro</a></li>
       </ul>
       <br>
-      <ul class="menu align-center row">
+      <ul class="menu align-center">
         <li><a href="javascript:void(0);">Uno</a></li>
         <li><a href="javascript:void(0);">Dos</a></li>
         <li><a href="javascript:void(0);">Tres</a></li>
         <li><a href="javascript:void(0);">Cuatro</a></li>
       </ul>
       <br>
-      <ul class="menu expanded row">
-        <li><a href="javascript:void(0);"></a></li>
+      <ul class="menu expanded">
         <li><a href="javascript:void(0);">Uno</a></li>
         <li><a href="javascript:void(0);">Dos</a></li>
         <li><a href="javascript:void(0);">Tres</a></li>
         <li><a href="javascript:void(0);">Cuatro</a></li>
-        <li><a href="javascript:void(0);"></a></li>
       </ul>
       <br>
       <hr>
 
   <center id="vertical"><h3>Menú vertical</h3></center>
-  <pre class="row">
+  <pre>
   &lt;ul class="menu vertical"&gt;
     &lt;li&gt;&lt;a href="#"&gt;Uno&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="#"&gt;Dos&lt;/a&gt;&lt;/li&gt;
@@ -116,7 +114,7 @@
   &lt;/ul&gt;
   </pre>
       <br>
-      <ul class="menu vertical row">
+      <ul class="menu vertical">
         <li><a href="javascript:void(0);">Uno</a></li>
         <li><a href="javascript:void(0);">Dos</a></li>
         <li><a href="javascript:void(0);">Tres</a></li>
@@ -125,7 +123,7 @@
       <br>
       <center>También podemos usar las clases <code>.align-right</code>  y <code>.align-center</code> para linear horizontalmente la posición de menú.</center>
       <br>
-  <pre class="row">
+  <pre>
   &lt;ul class="menu align-center vertical"&gt;
     &lt;li&gt;&lt;a href="#"&gt;Uno&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="#"&gt;Dos&lt;/a&gt;&lt;/li&gt;
@@ -134,7 +132,7 @@
   &lt;/ul&gt;
   </pre>
       <br>
-      <ul class="menu align-center vertical row">
+      <ul class="menu align-center vertical">
         <li><a href="javascript:void(0);">Uno</a></li>
         <li><a href="javascript:void(0);">Dos</a></li>
         <li><a href="javascript:void(0);">Tres</a></li>
@@ -144,7 +142,7 @@
       <hr>
 
   <center id="simple"><h3>Estilo simple</h3></center>
-  <pre class="row">
+  <pre>
   &lt;ul class="menu simple"&gt;
     &lt;li&gt;&lt;a href="#"&gt;Uno&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="#"&gt;Dos&lt;/a&gt;&lt;/li&gt;
@@ -153,7 +151,7 @@
   &lt;/ul&gt;
   </pre>
       <br>
-      <ul class="menu simple row">
+      <ul class="menu simple">
         <li><a href="javascript:void(0);">Uno</a></li>
         <li><a href="javascript:void(0);">Dos</a></li>
         <li><a href="javascript:void(0);">Tres</a></li>
@@ -163,7 +161,7 @@
       <hr>
 
   <center id="anidado"><h3>Estilo anidado</h3></center>
-  <pre class="row">
+  <pre>
   &lt;ul class="vertical menu"&gt;
     &lt;li&gt;
       &lt;a href="#"&gt;Uno&lt;/a&gt;
@@ -180,7 +178,7 @@
   &lt;/ul&gt;  
   </pre>
       <br>
-      <ul class="vertical menu row">
+      <ul class="vertical menu">
         <li>
           <a href="javascript:void(0);">Uno</a>
           <ul class="nested vertical menu">
@@ -198,7 +196,7 @@
       <hr>
 
   <center id="activo"><h3>Estado activo</h3></center>
-  <pre class="row">
+  <pre>
   &lt;ul class="menu"&gt;
     &lt;li&gt;&lt;a href="#"&gt;Uno&lt;/a&gt;&lt;/li&gt;
     &lt;li class="is-active"&gt;&lt;a href="#"&gt;Dos&lt;/a&gt;&lt;/li&gt;
@@ -207,7 +205,7 @@
   &lt;/ul&gt;
   </pre>
       <br>
-        <ul class="menu row">
+        <ul class="menu">
           <li><a href="javascript:void(0);">Uno</a></li>
           <li class="is-active"><a href="javascript:void(0);">Dos</a></li>
           <li><a href="javascript:void(0);">Tres</a></li>
@@ -217,7 +215,7 @@
       <hr>
 
   <center id="texto"><h3>Texto</h3></center>
-  <pre class="row">
+  <pre>
   &lt;ul class="menu"&gt;
     &lt;li class="menu-text"&gt;Título&lt;/li&gt;
     &lt;li&gt;&lt;a href="#"&gt;Uno&lt;/a&gt;&lt;/li&gt;
@@ -227,7 +225,7 @@
   &lt;/ul&gt;
   </pre>
       <br>
-        <ul class="menu row">
+        <ul class="menu">
           <li class="menu-text">Título</li>
           <li><a href="javascript:void(0);">Uno</a></li>
           <li><a href="javascript:void(0);">Dos</a></li>
@@ -238,7 +236,7 @@
       <hr>
 
   <center id="iconos"><h3>Iconos</h3></center>
-  <pre class="row">
+  <pre>
   &lt;ul class="menu align-center"&gt;
     &lt;li&gt;&lt;a href="#"&gt;&lt;i class="fa fa-rebel fa-lg"&gt;&lt;/i&gt; &lt;span&gt;Uno&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="#"&gt;&lt;i class="fa fa-empire fa-lg"&gt;&lt;/i&gt; &lt;span&gt;Dos&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
@@ -256,7 +254,7 @@
   <br>
       
   <center id="iconos2"><h3>Iconos en otras posiciones</h3></center>
-  <pre class="row">
+  <pre>
   &lt;ul class="menu icons icon-top align-center"&gt;
     &lt;li&gt;&lt;a href="#"&gt;&lt;i class="fa fa-rebel fa-lg"&gt;&lt;/i&gt; &lt;span&gt;Uno&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="#"&gt;&lt;i class="fa fa-empire fa-lg"&gt;&lt;/i&gt; &lt;span&gt;Dos&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
@@ -272,7 +270,7 @@
     <li><a href="javascript:void(0);"><i class="fa fa-fa fa-lg"></i> <span>Cuatro</span></a></li>
   </ul>
   <br>
-  <center class="row">También se puede usar .icon-right y .icon-bottom; pero el icono debe venir DESPUÉS del texto.</center>
+  <center>También se puede usar .icon-right y .icon-bottom; pero el icono debe venir DESPUÉS del texto.</center>
   <br>
   <ul class="menu icons icon-right align-center">
     <li><a href="javascript:void(0);"><span>Uno</span> <i class="fa fa-rebel fa-lg"></i></a></li>
