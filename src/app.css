@@ -12,6 +12,20 @@
 /******************************
 ESTILOS PROPIOS DEL TEMA
 *******************************/
+#acordeon {
+	& .accordion-title::before {
+		position: absolute;
+		top: 50%;
+		right: 1rem;
+		margin-top: -1.5rem;
+		content: '\f065';
+		font-family: 'FontAwesome';
+		font-size: 3rem;
+	}
+	& .is-active > .accordion-title::before {
+		content: '\f066';
+	}
+}
 #barra {
 	& .menu a, .menu .button {
 		line-height: 1;
@@ -30,7 +44,7 @@ ESTILOS PROPIOS DEL TEMA
 		color: #fefefe;
 	}
 }
-#barra,#grilla,#menu,#sticky,#table {
+#acordeon,#barra,#grilla,#menu,#sticky,#table,#tipografia {
 	& pre {
 		background: lightcyan;
 	  	border: 1px solid cadetblue;

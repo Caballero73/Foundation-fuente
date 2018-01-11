@@ -42,18 +42,28 @@ a:hover {
   cursor: pointer;
   text-decoration: none;
 }
-h1,h2,h3 {
+h1,h2,h3,h4,h5,h6 {
   color: #4682B4;
   font-family: 'ubuntu_reg',serif;
 }
 h1 {
-  font-size: calc(3.01163rem + 1.16279vw);
+  font-size: calc(1.22791rem + 2.7907vw);
 }
 h2 {
-  font-size: calc(2.01163rem + 1.16279vw);
+  font-size: calc(1.02326rem + 2.32558vw);
 }
 h3 {
-  font-size: calc(1.31163rem + 1.16279vw);
+  font-size: calc(1.31395rem + 1.39535vw);
+}
+h4 {
+  font-size: calc(1.45814rem + 0.81395vw);
+}
+h5 {
+  font-size: calc(1.55349rem + 0.34884vw);
+}
+h6 {
+  font-size: 16px;
+  font-size: 1.6rem;
 }
 .animated-1_5 {
   -webkit-animation-duration: 1.5s;
@@ -86,7 +96,7 @@ h3 {
           animation-fill-mode: both;
 }
 cite {
-  font-size: calc(0.80465rem + 0.46512vw);
+  font-size: calc(0.75581rem + 0.5814vw);
 }
 .contenedor {
   max-width: 900px !important;
@@ -99,6 +109,10 @@ cite {
   left: auto;
   margin-top: -3px;
 }
+.estilo-basico h1,.estilo-basico h2,.estilo-basico h3,.estilo-basico h4,.estilo-basico h5,.estilo-basico h6 {
+    color: black;
+    font-family: sans-serif;
+  }
 .ir-arriba {
   border-radius: 0.4rem;
   display:none;
@@ -204,6 +218,21 @@ cite {
 /******************************
 ESTILOS PROPIOS DEL TEMA
 *******************************/
+#acordeon .accordion-title:before {
+		position: absolute;
+		top: 50%;
+		right: 10px;
+		right: 1rem;
+		margin-top: -15px;
+		margin-top: -1.5rem;
+		content: '\f065';
+		font-family: 'FontAwesome';
+		font-size: 30px;
+		font-size: 3rem;
+	}
+#acordeon .is-active > .accordion-title:before {
+		content: '\f066';
+	}
 #barra .menu a, #barra .menu .button {
 		line-height: 1;
 		text-decoration: none;
@@ -222,13 +251,13 @@ ESTILOS PROPIOS DEL TEMA
 		background: #4682B4;
 		color: #fefefe;
 	}
-#barra pre, #grilla pre, #menu pre, #sticky pre, #table pre {
+#acordeon pre, #barra pre, #grilla pre, #menu pre, #sticky pre, #table pre, #tipografia pre {
 		background: lightcyan;
 	  	border: 1px solid cadetblue;
 	  	padding: 10px;
 	  	padding: 1rem;
 	}
-#barra small, #grilla small, #menu small, #sticky small, #table small {
+#acordeon small, #barra small, #grilla small, #menu small, #sticky small, #table small, #tipografia small {
 		color: #444;
 	}
 #grilla .row {
@@ -292,20 +321,32 @@ MEDIA-QUERIES
 		font-size: 1.8rem;
 	}
 	h1 {
-		font-size: 45px;
-		font-size: 4.5rem;
+		font-size: 48px;
+		font-size: 4.8rem;
 	}
 	h2 {
-		font-size: 35px;
-		font-size: 3.5rem;
+		font-size: 40px;
+		font-size: 4rem;
 	}
 	h3 {
-		font-size: 28px;
-		font-size: 2.8rem;
+		font-size: 31px;
+		font-size: 3.1rem;
+	}
+	h4 {
+		font-size: 25px;
+		font-size: 2.5rem;
+	}
+	h5 {
+		font-size: 20px;
+		font-size: 2rem;
+	}
+	h6 {
+		font-size: 16px;
+		font-size: 1.6rem;
 	}
 	cite {
-		font-size: 14px;
-		font-size: 1.4rem;
+		font-size: 15px;
+		font-size: 1.5rem;
 	}
 	#logo-container .callout h1 {
 		font-size: 50px;
@@ -322,16 +363,28 @@ MEDIA-QUERIES
 		font-size: 1.4rem;
 	}
 	h1 {
-		font-size: 35px;
-		font-size: 3.5rem;
+		font-size: 24px;
+		font-size: 2.4rem;
 	}
 	h2 {
-		font-size: 25px;
-		font-size: 2.5rem;
+		font-size: 20px;
+		font-size: 2rem;
 	}
 	h3 {
+		font-size: 19px;
+		font-size: 1.9rem;
+	}
+	h4 {
 		font-size: 18px;
 		font-size: 1.8rem;
+	}
+	h5 {
+		font-size: 17px;
+		font-size: 1.7rem;
+	}
+	h6 {
+		font-size: 16px;
+		font-size: 1.6rem;
 	}
 	cite {
 		font-size: 10px;

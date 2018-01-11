@@ -1,0 +1,259 @@
+<!doctype html>
+<html class="no-js" lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acordeón</title>
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+  </head>
+  <body class="contenedor">
+    <!-- /////// Botón para ir al principio -->
+    <a class="hide-for-small-only" href="#inicio">
+      <i class="fa fa-chevron-circle-up fa-2x ir-arriba"></i>
+    </a>
+    <!-- */Botón para ir al principio -->
+
+    <!-- /////// Botón para Menú Off-Canvas -->
+    <a class="hidden-xs hidden-sm" data-toggle="menu-offcanvas">
+      <i class="fa fa-bars fa-2x menu-btn"></i>
+    </a>
+    <!-- */Botón para Menú Off-Canvas -->
+
+    <!-- /////// Menú Off-Canvas -->
+    <div class="off-canvas-wrapper">
+      <div id="menu-offcanvas" class="off-canvas position-left" data-off-canvas data-transition="overlap">
+      <ul class="vertical menu mt-3">
+        <li><a href="index.html" title="Inicio"><i class="fa fa-home"></i> Inicio</a></li>
+        <li><a href="#basico" title="Lo básico">Lo básico</a></li>
+        <li><a href="#multiple" title="Multi-expandir">Multi-expandir</a></li>
+        
+        <li><a href="#cerrado" title="Todo cerrado ">Todo cerrado </a></li>
+        <li><a href="#deshabilitado" title="Deshabilitado">Deshabilitado</a></li>
+      </ul>
+      </div><!-- /.menu-offcanvas -->
+    </div><!-- /.off-canvas-wrapper -->
+    <!-- /.Menú Off-Canvas -->
+
+<div id="acordeon" class="off-canvas-content mt-3" data-off-canvas-content>
+
+  <center id="basico"><h3>Lo básico</h3></center>
+  <pre>
+  &lt;ul class="accordion" data-accordion&gt;
+    &lt;li class="accordion-item is-active" data-accordion-item&gt;
+      &lt;!-- Título del panel del Acordeón --&gt;
+      &lt;a href="#" class="accordion-title"&gt;&lt;h3&gt;Hari Sheldon&lt;/h3&gt;&lt;/a&gt;
+
+      &lt;!-- Contenido del panel del acordeón. --&gt;
+      &lt;div class="accordion-content" data-tab-content&gt;
+        &lt;div class="row"&gt;
+          &lt;div class="columns small-12 medium-8"&gt;
+            &lt;p&gt;&lt;h3&gt;HARI SELDON&lt;/h3&gt; Nació el año 11988 de la Era
+
+            &lt;!-- ... --&gt;
+   &lt;/ul&gt;
+  </pre>
+  <br>
+  <ul class="accordion" data-accordion>
+    <li class="accordion-item is-active" data-accordion-item>
+      <!-- Título del panel del Acordeón -->
+      <a href="javascript:void(0);" class="accordion-title"><h3>Hari Sheldon</h3></a>
+
+      <!-- Contenido del panel del acordeón. -->
+      <div class="accordion-content" data-tab-content>
+        <div class="row">
+          <div class="columns small-12 medium-8">
+            <p><h3>HARI SELDON</h3> Nació el año 11988 de la Era Galáctica; falleció en 12069. Las fechas suelen expresarse en términos de la Era Fundacional en curso, como –79 del año 1 E. F. Nacido en el seno de una familia de clase media en Helicón, sector de Arturo (donde su padre, según una leyenda de dudosa autenticidad, fue cultivador de tabaco en las plantas hidropónicas delplaneta), pronto demostró una sorprendente capacidad para las matemáticas. Las anécdotas sobre su inteligencia son innumerables, y algunas contradictorias.</p>
+            <cite>Enciclopedia Galáctica</cite>
+            <br>          
+          </div><!-- /.column -->
+          <div class="columns small-12 medium-4 right">
+            <img class="thumbnail" src="assets/img/img-hari-seldon.jpg">
+          </div><!-- /.column -->
+        </div><!-- /.row -->
+      </div>
+    </li>
+
+    <li class="accordion-item" data-accordion-item>
+      <!-- Título del panel del Acordeón -->
+      <a href="javascript:void(0);" class="accordion-title"><h3>Trántor</h3></a>
+
+      <!-- Contenido del panel del acordeón. -->
+      <div class="accordion-content" data-tab-content>
+        <div class="row">
+          <div class="columns small-12 medium-7">
+            <p><h3>TRÁNTOR</h3> Al comienzo del decimotercer milenio, esta tendencia alcanzó su punto culminante. Como centro del Gobierno imperial durante ininterrumpidos centenares de generaciones, y localizado, como estaba, en las regiones centrales de la Galaxia, entre los mundos más densamente poblados e industrialmente avanzados del sistema, no pudo dejar de ser el grupo humano más denso y rico que la raza había visto jamás.</p>
+            <cite>Enciclopedia Galáctica</cite>
+            <br>          
+          </div><!-- /.column -->
+          <div class="columns small-12 medium-5 right">
+            <img class="thumbnail" src="assets/img/img-trantor.jpg">
+          </div><!-- /.column -->
+        </div><!-- /.row -->
+      </div>
+    </li>
+  </ul><!-- /.accordion -->
+  <br>
+  <hr>
+
+  <center id="multiple"><h3>Multi-expandir</h3></center>
+  <pre>
+  &lt;ul class="accordion" data-accordion data-multi-expand="true"&gt;
+      &lt;!-- ... --&gt;
+  &lt;/ul&gt;
+  </pre>
+  <br>
+  <ul class="accordion" data-accordion data-multi-expand="true">
+    <li class="accordion-item" data-accordion-item>
+      <!-- Título del panel del Acordeón -->
+      <a href="javascript:void(0);" class="accordion-title"><h3>Hari Sheldon</h3></a>
+
+      <!-- Contenido del panel del acordeón. -->
+      <div class="accordion-content" data-tab-content>
+        <div class="row">
+          <div class="columns small-12 medium-8">
+            <p><h3>HARI SELDON</h3> Nació el año 11988 de la Era Galáctica; falleció en 12069. Las fechas suelen expresarse en términos de la Era Fundacional en curso, como –79 del año 1 E. F. Nacido en el seno de una familia de clase media en Helicón, sector de Arturo (donde su padre, según una leyenda de dudosa autenticidad, fue cultivador de tabaco en las plantas hidropónicas delplaneta), pronto demostró una sorprendente capacidad para las matemáticas. Las anécdotas sobre su inteligencia son innumerables, y algunas contradictorias.</p>
+            <cite>Enciclopedia Galáctica</cite>
+            <br>          
+          </div><!-- /.column -->
+          <div class="columns small-12 medium-4 right">
+            <img class="thumbnail" src="assets/img/img-hari-seldon.jpg">
+          </div><!-- /.column -->
+        </div><!-- /.row -->
+      </div>
+    </li>
+
+    <li class="accordion-item" data-accordion-item>
+      <!-- Título del panel del Acordeón -->
+      <a href="javascript:void(0);" class="accordion-title"><h3>Trántor</h3></a>
+
+      <!-- Contenido del panel del acordeón. -->
+      <div class="accordion-content" data-tab-content>
+        <div class="row">
+          <div class="columns small-12 medium-7">
+            <p><h3>TRÁNTOR</h3> Al comienzo del decimotercer milenio, esta tendencia alcanzó su punto culminante. Como centro del Gobierno imperial durante ininterrumpidos centenares de generaciones, y localizado, como estaba, en las regiones centrales de la Galaxia, entre los mundos más densamente poblados e industrialmente avanzados del sistema, no pudo dejar de ser el grupo humano más denso y rico que la raza había visto jamás.</p>
+            <cite>Enciclopedia Galáctica</cite>
+            <br>          
+          </div><!-- /.column -->
+          <div class="columns small-12 medium-5 right">
+            <img class="thumbnail" src="assets/img/img-trantor.jpg">
+          </div><!-- /.column -->
+        </div><!-- /.row -->
+      </div>
+    </li>
+  </ul><!-- /.accordion -->
+  <br>
+  <hr>
+
+  <center id="cerrado"><h3>Todo cerrado </h3></center>
+  <pre>
+  &lt;ul class="accordion" data-accordion data-allow-all-closed="true"&gt;
+      &lt;!-- ... --&gt;
+  &lt;/ul&gt;
+  </pre>
+  <br>
+  <ul class="accordion" data-accordion data-allow-all-closed="true">
+    <li class="accordion-item" data-accordion-item>
+      <!-- Título del panel del Acordeón -->
+      <a href="javascript:void(0);" class="accordion-title"><h3>Hari Sheldon</h3></a>
+
+      <!-- Contenido del panel del acordeón. -->
+      <div class="accordion-content" data-tab-content>
+        <div class="row">
+          <div class="columns small-12 medium-8">
+            <p><h3>HARI SELDON</h3> Nació el año 11988 de la Era Galáctica; falleció en 12069. Las fechas suelen expresarse en términos de la Era Fundacional en curso, como –79 del año 1 E. F. Nacido en el seno de una familia de clase media en Helicón, sector de Arturo (donde su padre, según una leyenda de dudosa autenticidad, fue cultivador de tabaco en las plantas hidropónicas delplaneta), pronto demostró una sorprendente capacidad para las matemáticas. Las anécdotas sobre su inteligencia son innumerables, y algunas contradictorias.</p>
+            <cite>Enciclopedia Galáctica</cite>
+            <br>          
+          </div><!-- /.column -->
+          <div class="columns small-12 medium-4 right">
+            <img class="thumbnail" src="assets/img/img-hari-seldon.jpg">
+          </div><!-- /.column -->
+        </div><!-- /.row -->
+      </div>
+    </li>
+
+    <li class="accordion-item" data-accordion-item>
+      <!-- Título del panel del Acordeón -->
+      <a href="javascript:void(0);" class="accordion-title"><h3>Trántor</h3></a>
+
+      <!-- Contenido del panel del acordeón. -->
+      <div class="accordion-content" data-tab-content>
+        <div class="row">
+          <div class="columns small-12 medium-7">
+            <p><h3>TRÁNTOR</h3> Al comienzo del decimotercer milenio, esta tendencia alcanzó su punto culminante. Como centro del Gobierno imperial durante ininterrumpidos centenares de generaciones, y localizado, como estaba, en las regiones centrales de la Galaxia, entre los mundos más densamente poblados e industrialmente avanzados del sistema, no pudo dejar de ser el grupo humano más denso y rico que la raza había visto jamás.</p>
+            <cite>Enciclopedia Galáctica</cite>
+            <br>          
+          </div><!-- /.column -->
+          <div class="columns small-12 medium-5 right">
+            <img class="thumbnail" src="assets/img/img-trantor.jpg">
+          </div><!-- /.column -->
+        </div><!-- /.row -->
+      </div>
+    </li>
+  </ul><!-- /.accordion -->
+  <br>
+  <hr>
+
+  <center id="deshabilitado"><h3>Deshabilitado</h3></center>
+  <pre>
+  &lt;ul class="accordion" data-accordion disabled&gt;
+      &lt;!-- ... --&gt;
+  &lt;/ul&gt;
+  </pre>
+  <br>
+  <ul class="accordion" data-accordion disabled>
+    <li class="accordion-item" data-accordion-item>
+      <!-- Título del panel del Acordeón -->
+      <a href="javascript:void(0);" class="accordion-title"><h3>Hari Sheldon</h3></a>
+
+      <!-- Contenido del panel del acordeón. -->
+      <div class="accordion-content" data-tab-content>
+        <div class="row">
+          <div class="columns small-12 medium-8">
+            <p><h3>HARI SELDON</h3> Nació el año 11988 de la Era Galáctica; falleció en 12069. Las fechas suelen expresarse en términos de la Era Fundacional en curso, como –79 del año 1 E. F. Nacido en el seno de una familia de clase media en Helicón, sector de Arturo (donde su padre, según una leyenda de dudosa autenticidad, fue cultivador de tabaco en las plantas hidropónicas delplaneta), pronto demostró una sorprendente capacidad para las matemáticas. Las anécdotas sobre su inteligencia son innumerables, y algunas contradictorias.</p>
+            <cite>Enciclopedia Galáctica</cite>
+            <br>          
+          </div><!-- /.column -->
+          <div class="columns small-12 medium-4 right">
+            <img class="thumbnail" src="assets/img/img-hari-seldon.jpg">
+          </div><!-- /.column -->
+        </div><!-- /.row -->
+      </div>
+    </li>
+
+    <li class="accordion-item" data-accordion-item>
+      <!-- Título del panel del Acordeón -->
+      <a href="javascript:void(0);" class="accordion-title"><h3>Trántor</h3></a>
+
+      <!-- Contenido del panel del acordeón. -->
+      <div class="accordion-content" data-tab-content>
+        <div class="row">
+          <div class="columns small-12 medium-7">
+            <p><h3>TRÁNTOR</h3> Al comienzo del decimotercer milenio, esta tendencia alcanzó su punto culminante. Como centro del Gobierno imperial durante ininterrumpidos centenares de generaciones, y localizado, como estaba, en las regiones centrales de la Galaxia, entre los mundos más densamente poblados e industrialmente avanzados del sistema, no pudo dejar de ser el grupo humano más denso y rico que la raza había visto jamás.</p>
+            <cite>Enciclopedia Galáctica</cite>
+            <br>          
+          </div><!-- /.column -->
+          <div class="columns small-12 medium-5 right">
+            <img class="thumbnail" src="assets/img/img-trantor.jpg">
+          </div><!-- /.column -->
+        </div><!-- /.row -->
+      </div>
+    </li>
+  </ul><!-- /.accordion -->
+  <br>
+  <hr>
+
+</div><!-- /.id acordeon -->
+
+    <!--*****************
+     CORE JS 
+    ******************-->
+    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="assets/js/vendor/what-input.js"></script>
+    <script src="assets/js/vendor/foundation.js"></script>
+    <script src="assets/js/app.js"></script>
+
+  </body>
+</html>

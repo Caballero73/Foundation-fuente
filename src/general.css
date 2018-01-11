@@ -23,18 +23,27 @@ a:hover {
   cursor: pointer;
   text-decoration: none;
 }
-h1,h2,h3 {
+h1,h2,h3,h4,h5,h6 {
   color: var(--colorPpal);
   font-family: var(--fontTitulo);
 }
 h1 {
-  font-size: responsive 3.5rem 4.5rem;
+  font-size: responsive 2.4rem 4.8rem;
 }
 h2 {
-  font-size: responsive 2.5rem 3.5rem;
+  font-size: responsive 2rem 4rem;
 }
 h3 {
-  font-size: responsive 1.8rem 2.8rem;
+  font-size: responsive 1.9rem 3.1rem;
+}
+h4 {
+  font-size: responsive 1.8rem 2.5rem;
+}
+h5 {
+  font-size: responsive 1.7rem 2rem;
+}
+h6 {
+  font-size: responsive 1.6rem 1.6rem;
 }
 .animated-1_5 {
   animation-duration: 1.5s;
@@ -57,7 +66,7 @@ h3 {
   animation-fill-mode: both;
 }
 cite {
-  font-size: responsive 1rem 1.4rem;
+  font-size: responsive 1rem 1.5rem;
 }
 .contenedor {
   max-width: 90rem !important;
@@ -68,6 +77,12 @@ cite {
   right: 0px;
   left: auto;
   margin-top: -3px;
+}
+.estilo-basico {
+  & h1,h2,h3,h4,h5,h6 {
+    color: black;
+    font-family: sans-serif;
+  }
 }
 .ir-arriba {
   border-radius: 0.4rem;
