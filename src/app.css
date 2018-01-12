@@ -44,7 +44,7 @@ ESTILOS PROPIOS DEL TEMA
 		color: #fefefe;
 	}
 }
-#acordeon,#barra,#grilla,#menu,#sticky,#table,#tipografia {
+#acordeon,#barra,#botones,#grilla,#menu,#sticky,#table,#tipografia {
 	& pre {
 		background: lightcyan;
 	  	border: 1px solid cadetblue;
