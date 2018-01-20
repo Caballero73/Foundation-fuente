@@ -1,1 +1,187 @@
-botones.html
+<!doctype html>
+<html class="no-js" lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interruptores / Switchs</title>
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+  </head>
+  <body class="contenedor">
+    <!-- /////// Botón para ir al principio -->
+    <a class="hide-for-small-only" href="#inicio">
+      <i class="fa fa-chevron-circle-up fa-2x ir-arriba"></i>
+    </a>
+    <!-- */Botón para ir al principio -->
+
+    <!-- /////// Botón para Menú Off-Canvas -->
+    <a class="hidden-xs hidden-sm" data-toggle="menu-offcanvas">
+      <i class="fa fa-bars fa-2x menu-btn"></i>
+    </a>
+    <!-- */Botón para Menú Off-Canvas -->
+
+    <!-- /////// Menú Off-Canvas -->
+    <div class="off-canvas-wrapper">
+      <div id="menu-offcanvas" class="off-canvas position-left" data-off-canvas data-transition="overlap">
+      <ul class="vertical menu mt-3">
+        <li><a href="index.html" title="Inicio"><i class="fa fa-home"></i> Inicio</a></li>
+        <li><a href="#basico" title="Lo básico">Lo básico</a></li>
+        <li><a href="#radio" title="Tipo Radio">Tipo Radio</a></li>
+        <li><a href="#talla" title="Tamaño">Tamaño</a></li>
+        <li><a href="#internas" title=" Etiquetas internas"> Etiquetas internas</a></li>
+      </ul>
+      </div><!-- /.menu-offcanvas -->
+    </div><!-- /.off-canvas-wrapper -->
+    <!-- /.Menú Off-Canvas -->
+
+<div id="slider" class="off-canvas-content mt-3" data-off-canvas-content>
+
+  <center id="basico"><h3>Lo básico</h3></center>
+  <pre>
+    &lt;div class="switch">
+      &lt;input class="switch-input" id="exampleSwitch" type="checkbox" name="exampleSwitch">
+      &lt;label class="switch-paddle" for="exampleSwitch">
+        &lt;span class="show-for-sr">Descargar&lt;/span>
+      &lt;/label>
+    &lt;/div>
+  </pre>
+  <br>
+  <div class="switch large">
+    <input class="switch-input" id="exampleSwitch" type="checkbox" name="exampleSwitch">
+    <label class="switch-paddle" for="exampleSwitch">
+      <span class="show-for-sr">Descargar</span>
+    </label>
+  </div>
+  <br>
+  <hr>
+
+
+  <center id="radio"><h3>Tipo Radio</h3></center>
+  <pre>
+    &lt;div class="switch">
+      &lt;input class="switch-input" id="exampleRadioSwitch1" type="radio" checked name="testGroup">
+      &lt;label class="switch-paddle" for="exampleRadioSwitch1">
+        &lt;span class="show-for-sr">Uno&lt;/span>
+      &lt;/label>
+    &lt;/div>
+    &lt;div class="switch">
+      &lt;input class="switch-input" id="exampleRadioSwitch2" type="radio" checked name="testGroup">
+      &lt;label class="switch-paddle" for="exampleRadioSwitch2">
+        &lt;span class="show-for-sr">Dos&lt;/span>
+      &lt;/label>
+    &lt;/div>
+    &lt;div class="switch">
+      &lt;input class="switch-input" id="exampleRadioSwitch3" type="radio" checked name="testGroup">
+      &lt;label class="switch-paddle" for="exampleRadioSwitch3">
+        &lt;span class="show-for-sr">Tres&lt;/span>
+      &lt;/label>
+    &lt;/div>
+  </pre>
+  <br>
+  <div class="switch large">
+    <input class="switch-input" id="exampleRadioSwitch1" type="radio" checked name="testGroup">
+    <label class="switch-paddle" for="exampleRadioSwitch1">
+      <span class="show-for-sr">Uno</span>
+    </label>
+  </div>
+  <div class="switch large">
+    <input class="switch-input" id="exampleRadioSwitch2" type="radio" checked name="testGroup">
+    <label class="switch-paddle" for="exampleRadioSwitch2">
+      <span class="show-for-sr">Dos</span>
+    </label>
+  </div>
+  <div class="switch large">
+    <input class="switch-input" id="exampleRadioSwitch3" type="radio" checked name="testGroup">
+    <label class="switch-paddle" for="exampleRadioSwitch3">
+      <span class="show-for-sr">Tres</span>
+    </label>
+  </div>
+  <br>
+  <hr>
+
+  <center id="talla"><h3>Tamaño</h3></center>
+  <pre>
+    &lt;div class="switch tiny">
+      &lt;input class="switch-input" id="tinySwitch" type="checkbox" name="exampleSwitch">
+      &lt;label class="switch-paddle" for="tinySwitch">
+        &lt;span class="show-for-sr">Tiny&lt;/span>
+      &lt;/label>
+    &lt;/div>
+
+    &lt;div class="switch small">
+      &lt;input class="switch-input" id="smallSwitch" type="checkbox" name="exampleSwitch">
+      &lt;label class="switch-paddle" for="smallSwitch">
+        &lt;span class="show-for-sr">Small&lt;/span>
+      &lt;/label>
+    &lt;/div>
+
+    &lt;div class="switch large">
+      &lt;input class="switch-input" id="largeSwitch" type="checkbox" name="exampleSwitch">
+      &lt;label class="switch-paddle" for="largeSwitch">
+        &lt;span class="show-for-sr">Show&lt;/span>
+      &lt;/label>
+    &lt;/div>
+  </pre>
+  <br>
+  <div class="switch tiny">
+    <input class="switch-input" id="tinySwitch" type="checkbox" name="exampleSwitch">
+    <label class="switch-paddle" for="tinySwitch">
+      <span class="show-for-sr">Tiny  </span>
+    </label>
+  </div>
+
+  <div class="switch small">
+    <input class="switch-input" id="smallSwitch" type="checkbox" name="exampleSwitch">
+    <label class="switch-paddle" for="smallSwitch">
+      <span class="show-for-sr">Small  </span>
+    </label>
+  </div>
+
+  <div class="switch large">
+    <input class="switch-input" id="largeSwitch" type="checkbox" name="exampleSwitch">
+    <label class="switch-paddle" for="largeSwitch">
+      <span class="show-for-sr">Show  </span>
+    </label>
+  </div>
+  <br>
+  <hr>
+
+  <center id="internas"><h3> Etiquetas internas </h3></center>
+  <pre>
+    &lt;p>¿Te parece bien?&lt;/p>
+    &lt;div class="switch large">
+      &lt;input class="switch-input" id="si-no" type="checkbox" name="exampleSwitch">
+      &lt;label class="switch-paddle" for="si-no">
+        &lt;span class="show-for-sr">¿Te parece bien?&lt;/span>
+        &lt;span class="switch-active" aria-hidden="true">Si&lt;/span>
+        &lt;span class="switch-inactive" aria-hidden="true">No&lt;/span>
+      &lt;/label>
+    &lt;/div>
+  </pre>
+  <br>
+  <p>¿Te parece bien?</p>
+  <div class="switch large">
+    <input class="switch-input" id="si-no" type="checkbox" name="exampleSwitch">
+    <label class="switch-paddle" for="si-no">
+      <span class="show-for-sr">¿Te parece bien?</span>
+      <span class="switch-active" aria-hidden="true">Si</span>
+      <span class="switch-inactive" aria-hidden="true">No</span>
+    </label>
+  </div>
+  <br>
+  <hr>
+
+</div><!-- /.id slider -->
+
+    <!--*****************
+     CORE JS
+    ******************-->
+    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="assets/js/vendor/what-input.js"></script>
+    <script src="assets/js/vendor/foundation.js"></script>
+    <script src="assets/js/app.js"></script>
+
+  </body>
+</html>

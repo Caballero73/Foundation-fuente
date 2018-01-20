@@ -1,1 +1,174 @@
-botones.html
+<!doctype html>
+<html class="no-js" lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control deslizante</title>
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+  </head>
+  <body class="contenedor">
+    <!-- /////// Botón para ir al principio -->
+    <a class="hide-for-small-only" href="#inicio">
+      <i class="fa fa-chevron-circle-up fa-2x ir-arriba"></i>
+    </a>
+    <!-- */Botón para ir al principio -->
+
+    <!-- /////// Botón para Menú Off-Canvas -->
+    <a class="hidden-xs hidden-sm" data-toggle="menu-offcanvas">
+      <i class="fa fa-bars fa-2x menu-btn"></i>
+    </a>
+    <!-- */Botón para Menú Off-Canvas -->
+
+    <!-- /////// Menú Off-Canvas -->
+    <div class="off-canvas-wrapper">
+      <div id="menu-offcanvas" class="off-canvas position-left" data-off-canvas data-transition="overlap">
+      <ul class="vertical menu mt-3">
+        <li><a href="index.html" title="Inicio"><i class="fa fa-home"></i> Inicio</a></li>
+        <li><a href="#basico" title="Lo básico">Lo básico</a></li>
+        <li><a href="#vertical" title="Vertical">Vertical</a></li>
+        <li><a href="#deshabilitado" title="Deshabilitado">Deshabilitado</a></li>
+        <li><a href="#doble" title="Dos Manijas">Dos Manijas</a></li>
+        <li><a href="#enlace" title="Enlace de datos">Enlace de datos</a></li>
+      </ul>
+      </div><!-- /.menu-offcanvas -->
+    </div><!-- /.off-canvas-wrapper -->
+    <!-- /.Menú Off-Canvas -->
+
+<div id="slider" class="off-canvas-content mt-3" data-off-canvas-content>
+
+  <center id="basico"><h3>Lo básico</h3></center>
+  <pre>
+    &lt;div class="slider" data-slider data-initial-start="50" data-end="200">
+      &lt;span class="slider-handle"  data-slider-handle role="slider" tabindex="1">&lt;/span>
+      &lt;span class="slider-fill" data-slider-fill>&lt;/span>
+      &lt;input type="hidden">
+    &lt;/div>
+  </pre>
+  <br>
+  <div class="slider" data-slider data-initial-start="50" data-end="200">
+    <span class="slider-handle"  data-slider-handle role="slider" tabindex="1"></span>
+    <span class="slider-fill" data-slider-fill></span>
+    <input type="hidden">
+  </div>
+  <br>
+  <hr>
+
+  <center id="vertical"><h3>Vertical</h3></center>
+  <pre>
+    &lt;div class="slider vertical" data-slider data-initial-start="25" data-end="200" data-vertical="true">
+      &lt;span class="slider-handle" data-slider-handle role="slider" tabindex="1">&lt;/span>
+      &lt;span class="slider-fill" data-slider-fill>&lt;/span>
+      &lt;input type="hidden">
+    &lt;/div>
+  </pre>
+  <br>
+  <div class="slider vertical" data-slider data-initial-start="25" data-end="200" data-vertical="true">
+    <span class="slider-handle" data-slider-handle role="slider" tabindex="1"></span>
+    <span class="slider-fill" data-slider-fill></span>
+    <input type="hidden">
+  </div>
+  <br>
+  <hr>
+
+  <center id="deshabilitado"><h3>Deshabilitado</h3></center>
+  <pre>
+    &lt;div class="slider disabled" data-slider data-initial-start="50" data-end="200">
+      &lt;span class="slider-handle"  data-slider-handle role="slider" tabindex="1">&lt;/span>
+      &lt;span class="slider-fill" data-slider-fill>&lt;/span>
+      &lt;input type="hidden">
+    &lt;/div>
+  </pre>
+  <br>
+  <div class="slider disabled" data-slider data-initial-start="50" data-end="200">
+    <span class="slider-handle"  data-slider-handle role="slider" tabindex="1"></span>
+    <span class="slider-fill" data-slider-fill></span>
+    <input type="hidden">
+  </div>
+  <br>
+  <hr>
+
+  <center id="doble"><h3>Dos manijas</h3></center>
+  <pre>
+    &lt;div class="slider" data-slider data-initial-start="25" data-initial-end="75">
+      &lt;span class="slider-handle" data-slider-handle role="slider" tabindex="1">&lt;/span>
+      &lt;span class="slider-fill" data-slider-fill>&lt;/span>
+      &lt;span class="slider-handle" data-slider-handle role="slider" tabindex="1">&lt;/span>
+      &lt;input type="hidden">
+      &lt;input type="hidden">
+    &lt;/div>
+  </pre>
+  <br>
+  <div class="slider" data-slider data-initial-start="25" data-initial-end="75">
+    <span class="slider-handle" data-slider-handle role="slider" tabindex="1"></span>
+    <span class="slider-fill" data-slider-fill></span>
+    <span class="slider-handle" data-slider-handle role="slider" tabindex="1"></span>
+    <input type="hidden">
+    <input type="hidden">
+  </div>
+  <br>
+  <hr>
+
+  <center id="enlace"><h3>Enlace de datos</h3></center>
+  <pre>
+    &lt;div class="small-10 columns">
+      &lt;div class="slider" data-slider data-initial-start="50">
+        &lt;span class="slider-handle"  data-slider-handle role="slider" tabindex="1" aria-controls="sliderOutput1">&lt;/span>
+        &lt;span class="slider-fill" data-slider-fill>&lt;/span>
+      &lt;/div>
+    &lt;/div>
+    &lt;div class="small-2 columns">
+      &lt;input type="number" id="sliderOutput1">
+    &lt;/div
+
+
+    Paso a paso
+
+    &lt;div class="small-10 columns">
+      &lt;div class="slider" data-slider data-initial-start="50" data-step="5">
+        &lt;span class="slider-handle"  data-slider-handle role="slider" tabindex="1" aria-controls="sliderOutput1">&lt;/span>
+        &lt;span class="slider-fill" data-slider-fill>&lt;/span>
+      &lt;/div>
+    &lt;/div>
+    &lt;div class="small-2 columns">
+      &lt;input type="number" id="sliderOutput1">
+    &lt;/div
+  </pre>
+  <br>
+  <div class="small-10 columns">
+    <div class="slider" data-slider data-initial-start="50">
+      <span class="slider-handle"  data-slider-handle role="slider" tabindex="1" aria-controls="sliderOutput1"></span>
+      <span class="slider-fill" data-slider-fill></span>
+    </div>
+  </div>
+  <div class="small-2 columns">
+    <input type="number" id="sliderOutput1">
+  </div>
+  <br>
+  <p>Paso a paso</p>
+  <div class="small-10 columns">
+    <div class="slider" data-slider data-initial-start="50" data-step="5">
+      <span class="slider-handle"  data-slider-handle role="slider" tabindex="1" aria-controls="sliderOutput2"></span>
+      <span class="slider-fill" data-slider-fill></span>
+    </div>
+  </div>
+  <div class="small-2 columns">
+    <input type="number" id="sliderOutput2">
+  </div>
+  <br>
+  <hr>
+
+</div><!-- /.id slider -->
+
+    <!--*****************
+     CORE JS
+    ******************-->
+    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="assets/js/vendor/what-input.js"></script>
+    <script src="assets/js/vendor/foundation.js"></script>
+    <script src="assets/js/app.js"></script>
+
+  </body>
+</html>

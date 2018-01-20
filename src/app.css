@@ -44,7 +44,7 @@ ESTILOS PROPIOS DEL TEMA
 		color: #fefefe;
 	}
 }
-#acordeon,#barra,#botones,#grilla,#menu,#sticky,#table,#tipografia {
+#acordeon,#barra,#botones,#grilla,#llamadas,#menu,#slider,#sticky,#table,#tipografia {
 	& pre {
 		background: lightcyan;
 	  	border: 1px solid cadetblue;
@@ -72,13 +72,13 @@ ESTILOS PROPIOS DEL TEMA
 	& .callout {
 		background-color: var(--colorPpal);
 		margin: 0;
-	
+
 
 		& h1 {
 			color: white;
 			font-size: responsive 3rem 5rem;
 			font-weight: bold;
-		} 
+		}
 	}
 }
 #menu {
@@ -96,7 +96,7 @@ ESTILOS PROPIOS DEL TEMA
 	background: #48a19d;
 }
 	& li {
-		
+
 		& a {
 			color: white;
 			font-family: var(--fontTitulo);
@@ -129,5 +129,3 @@ ESTILOS PROPIOS DEL TEMA
 /******************************
 MEDIA-QUERIES
 *******************************/
-
-
