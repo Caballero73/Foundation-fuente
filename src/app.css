@@ -44,7 +44,7 @@ ESTILOS PROPIOS DEL TEMA
 		color: #fefefe;
 	}
 }
-#acordeon,#barra,#botones,#grilla,#llamadas,#menu,#slider,#sticky,#table,#tipografia {
+#acordeon,#barra,#botones,#grilla,#llamadas,#menu,#slider,#sticky,#table,#tarjetas,#tipografia {
 	& pre {
 		background: lightcyan;
 	  	border: 1px solid cadetblue;
@@ -119,6 +119,12 @@ ESTILOS PROPIOS DEL TEMA
 
 	& a:hover {
 			color: var(--colorSec);
+	}
+}
+#tarjetas {
+
+	& .card {
+		border: 1px solid #999;
 	}
 }
 
