@@ -28,7 +28,9 @@
       <ul class="vertical menu mt-3">
         <li><a href="index.html" title="Inicio"><i class="fa fa-home"></i> Inicio</a></li>
         <li><a href="#basico" title="Lo básico">Lo básico</a></li>
-        <li><a href="#multiple" title="Multi-expandir">Multi-expandir</a></li>
+        <li><a href="#posicion" title="Posicionamiento">Posicionamiento</a></li>
+        <li><a href="#explicito1" title="Posicionamiento explícito arriba y abajo">Posicionamiento explícito arriba y abajo</a></li>
+        <li><a href="#explicito2" title="Posicionamiento explícito derecha e izquierda">Posicionamiento explícito derecha e izquierda</a></li>
       </ul>
       </div><!-- /.menu-offcanvas -->
     </div><!-- /.off-canvas-wrapper -->
@@ -93,7 +95,7 @@
 
   <center id="posicion"><h3>Posicionamiento</h3></center>
   <pre>
-  &lt;button class="button" type="button" data-toggle="example-dropdown2">Alineado Arriba&lt;/button>
+  &lt;button class="button large" type="button" data-toggle="example-dropdown2">Alineado Arriba&lt;/button>
 
   &lt;div class="dropdown-pane top" id="example-dropdown2" data-dropdown>
     &lt;p class="lead">«La violencia es el último recurso del incompetente».&lt;/p>
@@ -102,122 +104,207 @@
   <br>
   <p>Por defecto, un menú desplegable se ancla debajo del botón que lo abrió. Agregue la clase <b>.top , .right o .left</b> al menú desplegable para cambiar esto.</p>
   <br>
-  <button class="button large" type="button" data-toggle="example-dropdown3">Alineado Arriba</button>
-  <div class="dropdown-pane top" id="example-dropdown3" data-dropdown>
-    <p class="lead">«La violencia es el último recurso del incompetente».</p>
-  </div>
-  <button class="button large" type="button" data-toggle="example-dropdown4" style="float: right;">Alineado Abajo</button>
-  <div class="dropdown-pane bottom" id="example-dropdown4" data-dropdown>
-    <p class="lead">«La violencia es el último recurso del incompetente».</p>
-  </div>
-  <br>
-  <button class="button large" type="button" data-toggle="example-dropdown5">Alineado a la Derecha</button>
-  <div class="dropdown-pane right" id="example-dropdown5" data-dropdown>
-    <p class="lead">«La violencia es el último recurso del incompetente».</p>
+  <div>  
+    <button class="button large" type="button" data-toggle="example-dropdown3">Alineado Arriba</button>
+    <div class="dropdown-pane top" id="example-dropdown3" data-dropdown>
+      <p class="lead">«La violencia es el último recurso del incompetente».</p>
+    </div>
   </div>
 
-  <button class="button large" type="button" data-toggle="example-dropdown6" style="float: right;">Alineado a la Izquierda</button>
-  <div class="dropdown-pane left" id="example-dropdown6" data-dropdown>
-    <p class="lead">«La violencia es el último recurso del incompetente».</p>
+  <div>
+    <button class="button large" type="button" data-toggle="example-dropdown6">Alineado a la Izquierda</button>
+    <div class="dropdown-pane left" id="example-dropdown6" data-dropdown>
+      <p class="lead">«La violencia es el último recurso del incompetente».</p>
+    </div>
   </div>
+
+  <div>
+    <button class="button large" type="button" data-toggle="example-dropdown5">Alineado a la Derecha</button>
+    <div class="dropdown-pane right" id="example-dropdown5" data-dropdown>
+      <p class="lead">«La violencia es el último recurso del incompetente».</p>
+    </div>
+  </div>
+  
+  <div>
+    <button class="button large" type="button" data-toggle="example-dropdown4">Alineado Abajo</button>
+    <div class="dropdown-pane" id="example-dropdown4" data-dropdown>
+      <p class="lead">«La violencia es el último recurso del incompetente».</p>
+    </div>
+  </div>
+  <br>
+  <p> Agregar <b>.float-right o .float-left</b> al ancla también cambiará la dirección del menú desplegable. </p>
   <br>
   <hr>
 
-  <center id="cerrado"><h3>Todo cerrado </h3></center>
+  <center id="explicito1"><h3>Posicionamiento explícito arriba y abajo</h3></center>
   <pre>
-  &lt;ul class="accordion" data-accordion data-allow-all-closed="true"&gt;
-      &lt;!-- ... --&gt;
-  &lt;/ul&gt;
+  &lt;button class="button large" type="button" data-toggle="example-dropdown-bottom-left">Desplegar&lt;/button>
+  &lt;div class="dropdown-pane" data-position="bottom" data-alignment="left" id="example-dropdown-bottom-left" data-dropdown data-auto-focus="true">
+    &lt;p>AQUI VA EL CONTENIDO DEL PANEL.&lt;/p>
+  &lt;/div>
   </pre>
   <br>
-  <ul class="accordion" data-accordion data-allow-all-closed="true">
-    <li class="accordion-item" data-accordion-item>
-      <!-- Título del panel del Acordeón -->
-      <a href="javascript:void(0);" class="accordion-title"><h3>Hari Sheldon</h3></a>
-
-      <!-- Contenido del panel del acordeón. -->
-      <div class="accordion-content" data-tab-content>
-        <div class="row">
-          <div class="columns small-12 medium-8">
-            <p><h3>HARI SELDON</h3> Nació el año 11988 de la Era Galáctica; falleció en 12069. Las fechas suelen expresarse en términos de la Era Fundacional en curso, como –79 del año 1 E. F. Nacido en el seno de una familia de clase media en Helicón, sector de Arturo (donde su padre, según una leyenda de dudosa autenticidad, fue cultivador de tabaco en las plantas hidropónicas delplaneta), pronto demostró una sorprendente capacidad para las matemáticas. Las anécdotas sobre su inteligencia son innumerables, y algunas contradictorias.</p>
-            <cite>Enciclopedia Galáctica</cite>
-            <br>          
-          </div><!-- /.column -->
-          <div class="columns small-12 medium-4 right">
-            <img class="thumbnail" src="assets/img/img-hari-seldon.jpg">
-          </div><!-- /.column -->
-        </div><!-- /.row -->
+  <div class="">
+    <div id="col1"
+      <!-- Bottom Left -->
+      <div>
+        <small><b>Abajo Izquierda</b><br>
+          data-position="bottom"<br>
+          data-alignment="left"</small><br>
+          <br>
+        <button class="button large" type="button" data-toggle="example-dropdown-bottom-left">Desplegar</button>
+        <div class="dropdown-pane" data-position="bottom" data-alignment="left" id="example-dropdown-bottom-left" data-dropdown data-auto-focus="true">
+          <p class="lead">Para tener éxito, la planificación sola es insuficiente. Uno debe improvisar también.</p>
+        </div>
       </div>
-    </li>
 
-    <li class="accordion-item" data-accordion-item>
-      <!-- Título del panel del Acordeón -->
-      <a href="javascript:void(0);" class="accordion-title"><h3>Trántor</h3></a>
-
-      <!-- Contenido del panel del acordeón. -->
-      <div class="accordion-content" data-tab-content>
-        <div class="row">
-          <div class="columns small-12 medium-7">
-            <p><h3>TRÁNTOR</h3> Al comienzo del decimotercer milenio, esta tendencia alcanzó su punto culminante. Como centro del Gobierno imperial durante ininterrumpidos centenares de generaciones, y localizado, como estaba, en las regiones centrales de la Galaxia, entre los mundos más densamente poblados e industrialmente avanzados del sistema, no pudo dejar de ser el grupo humano más denso y rico que la raza había visto jamás.</p>
-            <cite>Enciclopedia Galáctica</cite>
-            <br>          
-          </div><!-- /.column -->
-          <div class="columns small-12 medium-5 right">
-            <img class="thumbnail" src="assets/img/img-trantor.jpg">
-          </div><!-- /.column -->
-        </div><!-- /.row -->
+      <!-- Bottom Center -->
+      <div>
+        <small><b>Abajo Centro</b><br>
+          data-position="bottom"<br>
+          data-alignment="center"</small><br>
+          <br>
+        <button class="button large" type="button" data-toggle="example-dropdown-bottom-center">Desplegar</button>
+        <div class="dropdown-pane" data-position="bottom" data-alignment="center" id="example-dropdown-bottom-center" data-dropdown data-auto-focus="true">
+          <p class="lead">En primer lugar acabemos con Sócrates, porque ya estoy harto de este invento de que no saber nada es un signo de sabiduría.</p>
+        </div>
       </div>
-    </li>
-  </ul><!-- /.accordion -->
+
+      <!-- Bottom Right -->
+      <div>
+        <small><b>Abajo Derecha</b><br>
+          data-position="bottom"<br>
+          data-alignment="right"</small><br>
+          <br>
+        <button class="button large" type="button" data-toggle="example-dropdown-bottom-right">Desplegar</button>
+        <div class="dropdown-pane" data-position="bottom" data-alignment="right" id="example-dropdown-bottom-right" data-dropdown data-auto-focus="true">
+          <p class="lead">Un sutil pensamiento erróneo puede dar lugar a una indagación fructífera que revela verdades de gran valor.</p>
+        </div>
+      </div>
+    </div><!-- ./col1 -->
+
+    <div id="col2">      
+      <!-- Top Left -->
+      <div>
+        <small><b>Arriba Izquierda</b><br>
+          data-position="top"<br>
+          data-alignment="right"</small><br>
+          <br>
+        <button class="button large" type="button" data-toggle="example-dropdown-top-left">Desplegar</button>
+        <div class="dropdown-pane" data-position="top" data-alignment="left" id="example-dropdown-top-left" data-dropdown data-auto-focus="true">
+          <p class="lead">Nunca permitas que el sentido de la moral te impida hacer lo que está bien.</p>
+        </div>
+      </div>
+
+      <!-- Top Center -->
+      <div>
+        <small><b>Arriba Centro</b><br>
+          data-position="top"<br>
+          data-alignment="center"</small><br>
+          <br>
+        <button class="button large" type="button" data-toggle="example-dropdown-top-center">Desplegar</button>
+        <div class="dropdown-pane" data-position="top" data-alignment="center" id="example-dropdown-top-center" data-dropdown data-auto-focus="true">
+          <p class="lead">El aspecto más triste de la vida actual es que la ciencia gana en conocimiento más rápidamente que la sociedad en sabiduría.</p>
+        </div>
+      </div>
+
+      <!-- Top Right -->
+      <div>
+        <small><b>Arriba Derecha</b><br>
+          data-position="top"<br>
+          data-alignment="right"</small><br>
+          <br>
+        <button class="button large" type="button" data-toggle="example-dropdown-top-right">Desplegar</button>
+        <div class="dropdown-pane" data-position="top" data-alignment="right" id="example-dropdown-top-right" data-dropdown data-auto-focus="true">
+          <p class="lead">Ser autodidacta es, estoy convencido, el único tipo de educación que existe.</p>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- ./row-cont -->
   <br>
   <hr>
 
-  <center id="deshabilitado"><h3>Deshabilitado</h3></center>
+  <center id="explicito2"><h3>Posicionamiento explícito derecha e izquierda</h3></center>
   <pre>
   &lt;ul class="accordion" data-accordion disabled&gt;
       &lt;!-- ... --&gt;
   &lt;/ul&gt;
   </pre>
   <br>
-  <ul class="accordion" data-accordion disabled>
-    <li class="accordion-item" data-accordion-item>
-      <!-- Título del panel del Acordeón -->
-      <a href="javascript:void(0);" class="accordion-title"><h3>Hari Sheldon</h3></a>
+  <!-- Right Top -->
+  <div>
+    <small><b>Derecha Arriba</b><br>
+      data-position="right"<br>
+      data-alignment="top"</small><br>
+      <br>
+    <button class="button large" type="button" data-toggle="example-dropdown-right-top">Desplegar</button>
+    <div class="dropdown-pane" data-position="right" data-alignment="top" id="example-dropdown-right-top" data-dropdown data-auto-focus="true">
+      <p class="lead">Ser autodidacta es, estoy convencido, el único tipo de educación que existe.</p>
+    </div>
+  </div>
 
-      <!-- Contenido del panel del acordeón. -->
-      <div class="accordion-content" data-tab-content>
-        <div class="row">
-          <div class="columns small-12 medium-8">
-            <p><h3>HARI SELDON</h3> Nació el año 11988 de la Era Galáctica; falleció en 12069. Las fechas suelen expresarse en términos de la Era Fundacional en curso, como –79 del año 1 E. F. Nacido en el seno de una familia de clase media en Helicón, sector de Arturo (donde su padre, según una leyenda de dudosa autenticidad, fue cultivador de tabaco en las plantas hidropónicas delplaneta), pronto demostró una sorprendente capacidad para las matemáticas. Las anécdotas sobre su inteligencia son innumerables, y algunas contradictorias.</p>
-            <cite>Enciclopedia Galáctica</cite>
-            <br>          
-          </div><!-- /.column -->
-          <div class="columns small-12 medium-4 right">
-            <img class="thumbnail" src="assets/img/img-hari-seldon.jpg">
-          </div><!-- /.column -->
-        </div><!-- /.row -->
-      </div>
-    </li>
+  <!-- Left Top -->
+  <div>
+    <small><b>Izquierda Arriba</b><br>
+      data-position="left"<br>
+      data-alignment="top"</small><br>
+      <br>
+    <button class="button large" type="button" data-toggle="example-dropdown-left-top">Desplegar</button>
+    <div class="dropdown-pane" data-position="left" data-alignment="top" id="example-dropdown-left-top" data-dropdown data-auto-focus="true">
+      <p class="lead">El aspecto más triste de la vida actual es que la ciencia gana en conocimiento más rápidamente que la sociedad en sabiduría.</p>
+    </div>
+  </div>
 
-    <li class="accordion-item" data-accordion-item>
-      <!-- Título del panel del Acordeón -->
-      <a href="javascript:void(0);" class="accordion-title"><h3>Trántor</h3></a>
+  <!-- Right Center -->
+  <div>
+    <small><b>Derecha Centro</b><br>
+      data-position="right"<br>
+      data-alignment="center"</small><br>
+      <br>
+    <button class="button large" type="button" data-toggle="example-dropdown-right-center">Desplegar</button>
+    <div class="dropdown-pane" data-position="right" data-alignment="center" id="example-dropdown-right-center" data-dropdown data-auto-focus="true">
+      <p class="lead">Nunca permitas que el sentido de la moral te impida hacer lo que está bien.</p>
+    </div>
+  </div>
+  
 
-      <!-- Contenido del panel del acordeón. -->
-      <div class="accordion-content" data-tab-content>
-        <div class="row">
-          <div class="columns small-12 medium-7">
-            <p><h3>TRÁNTOR</h3> Al comienzo del decimotercer milenio, esta tendencia alcanzó su punto culminante. Como centro del Gobierno imperial durante ininterrumpidos centenares de generaciones, y localizado, como estaba, en las regiones centrales de la Galaxia, entre los mundos más densamente poblados e industrialmente avanzados del sistema, no pudo dejar de ser el grupo humano más denso y rico que la raza había visto jamás.</p>
-            <cite>Enciclopedia Galáctica</cite>
-            <br>          
-          </div><!-- /.column -->
-          <div class="columns small-12 medium-5 right">
-            <img class="thumbnail" src="assets/img/img-trantor.jpg">
-          </div><!-- /.column -->
-        </div><!-- /.row -->
-      </div>
-    </li>
-  </ul><!-- /.accordion -->
+  <!-- Left Center -->
+  <div>
+    <small><b>Izquierda Centro</b><br>
+      data-position="left"<br>
+      data-alignment="center"</small><br>
+      <br>
+    <button class="button large" type="button" data-toggle="example-dropdown-left-center">Desplegar</button>
+    <div class="dropdown-pane" data-position="left" data-alignment="center" id="example-dropdown-left-center" data-dropdown data-auto-focus="true">
+      <p class="lead">Un sutil pensamiento erróneo puede dar lugar a una indagación fructífera que revela verdades de gran valor.</p>
+    </div>
+  </div>
+
+  <!-- Right Bottom -->
+  <div>
+    <small><b>Derecha Abajo</b><br>
+      data-position="right"<br>
+      data-alignment="bottom"</small><br>
+      <br>
+    <button class="button large" type="button" data-toggle="example-dropdown-right-bottom">Desplegar</button>
+    <div class="dropdown-pane" data-position="right" data-alignment="bottom" id="example-dropdown-right-bottom" data-dropdown data-auto-focus="true">
+      <p class="lead">En primer lugar acabemos con Sócrates, porque ya estoy harto de este invento de que no saber nada es un signo de sabiduría.</p>
+    </div>
+  </div>
+  
+
+  <!-- Left Bottom -->
+  <div>
+    <small><b>Izquierda Abajo</b><br>
+      data-position="left"<br>
+      data-alignment="bottom"</small><br>
+      <br>
+    <button class="button large" type="button" data-toggle="example-dropdown-left-bottom">Desplegar</button>
+    <div class="dropdown-pane" data-position="left" data-alignment="bottom" id="example-dropdown-left-bottom" data-dropdown data-auto-focus="true">
+    </div>
+  </div>
+  
   <br>
   <hr>
 
