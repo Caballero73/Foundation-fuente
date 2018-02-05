@@ -251,13 +251,13 @@ ESTILOS PROPIOS DEL TEMA
 		background: #4682B4;
 		color: #fefefe;
 	}
-#acordeon pre, #barra pre, #botones pre, #grilla pre, #llamadas pre, #menu pre, #slider pre, #sticky pre, #table pre, #tarjetas pre, #tipografia pre {
+#acordeon pre, #barra pre, #botones pre, #desplegable pre, #grilla pre, #llamadas pre, #menu pre, #slider pre, #sticky pre, #table pre, #tipografia pre {
 		background: lightcyan;
 	  	border: 1px solid cadetblue;
 	  	padding: 10px;
 	  	padding: 1rem;
 	}
-#acordeon small, #barra small, #botones small, #grilla small, #llamadas small, #menu small, #slider small, #sticky small, #table small, #tarjetas small, #tipografia small {
+#acordeon small, #barra small, #botones small, #desplegable small, #grilla small, #llamadas small, #menu small, #slider small, #sticky small, #table small, #tipografia small {
 		color: #444;
 	}
 #grilla .row {
