@@ -1,3 +1,199 @@
-&lt;
-&gt;
+<!doctype html>
+<html class="no-js" lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuera del Lienzo / Off-Canvas</title>
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+  </head>
+  <body class="contenedor">
+    <!-- /////// Botón para ir al principio -->
+    <a class="hide-for-small-only" href="#inicio">
+      <i class="fa fa-chevron-circle-up fa-2x ir-arriba"></i>
+    </a>
+    <!-- */Botón para ir al principio -->
 
+    <!-- /////// Botón para Menú Off-Canvas -->
+    <a class="hidden-xs hidden-sm" data-toggle="menu-offcanvas">
+      <i class="fa fa-bars fa-2x menu-btn"></i>
+    </a>
+    <!-- */Botón para Menú Off-Canvas -->
+
+    <!-- /////// Menú Off-Canvas -->
+    <div class="off-canvas-wrapper">
+      <div id="menu-offcanvas" class="off-canvas position-left" data-off-canvas data-transition="overlap">
+      <ul class="vertical menu mt-3">
+        <li><a href="index.html" title="Inicio"><i class="fa fa-home"></i> Inicio</a></li>
+        <li><a href="#configurar" title="Menú Básico">Menú Básico</a></li>
+
+      </ul>
+      </div><!-- /.menu-offcanvas -->
+    </div><!-- /.off-canvas-wrapper -->
+    <!-- */Menú Off-Canvas -->
+
+<div id="offcanvas" class="off-canvas-content" data-off-canvas-content>
+
+  <center id="configurar" class="mt-3"><h3>Configuración</h3></center>
+  <p>¡Configurarlo solo requiere dos elementos! Crea un contenedor fuera del lienzo con la clase .off-canvas y el atributo data-off-canvas . Este es el espacio de su contenido fuera del lienzo.</p>
+  <p>El contenedor  también necesita una clase de posicionamiento para determinar desde qué lado de la ventana gráfica se abre:</p>
+  <ul>
+    <li>.position-left</li>
+    <li>.position-right</li>
+    <li>.position-top</li>
+    <li>.position-bottom</li> 
+  </ul>
+  <p>Además, asegúrese de que el panel fuera del lienzo tenga una identificación o ID única, de modo que pueda apuntar con el disparador de clic.</p>
+  <p><b>Ejemplo:</b></p>
+  <pre>
+  &lt;div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+    &lt;!-- Tu menú o contenido fuera del lienzo va aquí -->
+  &lt;/div>
+  </pre>
+  <br>
+  <p>Junto con el contenedor fuera del lienzo, el contenido principal de la página se alojará en su propio contenedor con la clase .off-canvas-content y el atributo data-off-canvas-content . Aquí es donde va el contenido general de tu página.</p>
+  <pre>
+  &lt;div class="off-canvas-content" data-off-canvas-content>
+    &lt;!-- El contenido de tu página va aquí -->
+  &lt;/div>
+  </pre>
+  <br>
+  <hr>
+
+  <center id="envoltura"><h3>Envoltura</h3></center>
+  <p>Puede agregar un contenedor opcional alrededor del lienzo y el contenido. Esto oculta las barras de desplazamiento verticales (en la parte superior / inferior de la lona) u horizontales (en la izquierda / derecha fuera del lienzo) que tendrá el cuerpo. Simplemente agregue un contenedor con la clase .off-canvas-wrapper . </p>
+  <pre>
+  &lt;body>
+    &lt;div class="off-canvas-wrapper">
+      &lt;div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+       &lt;!-- Tu menú o contenido fuera del lienzo va aquí -->
+      &lt;/div>
+      &lt;div class="off-canvas-content" data-off-canvas-content>
+       &lt;!-- El contenido de tu página va aquí -->
+      &lt;/div>
+    &lt;/div>
+  &lt;/body>
+  </pre>
+  <br>
+  <hr>
+
+  <center id="disparadores"><h3>Disparadores</h3></center>
+  <pre>
+  &lt;button type="button" class="button large" data-toggle="menu-offcanvas">
+      Abrir Menú
+  &lt;/button>
+  </pre>
+  <br>
+  <button type="button" class="button large" data-toggle="menu-offcanvas">
+    Abrir Menú
+  </button>
+  <br>
+  <hr>
+
+  <center id="cerrar"><h3>Botón Cerrar</h3></center>
+  <pre>
+  &lt;button class="close-button" aria-label="Close menu" type="button" data-close>
+    &lt;span aria-hidden="true">&times;&lt;/span>
+  &lt;/button>
+  </pre>
+  <br>
+  <div style="position: relative; width:75px;">
+    <button class="close-button" aria-label="Close menu" type="button" data-close>
+      <span aria-hidden="true">&times;</span>
+    </button>    
+  </div>
+  <br>
+  <hr>
+
+  <center id="completo"><h3>Ejemplo Completo</h3></center>
+  <pre>
+    &lt;body style="padding: 2rem">
+      &lt;div class="off-canvas-wrapper">
+        &lt;div class="off-canvas position-left" id="offCanvas" data-off-canvas style="padding: 3rem">
+
+          &lt;!-- Close button -->
+          &lt;button class="close-button" aria-label="Close menu" type="button" data-close>
+            &lt;span aria-hidden="true">&times;&lt;/span>
+          &lt;/button>
+
+          &lt;!-- Menu -->
+          &lt;ul class="vertical menu">
+            &lt;li>&lt;a href="#">Inicio&lt;/a>&lt;/li>
+            &lt;li>&lt;a href="#">Alfa&lt;/a>&lt;/li>
+            &lt;li>&lt;a href="#">Beta&lt;/a>&lt;/li>
+            &lt;li>&lt;a href="#">Delta&lt;/a>&lt;/li>
+            &lt;li>&lt;a href="#">Gamma&lt;/a>&lt;/li>
+            &lt;li>&lt;a href="#">Dseta&lt;/a>&lt;/li>
+          &lt;/ul>
+
+        &lt;/div>
+
+        &lt;div class="off-canvas-content" data-off-canvas-content>
+          &lt;button type="button" class="button large" data-toggle="offCanvas">
+            Menú
+          &lt;/button>
+          &lt;br>
+          &lt;p class="lead">&lt;b>FUNDACIÓN&lt;/b> — Un psicólogo y matemático genial prevé el derrumbamiento del Imperio y el subsiguiente caos, y decide emplear la ciencia psicohistórica (una especie de psicología de masas matemáticamente estructurada) para reducir al mínimo el inevitable período de barbarie que antecederá a la consolidación de un Segundo Imperio. Para ello establece dos Fundaciones,una en cada extremo de la Galaxia, con el fin de preservar el saber humano.&lt;/p>
+        &lt;/div>
+      &lt;/div>&lt;!-- off-canvas-wrapper -->
+    &lt;/body>
+  </pre>
+  <br>
+  <iframe src="canvas-off-ej1.html" width="100%" height="350px"></iframe>
+  <br>
+  <hr>
+
+  <center id="posición"><h3>Posición</h3></center>
+  <pre>
+  &lt;body style="padding: 2rem">
+    &lt;div class="off-canvas-wrapper">
+      &lt;button type="button" class="button large" data-toggle="offCanvasLeftSplit1">Abrir izquierdo&lt;/button>
+      &lt;button type="button" class="button large" data-toggle="offCanvasRightSplit2">Abrir derecho&lt;/button>
+
+      &lt;div class="row">
+        &lt;div class="small-6 columns">
+          &lt;div class="off-canvas-wrapper">
+            &lt;div class="off-canvas-absolute position-left" id="offCanvasLeftSplit1" data-off-canvas style="padding: 2rem">
+              Contenido del menú o contenido fuera del lienzo de la izquierda
+            &lt;/div>
+            &lt;div class="off-canvas-content" style="min-height: 300px;" data-off-canvas-content style="padding: 2rem">
+              &lt;p class="lead"> ¡No tengo nada que ver con el lienzo de la derecha! &lt;/p>
+            &lt;/div>
+          &lt;/div>
+        &lt;/div>
+        &lt;div class="small-6 columns">
+          &lt;div class="off-canvas-wrapper">
+            &lt;div class="off-canvas-absolute position-right" id="offCanvasRightSplit2" data-off-canvas style="padding: 2rem">
+              Contenido del menú o contenido fuera del lienzo de la derecha
+            &lt;/div>
+            &lt;div class="off-canvas-content" style="min-height: 300px;" data-off-canvas-content style="padding: 2rem">
+              &lt;p class="lead"> ¡Soy un contenedor único Off-Canvas por mi cuenta! &lt;/p>
+            &lt;/div>
+          &lt;/div>
+        &lt;/div>
+      &lt;/div>
+    &lt;/div>&lt;!-- off-canvas-wrapper -->
+  &lt;/body
+  </pre>
+  <br>
+  <iframe src="canvas-off-ej2.html" width="100%" height="350px"></iframe>
+  <br>
+  <hr>
+
+  
+  
+
+</div><!-- /.id offcanvas -->
+
+    <!--*****************
+     CORE JS 
+    ******************-->
+    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="assets/js/vendor/what-input.js"></script>
+    <script src="assets/js/vendor/foundation.js"></script>
+    <script src="assets/js/app.js"></script>
+
+  </body>
+</html>
