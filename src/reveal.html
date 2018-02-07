@@ -1,0 +1,288 @@
+<!doctype html>
+<html class="no-js" lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reveal / Modals</title>
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+  </head>
+  <body class="contenedor">
+    <!-- /////// Botón para ir al principio -->
+    <a class="hide-for-small-only" href="#inicio">
+      <i class="fa fa-chevron-circle-up fa-2x ir-arriba"></i>
+    </a>
+    <!-- */Botón para ir al principio -->
+
+    <!-- /////// Botón para Menú Off-Canvas -->
+    <a class="hidden-xs hidden-sm" data-toggle="menu-offcanvas">
+      <i class="fa fa-bars fa-2x menu-btn"></i>
+    </a>
+    <!-- */Botón para Menú Off-Canvas -->
+
+    <!-- /////// Menú Off-Canvas -->
+    <div class="off-canvas-wrapper">
+      <div id="menu-offcanvas" class="off-canvas position-left" data-off-canvas data-transition="overlap">
+      <ul class="vertical menu mt-3">
+        <li><a href="index.html" title="Inicio"><i class="fa fa-home"></i> Inicio</a></li>
+        <li><a href="#basico" title="Lo básico">Lo básico</a></li>        
+        <li><a href="#cebrado" title="Cebrado">Cebrado</a></li>        
+      </ul>
+      </div><!-- /.menu-offcanvas -->
+    </div><!-- /.off-canvas-wrapper -->
+    <!-- /.Menú Off-Canvas -->
+
+<div id="table" class="off-canvas-content mt-3" data-off-canvas-content>
+
+  <center id="basico"><h3>Lo básico</h3></center>
+  <pre>
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th width = "20%"&gt;Cabecera de la tabla&lt;/th&gt;
+        &lt;th width = "40%"&gt;Encabezado de tabla&lt;/th&gt;
+        &lt;th width = "20%"&gt;Encabezado de tabla&lt;/th&gt;
+        &lt;th width = "20%"&gt;Encabezado de tabla&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td width = "20%"&gt;El contenido va aquí&lt;/td&gt;
+        &lt;td width = "40%"&gt;Este es un contenido más largo Donec id elit non mi porta gravida at eget metus.&lt;/td&gt;
+        &lt;td width = "20%"&gt;El contenido va aquí&lt;/td&gt;
+        &lt;td width = "20%"&gt;El contenido va aquí&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;El contenido va aquí&lt;/td&gt;
+        &lt;td&gt;Esto es más largo. El contenido va aquí. Donec id elit non mi porta gravida at eget metus.&lt;/td&gt;
+        &lt;td&gt;El contenido va aquí&lt;/td&gt;
+        &lt;td&gt;El contenido va aquí&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;El contenido va aquí&lt;/td&gt;
+        &lt;td&gt;Esto es más largo. El contenido va aquí. Donec id elit non mi porta gravida at eget metus. &lt;/td&gt;
+        &lt;td&gt;El contenido va aquí&lt;/td&gt;
+        &lt;td&gt;El contenido va aquí&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+  </pre>
+  <br>
+  <table>
+    <thead>
+      <tr>
+        <th width = "20%">Cabecera de la tabla</th>
+        <th width = "40%">Encabezado de tabla</th>
+        <th width = "20%">Encabezado de tabla</th>
+        <th width = "20%">Encabezado de tabla</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td width = "20%">El contenido va aquí</td>
+        <td width = "40%">Este es un contenido más largo Donec id elit non mi porta gravida at eget metus.</td>
+        <td width = "20%">El contenido va aquí</td>
+        <td width = "20%">El contenido va aquí</td>
+      </tr>
+      <tr>
+        <td>El contenido va aquí</td>
+        <td>Esto es más largo. El contenido va aquí. Donec id elit non mi porta gravida at eget metus.</td>
+        <td>El contenido va aquí</td>
+        <td>El contenido va aquí</td>
+      </tr>
+      <tr>
+        <td>El contenido va aquí</td>
+        <td>Esto es más largo. El contenido va aquí. Donec id elit non mi porta gravida at eget metus. </td>
+        <td>El contenido va aquí</td>
+        <td>El contenido va aquí</td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <hr>
+
+  <center id="hover"><h3>Estado Hover</h3></center>
+  <pre>
+  &lt;table class="hover"&gt;
+    &lt;thead&gt;
+      .../
+  </pre>
+  <br>
+  <table class="hover">
+    <thead>
+      <tr>
+        <th width = "20%">Cabecera de la tabla</th>
+        <th width = "40%">Encabezado de tabla</th>
+        <th width = "20%">Encabezado de tabla</th>
+        <th width = "20%">Encabezado de tabla</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td width = "20%">El contenido va aquí</td>
+        <td width = "40%">Este es un contenido más largo Donec id elit non mi porta gravida at eget metus.</td>
+        <td width = "20%">El contenido va aquí</td>
+        <td width = "20%">El contenido va aquí</td>
+      </tr>
+      <tr>
+        <td>El contenido va aquí</td>
+        <td>Esto es más largo. El contenido va aquí. Donec id elit non mi porta gravida at eget metus.</td>
+        <td>El contenido va aquí</td>
+        <td>El contenido va aquí</td>
+      </tr>
+      <tr>
+        <td>El contenido va aquí</td>
+        <td>Esto es más largo. El contenido va aquí. Donec id elit non mi porta gravida at eget metus. </td>
+        <td>El contenido va aquí</td>
+        <td>El contenido va aquí</td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <hr>
+
+  <center id="cebrado"><h3>Cebrado</h3></center>
+  <pre>
+  &lt;table class="unstriped"&gt;
+    &lt;thead&gt;
+      .../
+  </pre>
+  <br>
+  <small>Por defecto, las filas de la tabla están cebradas (una fila es mas oscura que la hermana que le precede). Hay una clase .unstriped para eliminar las rayas.</small>
+  <br><br>
+  <table class="unstriped">
+    <thead>
+      <tr>
+        <th width = "20%">Cabecera de la tabla</th>
+        <th width = "40%">Encabezado de tabla</th>
+        <th width = "20%">Encabezado de tabla</th>
+        <th width = "20%">Encabezado de tabla</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td width = "20%">El contenido va aquí</td>
+        <td width = "40%">Este es un contenido más largo Donec id elit non mi porta gravida at eget metus.</td>
+        <td width = "20%">El contenido va aquí</td>
+        <td width = "20%">El contenido va aquí</td>
+      </tr>
+      <tr>
+        <td>El contenido va aquí</td>
+        <td>Esto es más largo. El contenido va aquí. Donec id elit non mi porta gravida at eget metus.</td>
+        <td>El contenido va aquí</td>
+        <td>El contenido va aquí</td>
+      </tr>
+      <tr>
+        <td>El contenido va aquí</td>
+        <td>Esto es más largo. El contenido va aquí. Donec id elit non mi porta gravida at eget metus. </td>
+        <td>El contenido va aquí</td>
+        <td>El contenido va aquí</td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <hr>
+
+  <center id="apilado"><h3>Tabla Apilada</h3></center>
+  <pre>
+  &lt;table class="stack"&gt;
+    &lt;thead&gt;
+      .../
+  </pre>
+  <br>
+  <small>Para apilar una tabla en pantallas pequeñas, agregue la clase .stack . </small>
+  <br><br>
+  <table class="stack">
+    <thead>
+      <tr>
+        <th> Galletas </th>
+        <th> Sabor </th>
+        <th> Calorías </th>
+        <th> En general </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td> Chocolate Chip </td>
+        <td> Muy bueno </td>
+        <td> 120cal </td>
+        <td> 7.5 / 10 </td>
+      </tr>
+      <tr>
+        <td> Snickerdoodle </td>
+        <td> Delicioso </td>
+        <td> 95cal </td>
+        <td> 8/10 </td>
+      </tr>
+      <tr>
+        <td> Avena y Pasas</td>
+        <td> Excelente </td>
+        <td> 10cal </td>
+        <td> 11/10 </td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <hr>
+
+  <center id="scroll"><h3>Tabla con desplazamiento (Scroll)</h3></center>
+  <pre>
+  &lt;div class="table-scroll"&gt;  
+    &lt;table&gt;
+      &lt;thead&gt;
+        .../
+  </pre>
+  <br>
+  <small><b>Importante:</b> Agregue un elemento contenedor con la clase .table-scroll alrededor de su tabla para habilitar el desplazamiento horizontal.</small>
+  <br><br>
+  <div class="table-scroll">
+    <table>
+      <thead>
+        <tr>
+          <th>Encabezado 1 de tabla</th>
+          <th>Encabezado 2 de tabla</th>
+          <th>Encabezado 3 de tabla</th>
+          <th>Encabezado 4 de tabla</th>
+          <th>Encabezado 5 de tabla</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="display:inline-block; width:430px;">Este es un contenido más largo Donec id elit non mi porta gravida at eget metus.</td>
+          <td>El contenido 2 va aquí</td>
+          <td>El contenido 3 va aquí</td>
+          <td>El contenido 4 va aquí</td>
+          <td>El contenido 5 va aquí</td>
+        </tr>
+
+        <tr>
+          <td>Este es un contenido más largo Donec id elit non mi porta gravida at eget metus.</td>
+          <td>El contenido 2 va aquí</td>
+          <td>El contenido 3 va aquí</td>
+          <td>El contenido 4 va aquí</td>
+          <td>El contenido 5 va aquí</td>
+        </tr>
+        
+        </tr>
+      </tbody>
+    </table>
+  </div><!-- /.table-scroll -->
+  <br>
+  <hr>
+
+  
+
+</div><!-- /.id table -->
+
+    <!--*****************
+     CORE JS 
+    ******************-->
+    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="assets/js/vendor/what-input.js"></script>
+    <script src="assets/js/vendor/foundation.js"></script>
+    <script src="assets/js/app.js"></script>
+
+  </body>
+</html>
