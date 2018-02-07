@@ -1,0 +1,100 @@
+<!doctype html>
+<html class="no-js" lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botón Cerrar</title>
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+  </head>
+  <body class="contenedor">
+    <!-- /////// Botón para ir al principio -->
+    <a class="hide-for-small-only" href="#inicio">
+      <i class="fa fa-chevron-circle-up fa-2x ir-arriba"></i>
+    </a>
+    <!-- */Botón para ir al principio -->
+
+    <!-- /////// Botón para Menú Off-Canvas -->
+    <a class="hidden-xs hidden-sm" data-toggle="menu-offcanvas">
+      <i class="fa fa-bars fa-2x menu-btn"></i>
+    </a>
+    <!-- */Botón para Menú Off-Canvas -->
+
+    <!-- /////// Menú Off-Canvas -->
+    <div class="off-canvas-wrapper">
+      <div id="menu-offcanvas" class="off-canvas position-left" data-off-canvas data-transition="overlap">
+      <ul class="vertical menu mt-3">
+        <li><a href="index.html" title="Inicio"><i class="fa fa-home"></i> Inicio</a></li>
+        <li><a href="#basico" title="Lo básico">Lo básico</a></li>
+        <li><a href="#cierre" title="Tipos de Cierre">Tipos de Cierre</a></li>
+      </ul>
+      </div><!-- /.menu-offcanvas -->
+    </div><!-- /.off-canvas-wrapper -->
+    <!-- /.Menú Off-Canvas -->
+
+<div id="botones" class="off-canvas-content mt-3" data-off-canvas-content>
+
+  <center id="basico"><h3>Lo básico</h3></center>
+  <pre>
+    &lt;div class="callout"&gt;
+      &lt;button class="close-button" aria-label="Close alert" type="button"&gt;
+        &lt;span aria-hidden="true"&gt;&times;&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;p&gt; ¡Mira este botón de cierre! &lt;/p&gt;
+    &lt;/div&gt;
+  </pre>
+  <br>
+  <div class="callout">
+    <button class="close-button" aria-label="Close alert" type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <p> ¡Mira este botón de cierre! </p>
+  </div>
+  <br>
+  <hr>
+
+  <center id="cierre"><h3>Tipos de Cierre</h3></center>
+  <pre>
+    &lt;div class="callout" data-closable&gt;
+      &lt;p&gt; ¡Puedes cerrar esto por completo! &lt;/p&gt;
+      &lt;button class="close-button" aria-label="Dismiss alert" type="button" data-close&gt;
+        &lt;span aria-hidden="true"&gt;&times;&lt;/span&gt;
+      &lt;/button&gt;
+    &lt;/div&gt;
+    
+    &lt;div class="success callout" data-closable="slide-out-right"&gt;
+      &lt;p&gt; También puedes cerrarme usando una animación de Motion UI. &lt;/p&gt;
+      &lt;button class="close-button" aria-label="Dismiss alert" type="button" data-close&gt;
+        &lt;span aria-hidden="true"&gt;&times;&lt;/span&gt;
+      &lt;/button&gt;
+    &lt;/div&gt;
+  </pre>
+  <br>
+  <div class="callout" data-closable>
+    <p> ¡Puedes cerrar esto por completo! </p>
+    <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="success callout" data-closable="slide-out-right">
+    <p> También puedes cerrarme usando una animación de Motion UI. </p>
+    <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <br>
+  <hr>
+</div><!-- /.id botones -->
+
+    <!--*****************
+     CORE JS
+    ******************-->
+    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="assets/js/vendor/what-input.js"></script>
+    <script src="assets/js/vendor/foundation.js"></script>
+    <script src="assets/js/app.js"></script>
+
+  </body>
+</html>

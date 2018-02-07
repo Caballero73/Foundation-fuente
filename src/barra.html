@@ -1,0 +1,155 @@
+<!doctype html>
+<html class="no-js" lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra Superior</title>
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+  </head>
+  <body class="contenedor">
+    <!-- /////// Botón para ir al principio -->
+    <a class="hide-for-small-only" href="#inicio">
+      <i class="fa fa-chevron-circle-up fa-2x ir-arriba"></i>
+    </a>
+    <!-- */Botón para ir al principio -->
+
+    <!-- /////// Botón para Menú Off-Canvas -->
+    <a class="hidden-xs hidden-sm" data-toggle="menu-offcanvas">
+      <i class="fa fa-bars fa-2x menu-btn"></i>
+    </a>
+    <!-- */Botón para Menú Off-Canvas -->
+
+    <!-- /////// Menú Off-Canvas -->
+    <div class="off-canvas-wrapper">
+      <div id="menu-offcanvas" class="off-canvas position-left" data-off-canvas data-transition="overlap">
+      <ul class="vertical menu mt-3">
+        <li><a href="index.html" title="Inicio"><i class="fa fa-home"></i> Inicio</a></li>
+        <li><a href="#basico" title="Barra Básica">Barra Básica</a></li>
+        <li><a href="#avanzado" title="Diseño Avanzado">Diseño Avanzado</a></li>
+        <li><a href="#apilado" title="Apilado">Apilado</a></li>
+      </ul>
+      </div><!-- /.menu-offcanvas -->
+    </div><!-- /.off-canvas-wrapper -->
+    <!-- */Menú Off-Canvas -->
+
+<div id="barra" class="off-canvas-content mt-3" data-off-canvas-content>
+
+  <center id="basico"><h3>Barra Básica</h3></center>
+  <pre>
+  &lt;div class="top-bar row"&gt;
+    &lt;div class="top-bar-left"&gt;
+      &lt;ul class="dropdown menu" data-dropdown-menu&gt;
+        &lt;li class="menu-text"&gt;Logotipo&lt;/li&gt;
+        &lt;li&gt;
+          &lt;a href="#"&gt;Uno&lt;/a&gt;
+          &lt;ul class="menu vertical"&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Alfa&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Beta&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Gamma&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Dos&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Tres&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class="top-bar-right"&gt;
+      &lt;ul class="menu"&gt;
+        &lt;li&gt;&lt;input type="search" placeholder="Buscar"&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a type="button"&gt;&lt;i class="fa fa-search"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  </pre>
+  <br>
+  <div class="top-bar">
+    <div class="top-bar-left">
+      <ul class="dropdown menu" data-dropdown-menu>
+        <li class="menu-text">Logotipo</li>
+        <li>
+          <a href="javascript:void(0);">Uno</a>
+          <ul class="menu vertical">
+            <li><a href="javascript:void(0);">Alfa</a></li>
+            <li><a href="javascript:void(0);">Beta</a></li>
+            <li><a href="javascript:void(0);">Gamma</a></li>
+          </ul>
+        </li>
+        <li><a href="javascript:void(0);">Dos</a></li>
+        <li><a href="javascript:void(0);">Tres</a></li>
+      </ul>
+    </div>
+    <div class="top-bar-right">
+      <ul class="menu">
+        <li><input type="search" placeholder="Buscar"></li>
+        <li><a type="button"><i class="fa fa-search"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <br>
+  <hr>
+
+  <center id="avanzado"><h3>Diseño Avanzado</h3></center>
+  <pre>
+  &lt;div class="title-bar" data-responsive-toggle="menu-responsivo" data-hide-for="medium"&gt;
+    &lt;button class="menu-icon" type="button" data-toggle="menu-responsivo"&gt;&lt;/button&gt;
+    &lt;div class="title-bar-title"&gt; Menú&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div id="menu-responsivo" class="top-bar row"&gt;
+    &lt;-- // Contenido del Menú // --&gt;      
+  &lt;/div&gt;
+  </pre>
+  <br>
+  <small><strong>Nota:</strong> Debes reducir el tamaño de la ventana de tu navegador para que puedas apreciar la alternacia entre el menú para móviles y el menú convencional.</small>
+  <br><br>
+  
+  <div class="title-bar" data-responsive-toggle="menu-responsivo" data-hide-for="medium">
+    <button class="menu-icon" type="button" data-toggle="menu-responsivo"></button>
+    <div class="title-bar-title"> Menú</div>
+  </div>
+
+  <div id="menu-responsivo" class="top-bar row">
+    <div class="top-bar-left">
+      <ul class="dropdown menu" data-dropdown-menu>
+        <li class="menu-text">Logotipo</li>
+        <li>
+          <a href="javascript:void(0);">Uno</a>
+          <ul class="menu vertical">
+            <li><a href="javascript:void(0);">Alfa</a></li>
+            <li><a href="javascript:void(0);">Beta</a></li>
+            <li><a href="javascript:void(0);">Gamma</a></li>
+          </ul>
+        </li>
+        <li><a href="javascript:void(0);">Dos</a></li>
+        <li><a href="javascript:void(0);">Tres</a></li>
+      </ul>
+    </div>
+    <div class="top-bar-right">
+      <ul class="menu">
+        <li><input type="search" placeholder="Buscar"></li>
+        <li><a type="button"><i class="fa fa-search"></i></a></li>
+      </ul>
+    </div>
+  </div>  
+  <br>
+  <hr>
+
+  <center id="apilado"><h3>Apilado</h3></center>
+  <p>Por defecto, las dos secciones de una barra superior se apilarán una encima de la otra en pantallas pequeñas. Esto se puede cambiar agregando la clase <code>.stacked-for-medium</code> o la clase <code>.stacked-for-large</code> según se desee.</p>
+  <br> 
+  <hr>  
+
+</div><!-- /.id barra -->
+
+    <!--*****************
+     CORE JS 
+    ******************-->
+    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="assets/js/vendor/what-input.js"></script>
+    <script src="assets/js/vendor/foundation.js"></script>
+    <script src="assets/js/app.js"></script>
+
+  </body>
+</html>
