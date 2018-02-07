@@ -27,8 +27,18 @@
       <div id="menu-offcanvas" class="off-canvas position-left" data-off-canvas data-transition="overlap">
       <ul class="vertical menu mt-3">
         <li><a href="index.html" title="Inicio"><i class="fa fa-home"></i> Inicio</a></li>
-        <li><a href="#configurar" title="Menú Básico">Menú Básico</a></li>
-
+        <li><a href="#configurar" title="Configurar">Configurar</a></li>
+        <li><a href="#envoltura" title="Envoltura">Envoltura</a></li>
+        <li><a href="#disparadores" title="Disparadores">Disparadores</a></li>
+        <li><a href="#cerrar" title="Botón Cerrar">Botón Cerrar</a></li>
+        <li><a href="#completo" title="Ejemplo Completo">Ejemplo Completo</a></li>
+        <li><a href="#posicion" title="Posición">Posición</a></li>
+        <li><a href="#direccion" title="Dirección">Dirección</a></li>
+        <li><a href="#multiples" title="Múltiples Páneles">Múltiples Páneles</a></li>
+        <li><a href="#transicion" title="Transiciones">Transiciones</a></li>
+        <li><a href="#mostrar" title="Mostrar en pantallas grandes">Mostrar en pantallas grandes</a></li>
+        <li><a href="#titlebar" title=" Combinado con TitleBar "> Combinado con TitleBar </a></li>
+        <li><a href="#cambio" title="De In-Canvas a Off-Canvas">De In-Canvas a Off-Canvas</a></li>
       </ul>
       </div><!-- /.menu-offcanvas -->
     </div><!-- /.off-canvas-wrapper -->
@@ -268,6 +278,82 @@
   <br>
   <hr>
 
+  <center id="mostrar"><h3>Mostrar en pantallas grandes</h3></center>
+  <pre>
+    &lt;div class="off-canvas position-left reveal-for-large" data-off-canvas>
+      &lt;!-- ... -->
+    &lt;/div>
+  </pre>
+  <br>
+  <p>Los paneles de izquierda o derecha se pueden configurar para que sean visibles en pantallas más grandes, como una barra lateral. Agregue la clase .reveal-for-medium o .reveal-for-large al menú Off-Canvas.</p>
+  <br>
+  <button id="button-altern" type="button" class="button large">
+    Alternar clase reveal <br>
+    Para mostra/ocultar Off-Canvas
+  </button>
+  <br>
+  <hr>
+
+  <center id="titlebar"><h3> Combinado con TitleBar </h3></center>
+  <pre>
+  &lt;div class="title-bar">
+    &lt;div class="title-bar-left">
+      &lt;button class="menu-icon" type="button" data-open="offCanvasLeft">&lt;/button>
+      &lt;span class="title-bar-title">Foundation en Español&lt;/span>
+    &lt;/div>
+    &lt;div class="title-bar-right">
+      &lt;button class="menu-icon" type="button" data-open="offCanvasRight">&lt;/button>
+    &lt;/div>
+  &lt;/div>
+  </pre>
+  <br>
+  <iframe src="canvas-off-ej6.html" width="100%" height="350px"></iframe>
+  <br>
+  <br>
+  <center><h4>En la parte Superior</h4></center>
+  <pre>
+  &lt;div class="title-bar">
+    &lt;div class="title-bar-left">
+      &lt;button class="menu-icon" type="button" data-open="offCanvasTop">&lt;/button>
+      &lt;span class="title-bar-title">Foundation en Español&lt;/span>
+    &lt;/div>
+    &lt;div class="title-bar-right">
+      &lt;button class="menu-icon" type="button" data-open="offCanvasTop">&lt;/button>
+    &lt;/div>
+  &lt;/div>
+
+  &lt;div class="off-canvas position-top" id="offCanvasTop" data-off-canvas style="padding: 2rem">
+    Contenido del menú o contenido fuera del lienzo en la parte superior
+  &lt;/div>
+  </pre>
+  <br>
+  <iframe src="canvas-off-ej7.html" width="100%" height="350px"></iframe>
+  <br>
+  <hr>
+
+  <center id="cambio"><h3>De In-Canvas a Off-Canvas</h3></center>
+  <pre>
+  &lt;div class="title-bar">
+    &lt;div class="title-bar-left">
+      &lt;button class="menu-icon" type="button" data-open="offCanvasLeft">&lt;/button>
+      &lt;span class="title-bar-title">Foundation en Español&lt;/span>
+    &lt;/div>
+    &lt;div class="title-bar-right">
+      &lt;button class="menu-icon" type="button" data-open="offCanvasRight">&lt;/button>
+    &lt;/div>
+  &lt;/div>
+  </pre>
+  <br>
+  <button type="button" class="button large hide-for-large" data-toggle="inCanvasExample">
+    Mostrar el contenido que estaba en el lienzo antes
+  </button>
+  <div class="off-canvas in-canvas-for-large position-right" id="inCanvasExample" data-off-canvas>
+    <br><br>
+    <div class="callout">Estoy en el lienzo (In-Canvas) hasta un tamaño de pantalla mediano y me muevo fuera del lienzo (Off-Canvas) para un tamaño menor. </div>
+  </div>
+  <br>
+  <hr>
+
   
   
 
@@ -280,6 +366,12 @@
     <script src="assets/js/vendor/what-input.js"></script>
     <script src="assets/js/vendor/foundation.js"></script>
     <script src="assets/js/app.js"></script>
+
+    <script type="text/javascript">
+      $('#button-altern').click(function() {
+        $('#menu-offcanvas').toggleClass('reveal-for-medium');
+      })
+    </script>
 
   </body>
 </html>
