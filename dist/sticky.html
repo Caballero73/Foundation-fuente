@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/css/foundation.css">
     <link rel="stylesheet" href="assets/css/app.css">
   </head>
-  <body class="contenedor">
+  <body>
     <!-- /////// Botón para ir al principio -->
     <a class="hide-for-small-only" href="#inicio">
       <i class="fa fa-chevron-circle-up fa-2x ir-arriba"></i>
@@ -20,9 +20,72 @@
     <a class="hidden-xs hidden-sm" data-toggle="menu-offcanvas">
       <i class="fa fa-bars fa-2x menu-btn"></i>
     </a>
-    <!-- */Botón para Menú Off-Canvas -->
+    <!-- */Botón para ir al principio -->
 
-    <!-- /////// Menú Off-Canvas -->
+    <!-- MENU -->
+    <section id="menu-container">
+  <div class="contenedor">
+    <ul class="menu dropdown align-center" data-dropdown-menu>
+
+      <li><a href="#" title="General">General</a>
+        <ul class="menu">
+          <li><a href="grilla.html" title="Grilla">Grilla Flex</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#" title="Tipografía">Tipografía</a>
+        <ul class="menu">
+          <li><a href="tipografia.html" title="Tipografía Básica">Tipografía Básica</a></li>
+          <li><a href="tipografia2.html" title="Tipografía Básica">Tipografía Auxiliar</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#" title="Controles">Controles</a>
+        <ul class="menu">
+          <li><a href="botones.html" title="Botones">Botones</a></li>
+          <li><a href="grupo-botones.html" title="Grupo de Botones">Grupo de Botones</a></li>
+          <li><a href="boton-cerrar.html" title="Botón Cerrar">Botón Cerrar</a></li>
+          <li><a href="slider.html" title="Control deslizante">Control deslizante</a></li>
+          <li><a href="switch.html" title="Interruptores">Interruptores</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#" title="Navegación">Navegación</a>
+        <ul class="menu">
+          <li><a href="menu.html" title="Menú">Menú</a></li>
+          <li><a href="menu-desplegable.html" title="Menú Desplegable">Menú Desplegable</a></li>
+          <li><a href="menu-drilldown.html" title="Menú Drilldown">Menú Drilldown</a></li>
+          <li><a href="menu-acordeon.html" title="Menú Acordeón">Menú Acordeón</a></li>
+          <li><a href="barra.html" title="Barra Superior">Barra Superior</a></li>
+          <li><a href="menu-responsivo.html" title="Menú Responsivo">Menú Responsivo</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#" title="Contenedores">Contenedores</a>
+        <ul class="menu">
+          <li><a href="acordeon.html" title="Acordeón">Acordeón</a></li>
+          <li><a href="desplegable.html" title="Desplegable">Desplegable</a></li>
+          <li><a href="llamadas.html" title="Llamadas">Llamadas</a></li>
+          <li><a href="tarjetas.html" title="Tarjetas o Cards">Tarjetas o Cards</a></li>
+          <li><a href="medios.html" title="Objetos Multimedia">Objetos Multimedia</a></li>
+          <li><a href="canvas-off.html" title="Fuera del lienzo / Off-Canvas">Fuera del lienzo / Off-Canvas</a></li>
+          <li><a href="reveal.html" title="Reveal / Modals">Reveal / Modals</a></li>
+          <li><a href="tabs.html" title="Pestañas / Tabs">Pestañas / Tabs</a></li>
+          <li><a href="tablas.html" title="Tablas">Tablas</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#" title="Complementos / Plugins">Complementos / Plugins</a>
+        <ul class="menu">
+          <li><a href="sticky.html" title="Sticky / Pegajoso">Sticky / Pegajoso</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</section>    
+    <!-- /.MENU -->
+
+    <!-- /////// Botón para Menú Off-Canvas -->
     <div class="off-canvas-wrapper">
       <div id="menu-offcanvas" class="off-canvas position-left" data-off-canvas data-transition="overlap">
       <ul class="vertical menu mt-3" data-smooth-scroll>
@@ -37,7 +100,7 @@
     </div><!-- /.off-canvas-wrapper -->
     <!-- */Menú Off-Canvas -->
 
-<div id="sticky" class="off-canvas-content mt-3" data-off-canvas-content>
+<div id="sticky" class="off-canvas-content contenedor mt-3" data-off-canvas-content>
 
   <center id="basico"><h3>Lo básico</h3></center>
   <pre>

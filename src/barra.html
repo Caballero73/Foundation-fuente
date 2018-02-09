@@ -9,12 +9,16 @@
     <link rel="stylesheet" href="assets/css/foundation.css">
     <link rel="stylesheet" href="assets/css/app.css">
   </head>
-  <body class="contenedor">
+  <body>
     <!-- /////// Botón para ir al principio -->
     <a class="hide-for-small-only" href="#inicio">
       <i class="fa fa-chevron-circle-up fa-2x ir-arriba"></i>
     </a>
     <!-- */Botón para ir al principio -->
+
+    <!-- MENU -->
+    @include('./menu_ppal.html')    
+    <!-- /.MENU -->
 
     <!-- /////// Botón para Menú Off-Canvas -->
     <a class="hidden-xs hidden-sm" data-toggle="menu-offcanvas">
@@ -35,7 +39,7 @@
     </div><!-- /.off-canvas-wrapper -->
     <!-- */Menú Off-Canvas -->
 
-<div id="barra" class="off-canvas-content mt-3" data-off-canvas-content>
+<div id="barra" class="off-canvas-content contenedor mt-3" data-off-canvas-content>
 
   <center id="basico"><h3>Barra Básica</h3></center>
   <pre>
