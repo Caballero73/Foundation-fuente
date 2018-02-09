@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/css/foundation.css">
     <link rel="stylesheet" href="assets/css/app.css">
     <style type="text/css">
-      .tabs-title > a {
+      .tabs-title > a, .accordion-item > a {
         display: block;
         padding: 1.25rem 1.5rem;
         font-size: 1.5rem;
@@ -33,67 +33,7 @@
     <!-- */Botón para Menú Off-Canvas -->
 
     <!-- MENU -->
-    <section id="menu-container">
-  <div class="contenedor">
-    <ul class="menu dropdown align-center" data-dropdown-menu>
-
-      <li><a href="#" title="General">General</a>
-        <ul class="menu">
-          <li><a href="grilla.html" title="Grilla">Grilla Flex</a></li>
-        </ul>
-      </li>
-
-      <li><a href="#" title="Tipografía">Tipografía</a>
-        <ul class="menu">
-          <li><a href="tipografia.html" title="Tipografía Básica">Tipografía Básica</a></li>
-          <li><a href="tipografia2.html" title="Tipografía Básica">Tipografía Auxiliar</a></li>
-        </ul>
-      </li>
-
-      <li><a href="#" title="Controles">Controles</a>
-        <ul class="menu">
-          <li><a href="botones.html" title="Botones">Botones</a></li>
-          <li><a href="grupo-botones.html" title="Grupo de Botones">Grupo de Botones</a></li>
-          <li><a href="boton-cerrar.html" title="Botón Cerrar">Botón Cerrar</a></li>
-          <li><a href="slider.html" title="Control deslizante">Control deslizante</a></li>
-          <li><a href="switch.html" title="Interruptores">Interruptores</a></li>
-        </ul>
-      </li>
-
-      <li><a href="#" title="Navegación">Navegación</a>
-        <ul class="menu">
-          <li><a href="menu.html" title="Menú">Menú</a></li>
-          <li><a href="menu-desplegable.html" title="Menú Desplegable">Menú Desplegable</a></li>
-          <li><a href="menu-drilldown.html" title="Menú Drilldown">Menú Drilldown</a></li>
-          <li><a href="menu-acordeon.html" title="Menú Acordeón">Menú Acordeón</a></li>
-          <li><a href="barra.html" title="Barra Superior">Barra Superior</a></li>
-          <li><a href="menu-responsivo.html" title="Menú Responsivo">Menú Responsivo</a></li>
-        </ul>
-      </li>
-
-      <li><a href="#" title="Contenedores">Contenedores</a>
-        <ul class="menu">
-          <li><a href="acordeon.html" title="Acordeón">Acordeón</a></li>
-          <li><a href="desplegable.html" title="Desplegable">Desplegable</a></li>
-          <li><a href="llamadas.html" title="Llamadas">Llamadas</a></li>
-          <li><a href="tarjetas.html" title="Tarjetas o Cards">Tarjetas o Cards</a></li>
-          <li><a href="medios.html" title="Objetos Multimedia">Objetos Multimedia</a></li>
-          <li><a href="canvas-off.html" title="Fuera del lienzo / Off-Canvas">Fuera del lienzo / Off-Canvas</a></li>
-          <li><a href="reveal.html" title="Reveal / Modals">Reveal / Modals</a></li>
-          <li><a href="tabs.html" title="Pestañas / Tabs">Pestañas / Tabs</a></li>
-          <li><a href="accordion_tabs.html" title="Pestañas de Acordeón">Pestañas de Acordeón</a></li>
-          <li><a href="tablas.html" title="Tablas">Tablas</a></li>
-        </ul>
-      </li>
-
-      <li><a href="#" title="Complementos / Plugins">Complementos / Plugins</a>
-        <ul class="menu">
-          <li><a href="sticky.html" title="Sticky / Pegajoso">Sticky / Pegajoso</a></li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-</section>    
+    @include('./menu_ppal.html')    
     <!-- /.MENU -->
 
     <!-- /////// Menú Off-Canvas -->
@@ -113,32 +53,38 @@
 
   <center id="basico"><h3>Lo básico</h3></center>
   <pre>
-  &lt;ul class="tabs" data-tabs id="example-tabs">
-    &lt;li class="tabs-title is-active">&lt;a href="#panel1" aria-selected="true">Tab 1&lt;/a>&lt;/li>
-    &lt;li class="tabs-title">&lt;a href="#panel2" data-tabs-target="panel2">Tab 2&lt;/a>&lt;/li>
+  &lt;h6>Soy un acordeón en small y large, pero tengo pestañas en medium&lt;/h6>
+  &lt;ul class="accordion" data-responsive-accordion-tabs="accordion medium-tabs large-accordion">
+    &lt;li class="accordion-item is-active" data-accordion-item>
+      &lt;a href="#" class="accordion-title">Acordeon 1&lt;/a>
+      &lt;div class="accordion-content" data-tab-content>
+        Comenzaría en estado abierto, debido al uso de la clase de estado `is-active`.
+      &lt;/div>
+    &lt;/li>
+    &lt;li class="accordion-item" data-accordion-item>
+      &lt;a href="#" class="accordion-title">Acordeon 2&lt;/a>
+      &lt;div class="accordion-content" data-tab-content>
+       Yo no estoy visible por que no tengo la clase active.
+      &lt;/div>
+    &lt;/li>
   &lt;/ul>
-  &lt;div class="tabs-content" data-tabs-content="example-tabs">
-    &lt;div class="tabs-panel is-active" id="panel1">
-      &lt;p>El área de contenido de pestañas tiene la clase .tabs-content mientras que cada sección tiene la clase .tabs-panel.&lt;/p>
-    &lt;/div>
-    &lt;div class="tabs-panel" id="panel2">
-      &lt;p>Cada panel de contenido también tiene una ID única, que está dirigida por un enlace en la tabstrip.&lt;/p>
-    &lt;/div>
-  &lt;/div>
   </pre>
   <br>
-  <ul class="tabs" data-tabs id="example-tabs">
-    <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a></li>
-    <li class="tabs-title"><a href="#panel2" data-tabs-target="panel2">Tab 2</a></li>
+  <h6>Soy un acordeón en small y large, pero tengo pestañas en medium</h6>
+  <ul class="accordion" data-responsive-accordion-tabs="accordion medium-tabs large-accordion">
+    <li class="accordion-item is-active" data-accordion-item>
+      <a href="#" class="accordion-title">Acordeon 1</a>
+      <div class="accordion-content" data-tab-content>
+        Comenzaría en estado abierto, debido al uso de la clase de estado `is-active`.
+      </div>
+    </li>
+    <li class="accordion-item" data-accordion-item>
+      <a href="#" class="accordion-title">Acordeon 2</a>
+      <div class="accordion-content" data-tab-content>
+       Yo no estoy visible por que no tengo la clase active.
+      </div>
+    </li>
   </ul>
-  <div class="tabs-content" data-tabs-content="example-tabs">
-    <div class="tabs-panel is-active" id="panel1">
-      <p>El área de contenido de pestañas tiene la clase .tabs-content mientras que cada sección tiene la clase .tabs-panel.</p>
-    </div>
-    <div class="tabs-panel" id="panel2">
-      <p>Cada panel de contenido también tiene una ID única, que está dirigida por un enlace en la tabstrip.</p>
-    </div>
-  </div>
   <hr>
 
   <center id="vertical"><h3>Pestañas Verticales</h3></center>
