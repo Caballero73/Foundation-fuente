@@ -98,7 +98,7 @@
     <!-- /////// Menú Off-Canvas -->
     <div class="off-canvas-wrapper">
       <div id="menu-offcanvas" class="off-canvas position-left" data-off-canvas data-transition="overlap">
-      <ul class="vertical menu mt-3">
+      <ul class="vertical menu mt-3" data-smooth-scroll>
         <li><a href="index.html" title="Inicio"><i class="fa fa-home"></i> Inicio</a></li>
         <li><a href="#basico" title="Lo básico">Lo básico</a></li>        
        
@@ -118,10 +118,20 @@
   &lt;/ul>
   </pre>
   <br>
-  <ul class="tabs" data-tabs id="example-tabs">
-    <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a></li>
-    <li class="tabs-title"><a data-tabs-target="panel2" href="#panel2">Tab 2</a></li>
-  </ul>
+  <div>    
+    <ul class="tabs" data-tabs id="example-tabs">
+      <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a></li>
+      <li class="tabs-title"><a href="#panel2" data-tabs-target="panel2">Tab 2</a></li>
+    </ul>
+    <div class="tabs-content" data-tabs-content="example-tabs">
+      <div class="tabs-panel is-active" id="panel1">
+        <p>El área de contenido de pestañas tiene la clase .tabs-content mientras que cada sección tiene la clase .tabs-panel.</p>
+      </div>
+      <div class="tabs-panel" id="panel2">
+        <p>Cada panel de contenido también tiene una ID única, que está dirigida por un enlace en la tabstrip.</p>
+      </div>
+    </div>
+  </div>
   <hr>
 
   <center id="talla"><h3>Tamaño</h3></center>
