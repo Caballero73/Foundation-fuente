@@ -1,0 +1,50 @@
+<!doctype html>
+<html class="no-js" lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 3 - Off-Canvas</title>
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+  </head>
+  <body style="padding: 2rem">
+    <div class="off-canvas-wrapper">
+      <button type="button" class="button large" data-toggle="offCanvasLeft1">Abrir Izquierda</button>
+      <button type="button" class="button large" data-toggle="offCanvasRight1">Abrir Derecha</button>
+      <button type="button" class="button large" data-toggle="offCanvasTop1">Abrir Arriba</button>
+      <button type="button" class="button large" data-toggle="offCanvasBottom1">Abrir Abajo</button>
+
+      <div class="row column">
+        <div class="off-canvas-wrapper">
+          <div class="off-canvas position-left" id="offCanvasLeft1" data-off-canvas>
+            <center><h1>Izquierdo</h1></center>
+          </div>
+          <div class="off-canvas position-right" id="offCanvasRight1" data-off-canvas>
+            <center><h1>Derecho</h1></center>
+          </div>
+          <div class="off-canvas position-top" id="offCanvasTop1" data-off-canvas>
+            <center><h1>Superior</h1></center>
+          </div>
+          <div class="off-canvas position-bottom" id="offCanvasBottom1" data-off-canvas>
+            <center><h1>Inferior</h1></center>
+          </div>
+          <div class="off-canvas-content" data-off-canvas-content>
+            <img src="assets/img/img-trantor.jpg" class="" height="auto" width="100%" alt="...">
+          </div>
+        </div>
+      </div>
+    </div><!-- off-canvas-wrapper -->
+  </body>
+
+    <!--*****************
+     CORE JS 
+    ******************-->
+    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="assets/js/vendor/what-input.js"></script>
+    <script src="assets/js/vendor/foundation.js"></script>
+    <script src="assets/js/app.js"></script>
+
+  </body>
+</html>

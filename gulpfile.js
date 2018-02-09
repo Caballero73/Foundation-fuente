@@ -5,6 +5,7 @@ var atImport = require ('postcss-import')
 var cssnested = require('postcss-nested')
 var mqpacker = require('css-mqpacker')
 var rucksack = require('rucksack-css')
+var fileinclude = require('gulp-file-include')
 var cssnext = require('postcss-cssnext')
 var browserSync = require('browser-sync').create()
 
@@ -33,11 +34,21 @@ gulp.task('css', function () {
     .pipe(browserSync.stream())
 })
 
+// Tarea para utilizar fileinclude
+gulp.task('fileinclude', function() {
+  gulp.src('./src/*.html')
+    .pipe(fileinclude({
+      prefix: '@',
+      basepath: './src'
+    }))
+    .pipe(gulp.dest('./dist'));
+});
+
 
 // Tarea para vigilar los cambios
 gulp.task('watch', function () {
   gulp.watch('./src/*.css', ['css']).on('change', browserSync.reload)
-  gulp.watch('./dist/*.html').on('change', browserSync.reload)
+  gulp.watch('./src/*.html', ['fileinclude']).on('change', browserSync.reload)
 })
 
-gulp.task('default', ['watch', 'css' , 'serve'])
+gulp.task('default', ['watch', 'fileinclude', 'css', 'serve'])

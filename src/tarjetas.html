@@ -1,0 +1,188 @@
+<!doctype html>
+<html class="no-js" lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjetas o cards</title>
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+  </head>
+  <body class="contenedor">
+    <!-- /////// Botón para ir al principio -->
+    <a class="hide-for-small-only" href="#inicio">
+      <i class="fa fa-chevron-circle-up fa-2x ir-arriba"></i>
+    </a>
+    <!-- */Botón para ir al principio -->
+
+    <!-- /////// Botón para Menú Off-Canvas -->
+    <a class="hidden-xs hidden-sm" data-toggle="menu-offcanvas">
+      <i class="fa fa-bars fa-2x menu-btn"></i>
+    </a>
+    <!-- */Botón para Menú Off-Canvas -->
+
+    <!-- /////// Menú Off-Canvas -->
+    <div class="off-canvas-wrapper">
+      <div id="menu-offcanvas" class="off-canvas position-left" data-off-canvas data-transition="overlap">
+      <ul class="vertical menu mt-3">
+        <li><a href="index.html" title="Inicio"><i class="fa fa-home"></i> Inicio</a></li>
+        <li><a href="#basico" title="Lo básico">Lo básico</a></li>
+        <li><a href="#imagenes" title="Imágenes">Imágenes</a></li>
+        <li><a href="#talla" title="Dimensionamiento">Dimensionamiento</a></li>
+      </ul>
+      </div><!-- /.menu-offcanvas -->
+    </div><!-- /.off-canvas-wrapper -->
+    <!-- /.Menú Off-Canvas -->
+
+<div id="tarjetas" class="off-canvas-content mt-3" data-off-canvas-content>
+
+  <center id="basico"><h3>Lo básico</h3></center>
+  <pre>
+  &lt;div class="card" style="width: 350px;">
+    &lt;div class="card-divider">
+      Este es el título.
+    &lt;/div>
+    &lt;img src="assets/img/planeta-1.jpg">
+    &lt;div class="card-section">
+      &lt;h4>Esta es la tarjeta o card.&lt;/h4>
+      &lt;p>Tiene un estilo visual fácil de sobreescribir, y está apropiadamente atenuado.&lt;/p>
+    &lt;/div>
+  &lt;/div>
+  </pre>
+  <br>
+  <div class="card" style="width: 350px;">
+    <div class="card-divider">
+      Este es el título.
+    </div>
+    <img src="assets/img/planeta-1.jpg">
+    <div class="card-section">
+      <h4>Esta es la tarjeta o card.</h4>
+      <p>Tiene un estilo visual fácil de sobreescribir, y está apropiadamente atenuado.</p>
+    </div>
+  </div>
+  <hr>
+
+  <center id="imagenes"><h3>Imágenes</h3></center>
+  <pre>
+  <b>Imagen sin padding</b>
+  &lt;div class="card" style="width: 350px;">
+    &lt;img src="assets/img/nave-1.jpg">
+    &lt;div class="card-section">
+      &lt;p>Esta es una tarjeta simple con una imagen.&lt;/p>
+    &lt;/div>
+  &lt;/div>
+
+  <b>Imagen con padding</b>
+  &lt;div class="card" style="width: 350px;">
+    &lt;div class="card-section">
+      &lt;img src="assets/img/nave-1.jpg">
+    &lt;/div>
+    &lt;div class="card-section">
+      &lt;p>Esta es una tarjeta simple con una imagen dentro de una &lt;b>.card-section&lt;/b>.&lt;/p>
+    &lt;/div>
+  &lt;/div>
+  </pre>
+  <br>
+  <!-- imagen sin padding -->
+  <div class="row">
+    <div class="column small-12 medium-6">
+      <div class="card" style="width: 350px;">
+        <img src="assets/img/nave-1.jpg">
+        <div class="card-section">
+          <p>Esta es una tarjeta simple con una imagen.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- imagen con padding -->
+    <div class="column small-12 medium-6">
+      <div class="card" style="width: 350px;">
+        <div class="card-section">
+          <img src="assets/img/nave-1.jpg">
+        </div>
+        <div class="card-section">
+          <p>Esta es una tarjeta simple con una imagen dentro de una <b>.card-section</b>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <center id="talla"><h3>Dimensionamiento</h3></center>
+  <pre>
+  &lt;div class="row small-up-2 medium-up-3">
+    &lt;div class="column">
+      &lt;div class="card">
+        &lt;img src="assets/img/planeta-1.jpg">
+        &lt;div class="card-section">
+          &lt;h4>Esta es una tarjeta.&lt;/h4>
+          &lt;p> Esta fila de tarjetas está incrustada en una cuadrícula de bloque flexible (Flex Block Grid).&lt;/p>
+        &lt;/div>
+      &lt;/div>
+    &lt;/div>
+    &lt;div class="column">
+      &lt;div class="card">
+        &lt;img src="assets/img/planeta-1.jpg">
+        &lt;div class="card-section">
+          &lt;h4>Esta es una tarjeta&lt;/h4>
+          &lt;p>Tiene un estilo visual fácil de sobreescribir, y está apropiadamente atenuado.&lt;/p>
+        &lt;/div>
+      &lt;/div>
+    &lt;/div>
+    &lt;div class="column">
+      &lt;div class="card">
+        &lt;img src="assets/img/planeta-1.jpg">
+        &lt;div class="card-section">
+          &lt;h4>Esta es una tarjeta&lt;/h4>
+          &lt;p>Tiene un estilo visual fácil de sobreescribir, y está apropiadamente atenuado.&lt;/p>
+        &lt;/div>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+  </pre>
+  <br>
+  <div class="row small-up-2 medium-up-3">
+    <div class="column">
+      <div class="card">
+        <img src="assets/img/planeta-1.jpg">
+        <div class="card-section">
+          <h4>Esta es una tarjeta.</h4>
+          <p> Esta fila de tarjetas está incrustada en una cuadrícula de bloque flexible (Flex Block Grid).</p>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <img src="assets/img/planeta-1.jpg">
+        <div class="card-section">
+          <h4>Esta es una tarjeta</h4>
+          <p>Tiene un estilo visual fácil de sobreescribir, y está apropiadamente atenuado.</p>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <img src="assets/img/planeta-1.jpg">
+        <div class="card-section">
+          <h4>Esta es una tarjeta</h4>
+          <p>Tiene un estilo visual fácil de sobreescribir, y está apropiadamente atenuado.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <hr>
+
+</div><!-- /.id tarjetas -->
+
+    <!--*****************
+     CORE JS
+    ******************-->
+    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="assets/js/vendor/what-input.js"></script>
+    <script src="assets/js/vendor/foundation.js"></script>
+    <script src="assets/js/app.js"></script>
+
+  </body>
+</html>
