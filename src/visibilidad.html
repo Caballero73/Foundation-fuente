@@ -1,0 +1,131 @@
+<!doctype html>
+<html class="no-js" lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clases de Visibilidad</title>
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+  </head>
+  <body>
+    <!-- /////// Botón para ir al principio -->
+    <a class="hide-for-small-only" href="#inicio">
+      <i class="fa fa-chevron-circle-up fa-2x ir-arriba"></i>
+    </a>
+    <!-- */Botón para ir al principio -->
+
+    <!-- MENU -->
+    @include('./menu_ppal.html')    
+    <!-- /.MENU -->
+
+    <!-- /////// Botón para Menú Off-Canvas -->
+    <a class="hidden-xs hidden-sm" data-toggle="menu-offcanvas">
+      <i class="fa fa-bars fa-2x menu-btn"></i>
+    </a>
+    <!-- */Botón para Menú Off-Canvas -->
+
+    <!-- /////// Menú Off-Canvas -->
+    <div class="off-canvas-wrapper">
+      <div id="menu-offcanvas" class="off-canvas position-left" data-off-canvas data-transition="overlap">
+      <ul class="vertical menu mt-3" data-smooth-scroll>
+        <li><a href="index.html" title="Inicio"><i class="fa fa-home"></i> Inicio</a></li>
+        <li><a href="#basico" title="Barra Básica">Barra Básica</a></li>
+        <li><a href="#avanzado" title="Diseño Avanzado">Diseño Avanzado</a></li>
+        <li><a href="#apilado" title="Apilado">Apilado</a></li>
+      </ul>
+      </div><!-- /.menu-offcanvas -->
+    </div><!-- /.off-canvas-wrapper -->
+    <!-- */Menú Off-Canvas -->
+
+<div id="visibilidad" class="off-canvas-content contenedor mt-3" data-off-canvas-content>
+
+  <center id="mostrar"><h3>Mostrar por tamaño de pantalla</h3></center>
+  <pre>
+    &lt;p>Este texto es visible en cualquier tipo de resolución.&lt;/p>
+    &lt;p class="show-for-medium">Este texto es visible en pantallas medianas o grandes.&lt;/p>
+    &lt;p class="show-for-large">Este texto es visible sólo en pantallas grandes.&lt;/p>
+  </pre>
+  <br>
+  <p>Este texto es visible en cualquier tipo de resolución.</p>
+  <p class="show-for-medium">Este texto es visible en pantallas medianas o grandes.</p>
+  <p class="show-for-large">Este texto es visible sólo en pantallas grandes.</p>
+  <br>
+   <center><h5>Mostrar solo para un tamaño de pantalla</h5></center>
+  <pre>
+  &lt;p class="show-for-small-only">Tu estás &lt;em>definitivamente&lt;/em> en una pantalla pequeña.&lt;/p>
+  &lt;p class="show-for-medium-only">Tu estás &lt;em>definitivamente&lt;/em> en una pantalla mediana.&lt;/p>
+  &lt;p class="show-for-large-only">Tu estás &lt;em>definitivamente&lt;/em> en una pantalla grande.&lt;/p>
+  </pre>
+  <p>Un conjunto separado de clases le permite mostrar contenido solo en un determinado tamaño de pantalla. Solo agregue -only al final de la clase.</p>
+  <p class="lead">¿No ve ningún texto debajo? Debe estar en una pantalla extra grande. </p>
+  <br>
+  <p class="show-for-small-only">Tu estás <em>definitivamente</em> en una pantalla pequeña.</p>
+  <p class="show-for-medium-only">Tu estás <em>definitivamente</em> en una pantalla mediana.</p>
+  <p class="show-for-large-only">Tu estás <em>definitivamente</em> en una pantalla grande.</p>
+  <hr>
+
+  <center id="avanzado"><h3>Diseño Avanzado</h3></center>
+  <pre>
+  &lt;div class="title-bar" data-responsive-toggle="menu-responsivo" data-hide-for="medium"&gt;
+    &lt;button class="menu-icon" type="button" data-toggle="menu-responsivo"&gt;&lt;/button&gt;
+    &lt;div class="title-bar-title"&gt; Menú&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div id="menu-responsivo" class="top-bar row"&gt;
+    &lt;-- // Contenido del Menú // --&gt;      
+  &lt;/div&gt;
+  </pre>
+  <br>
+  <small><strong>Nota:</strong> Debes reducir el tamaño de la ventana de tu navegador para que puedas apreciar la alternacia entre el menú para móviles y el menú convencional.</small>
+  <br><br>
+  
+  <div class="title-bar" data-responsive-toggle="menu-responsivo" data-hide-for="medium">
+    <button class="menu-icon" type="button" data-toggle="menu-responsivo"></button>
+    <div class="title-bar-title"> Menú</div>
+  </div>
+
+  <div id="menu-responsivo" class="top-bar row">
+    <div class="top-bar-left">
+      <ul class="dropdown menu" data-dropdown-menu>
+        <li class="menu-text">Logotipo</li>
+        <li>
+          <a href="javascript:void(0);">Uno</a>
+          <ul class="menu vertical">
+            <li><a href="javascript:void(0);">Alfa</a></li>
+            <li><a href="javascript:void(0);">Beta</a></li>
+            <li><a href="javascript:void(0);">Gamma</a></li>
+          </ul>
+        </li>
+        <li><a href="javascript:void(0);">Dos</a></li>
+        <li><a href="javascript:void(0);">Tres</a></li>
+      </ul>
+    </div>
+    <div class="top-bar-right">
+      <ul class="menu">
+        <li><input type="search" placeholder="Buscar"></li>
+        <li><a type="button"><i class="fa fa-search"></i></a></li>
+      </ul>
+    </div>
+  </div>  
+  <br>
+  <hr>
+
+  <center id="apilado"><h3>Apilado</h3></center>
+  <p>Por defecto, las dos secciones de una barra superior se apilarán una encima de la otra en pantallas pequeñas. Esto se puede cambiar agregando la clase <code>.stacked-for-medium</code> o la clase <code>.stacked-for-large</code> según se desee.</p>
+  <br> 
+  <hr>  
+
+</div><!-- /.id visibilidad -->
+
+    <!--*****************
+     CORE JS 
+    ******************-->
+    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="assets/js/vendor/what-input.js"></script>
+    <script src="assets/js/vendor/foundation.js"></script>
+    <script src="assets/js/app.js"></script>
+
+  </body>
+</html>

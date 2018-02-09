@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barra Superior</title>
+    <title>Clases de Visibilidad</title>
     <link rel="stylesheet" href="assets/css/font-awesome.css">
     <link rel="stylesheet" href="assets/css/foundation.css">
     <link rel="stylesheet" href="assets/css/app.css">
@@ -102,59 +102,31 @@
     </div><!-- /.off-canvas-wrapper -->
     <!-- */Menú Off-Canvas -->
 
-<div id="barra" class="off-canvas-content contenedor mt-3" data-off-canvas-content>
+<div id="visibilidad" class="off-canvas-content contenedor mt-3" data-off-canvas-content>
 
-  <center id="basico"><h3>Barra Básica</h3></center>
+  <center id="mostrar"><h3>Mostrar por tamaño de pantalla</h3></center>
   <pre>
-  &lt;div class="top-bar row"&gt;
-    &lt;div class="top-bar-left"&gt;
-      &lt;ul class="dropdown menu" data-dropdown-menu&gt;
-        &lt;li class="menu-text"&gt;Logotipo&lt;/li&gt;
-        &lt;li&gt;
-          &lt;a href="#"&gt;Uno&lt;/a&gt;
-          &lt;ul class="menu vertical"&gt;
-            &lt;li&gt;&lt;a href="#"&gt;Alfa&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href="#"&gt;Beta&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href="#"&gt;Gamma&lt;/a&gt;&lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;Dos&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;Tres&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-    &lt;div class="top-bar-right"&gt;
-      &lt;ul class="menu"&gt;
-        &lt;li&gt;&lt;input type="search" placeholder="Buscar"&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a type="button"&gt;&lt;i class="fa fa-search"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
+    &lt;p>Este texto es visible en cualquier tipo de resolución.&lt;/p>
+    &lt;p class="show-for-medium">Este texto es visible en pantallas medianas o grandes.&lt;/p>
+    &lt;p class="show-for-large">Este texto es visible sólo en pantallas grandes.&lt;/p>
   </pre>
   <br>
-  <div class="top-bar">
-    <div class="top-bar-left">
-      <ul class="dropdown menu" data-dropdown-menu>
-        <li class="menu-text">Logotipo</li>
-        <li>
-          <a href="javascript:void(0);">Uno</a>
-          <ul class="menu vertical">
-            <li><a href="javascript:void(0);">Alfa</a></li>
-            <li><a href="javascript:void(0);">Beta</a></li>
-            <li><a href="javascript:void(0);">Gamma</a></li>
-          </ul>
-        </li>
-        <li><a href="javascript:void(0);">Dos</a></li>
-        <li><a href="javascript:void(0);">Tres</a></li>
-      </ul>
-    </div>
-    <div class="top-bar-right">
-      <ul class="menu">
-        <li><input type="search" placeholder="Buscar"></li>
-        <li><a type="button"><i class="fa fa-search"></i></a></li>
-      </ul>
-    </div>
-  </div>
+  <p>Este texto es visible en cualquier tipo de resolución.</p>
+  <p class="show-for-medium">Este texto es visible en pantallas medianas o grandes.</p>
+  <p class="show-for-large">Este texto es visible sólo en pantallas grandes.</p>
   <br>
+   <center><h5>Mostrar solo para un tamaño de pantalla</h5></center>
+  <pre>
+  &lt;p class="show-for-small-only">Tu estás &lt;em>definitivamente&lt;/em> en una pantalla pequeña.&lt;/p>
+  &lt;p class="show-for-medium-only">Tu estás &lt;em>definitivamente&lt;/em> en una pantalla mediana.&lt;/p>
+  &lt;p class="show-for-large-only">Tu estás &lt;em>definitivamente&lt;/em> en una pantalla grande.&lt;/p>
+  </pre>
+  <p>Un conjunto separado de clases le permite mostrar contenido solo en un determinado tamaño de pantalla. Solo agregue -only al final de la clase.</p>
+  <p class="lead">¿No ve ningún texto debajo? Debe estar en una pantalla extra grande. </p>
+  <br>
+  <p class="show-for-small-only">Tu estás <em>definitivamente</em> en una pantalla pequeña.</p>
+  <p class="show-for-medium-only">Tu estás <em>definitivamente</em> en una pantalla mediana.</p>
+  <p class="show-for-large-only">Tu estás <em>definitivamente</em> en una pantalla grande.</p>
   <hr>
 
   <center id="avanzado"><h3>Diseño Avanzado</h3></center>
@@ -208,7 +180,7 @@
   <br> 
   <hr>  
 
-</div><!-- /.id barra -->
+</div><!-- /.id visibilidad -->
 
     <!--*****************
      CORE JS 
