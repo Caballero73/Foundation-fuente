@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/css/foundation.css">
     <link rel="stylesheet" href="assets/css/app.css">
   </head>
-  <body class="contenedor">
+  <body>
     <!-- /////// Botón para ir al principio -->
     <a class="hide-for-small-only" href="#inicio">
       <i class="fa fa-chevron-circle-up fa-2x ir-arriba"></i>
@@ -20,12 +20,16 @@
     <a class="hidden-xs hidden-sm" data-toggle="menu-offcanvas">
       <i class="fa fa-bars fa-2x menu-btn"></i>
     </a>
-    <!-- */Botón para Menú Off-Canvas -->
+    <!-- */Botón para ir al principio -->
 
-    <!-- /////// Menú Off-Canvas -->
+    <!-- MENU -->
+    @include('./menu_ppal.html')    
+    <!-- /.MENU -->
+
+    <!-- /////// Botón para Menú Off-Canvas -->
     <div class="off-canvas-wrapper">
       <div id="menu-offcanvas" class="off-canvas position-left" data-off-canvas data-transition="overlap">
-      <ul class="vertical menu mt-3">
+      <ul class="vertical menu mt-3" data-smooth-scroll>
         <li><a href="index.html" title="Inicio"><i class="fa fa-home"></i> Inicio</a></li>
         <li><a href="#basico" title="Lo básico">Lo básico</a></li>
         <li><a href="#vertical" title="Vertical">Vertical</a></li>
@@ -37,7 +41,7 @@
     </div><!-- /.off-canvas-wrapper -->
     <!-- /.Menú Off-Canvas -->
 
-<div id="slider" class="off-canvas-content mt-3" data-off-canvas-content>
+<div id="slider" class="off-canvas-content contenedor mt-3" data-off-canvas-content>
 
   <center id="basico"><h3>Lo básico</h3></center>
   <pre>
