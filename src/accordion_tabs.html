@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pestañas / Tabs</title>
+    <title>Pestañas y Acordeón</title>
     <link rel="stylesheet" href="assets/css/font-awesome.css">
     <link rel="stylesheet" href="assets/css/foundation.css">
     <link rel="stylesheet" href="assets/css/app.css">
@@ -41,9 +41,8 @@
       <div id="menu-offcanvas" class="off-canvas position-left" data-off-canvas data-transition="overlap">
       <ul class="vertical menu mt-3" data-smooth-scroll>
         <li><a href="index.html" title="Inicio"><i class="fa fa-home"></i> Inicio</a></li>
-        <li><a href="#basico" title="Lo básico">Lo básico</a></li>       
-        <li><a href="#vertical" title="Pestañas Verticales">Pestañas Verticales</a></li>        
-        <li><a href="#colapso" title="Pestañas Colapsables">Pestañas Colapsables</a></li>        
+        <li><a href="#acord_pest" title="Acordeón a Pestañas">Acordeón a Pestañas</a></li>        
+        <li><a href="#pest_acord" title="Pestañas a Acordeón">Pestañas a Acordeón</a></li>        
       </ul>
       </div><!-- /.menu-offcanvas -->
     </div><!-- /.off-canvas-wrapper -->
@@ -51,7 +50,7 @@
 
 <div id="tabs" class="off-canvas-content contenedor mt-3" data-off-canvas-content>
 
-  <center id="basico"><h3>Lo básico</h3></center>
+  <center id="acord_pest"><h3>Acordeón a Pestañas</h3></center>
   <pre>
   &lt;h6>Soy un acordeón en small y large, pero tengo pestañas en medium&lt;/h6>
   &lt;ul class="accordion" data-responsive-accordion-tabs="accordion medium-tabs large-accordion">
@@ -87,131 +86,70 @@
   </ul>
   <hr>
 
-  <center id="vertical"><h3>Pestañas Verticales</h3></center>
+  <center id="pest_acord"><h3>Pestañas a Acordeón</h3></center>
   <pre>
-  &lt;div class="row collapse">
-    &lt;div class="medium-3 columns">
-      &lt;ul class="vertical tabs" data-tabs id="example-tabs">
-        &lt;li class="tabs-title is-active">&lt;a href="#panel1v" aria-selected="true">Tab 1&lt;/a>&lt;/li>
-        &lt;li class="tabs-title">&lt;a href="#panel2v">Tab 2&lt;/a>&lt;/li>
-        &lt;li class="tabs-title">&lt;a href="#panel3v">Tab 3&lt;/a>&lt;/li>
-        &lt;li class="tabs-title">&lt;a href="#panel4v">Tab 4&lt;/a>&lt;/li>
-        &lt;li class="tabs-title">&lt;a href="#panel5v">Tab 5&lt;/a>&lt;/li>
-      &lt;/ul>
+  &lt;h6>Tengo pestañas en small y large, pero soy un acordeón en medium&lt;/h6>
+    &lt;ul class="tabs" data-responsive-accordion-tabs="tabs medium-accordion large-tabs" id="example-tabs">
+      &lt;li class="tabs-title is-active">&lt;a href="#panel1" aria-selected="true">Tab 1&lt;/a>&lt;/li>
+      &lt;li class="tabs-title">&lt;a href="#panel2">Tab 2&lt;/a>&lt;/li>
+      &lt;li class="tabs-title">&lt;a href="#panel3">Tab 3&lt;/a>&lt;/li>
+      &lt;li class="tabs-title">&lt;a href="#panel4">Tab 4&lt;/a>&lt;/li>
+      &lt;li class="tabs-title">&lt;a href="#panel5">Tab 5&lt;/a>&lt;/li>
+    &lt;/ul>
+  &lt;div class="tabs-content" data-tabs-content="example-tabs">
+    &lt;div class="tabs-panel is-active" id="panel1">
+      &lt;p>Uno&lt;/p>
+      &lt;p class="lead">Mírame soy un panel muy cool que contiene texto&lt;/p>
     &lt;/div>
-    &lt;div class="medium-9 columns">
-      &lt;div class="tabs-content" data-tabs-content="example-tabs">
-        &lt;div class="tabs-panel is-active" id="panel1v">
-          &lt;p>Uno&lt;/p>
-          &lt;p class="lead">Mírame soy un panel muy cool que contiene texto&lt;/p>
-        &lt;/div>
-        &lt;div class="tabs-panel" id="panel2v">
-          &lt;p>Dos&lt;/p>
-          &lt;img class="thumbnail" src="assets/img/img-terminus.jpg" width="100%">
-        &lt;/div>
-        &lt;div class="tabs-panel" id="panel3v">
-          &lt;p>Tres&lt;/p>
-          &lt;blockquote>«El antiintelectualismo ha sido el constante hilo que ha devanado su camino a través de nuestra vida política y cultural, nutrido por la falsa noción de que la democracia significa mi ignorancia es tan buena como tu conocimiento».
-            &lt;cite>Isaac Asimov&lt;/cite>&lt;/blockquote>
-        &lt;/div>
-        &lt;div class="tabs-panel" id="panel4v">
-          &lt;p>Cuatro&lt;/p>
-          &lt;img class="thumbnail" src="assets/img/nave-1.jpg" width="100%">
-        &lt;/div>
-        &lt;div class="tabs-panel" id="panel5v">
-          &lt;p>Cinco&lt;/p>
-          &lt;p class="lead">Si el conocimiento puede crear problemas, no es con la ignorancia con lo que podremos resolverlos&lt;/p>
-        &lt;/div>
-      &lt;/div>
+    &lt;div class="tabs-panel" id="panel2">
+      &lt;p>Dos&lt;/p>
+      &lt;img class="thumbnail" src="assets/img/img-terminus.jpg" width="100%">
     &lt;/div>
-  &lt;/div>
-  </pre>
-  <br>
-  <div class="row collapse">
-    <div class="medium-3 columns">
-      <ul class="vertical tabs" data-tabs id="example-tabs">
-        <li class="tabs-title is-active"><a href="#panel1v" aria-selected="true">Tab 1</a></li>
-        <li class="tabs-title"><a href="#panel2v">Tab 2</a></li>
-        <li class="tabs-title"><a href="#panel3v">Tab 3</a></li>
-        <li class="tabs-title"><a href="#panel4v">Tab 4</a></li>
-        <li class="tabs-title"><a href="#panel5v">Tab 5</a></li>
-      </ul>
-    </div>
-    <div class="medium-9 columns">
-      <div class="tabs-content" data-tabs-content="example-tabs">
-        <div class="tabs-panel is-active" id="panel1v">
-          <p>Uno</p>
-          <p class="lead">Mírame soy un panel muy cool que contiene texto</p>
-        </div>
-        <div class="tabs-panel" id="panel2v">
-          <p>Dos</p>
-          <img class="thumbnail" src="assets/img/img-terminus.jpg" width="100%">
-        </div>
-        <div class="tabs-panel" id="panel3v">
-          <p>Tres</p>
-          <blockquote>«El antiintelectualismo ha sido el constante hilo que ha devanado su camino a través de nuestra vida política y cultural, nutrido por la falsa noción de que la democracia significa mi ignorancia es tan buena como tu conocimiento».
-            <cite>Isaac Asimov</cite></blockquote>
-        </div>
-        <div class="tabs-panel" id="panel4v">
-          <p>Cuatro</p>
-          <img class="thumbnail" src="assets/img/nave-1.jpg" width="100%">
-        </div>
-        <div class="tabs-panel" id="panel5v">
-          <p>Cinco</p>
-          <p class="lead">Si el conocimiento puede crear problemas, no es con la ignorancia con lo que podremos resolverlos</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <br>
-  <hr>
-
-  <center id="colapso"><h3>Pestañas Colapsables</h3></center>
-  <pre>
-  &lt;ul class="tabs" data-active-collapse="true" data-tabs id="collapsing-tabs">
-    &lt;li class="tabs-title is-active">&lt;a href="#panel1c" aria-selected="true">Tab 1&lt;/a>&lt;/li>
-    &lt;li class="tabs-title">&lt;a href="#panel2c">Tab 2&lt;/a>&lt;/li>
-    &lt;li class="tabs-title">&lt;a href="#panel3c">Tab 3&lt;/a>&lt;/li>
-    &lt;li class="tabs-title">&lt;a href="#panel4c">Tab 4&lt;/a>&lt;/li>
-  &lt;/ul>
-
-  &lt;div class="tabs-content" data-tabs-content="collapsing-tabs">
-    &lt;div class="tabs-panel is-active" id="panel1c">
-      &lt;blockquote>«Ellos no van a escuchar. ¿Sabes por qué? Porque tienen ciertas nociones fijas sobre el pasado. En sus ojos, cualquier cambio sería una blasfemia incluso si se tratara de la verdad. Ellos no quieren la verdad, ellos quieren la tradición».
+    &lt;div class="tabs-panel" id="panel3">
+      &lt;p>Tres&lt;/p>
+      &lt;blockquote>«El antiintelectualismo ha sido el constante hilo que ha devanado su camino a través de nuestra vida política y cultural, nutrido por la falsa noción de que la democracia significa mi ignorancia es tan buena como tu conocimiento».
         &lt;cite>Isaac Asimov&lt;/cite>&lt;/blockquote>
     &lt;/div>
-    &lt;div class="tabs-panel" id="panel2c">
-      &lt;p class="lead">Tus supuestos son tus ventanas al mundo. Límpiales una vez cada tanto o la luz ya no entrará.&lt;/p>
-    &lt;/div>
-    &lt;div class="tabs-panel" id="panel3c">
+    &lt;div class="tabs-panel" id="panel4">
+      &lt;p>Cuatro&lt;/p>
       &lt;img class="thumbnail" src="assets/img/nave-1.jpg" width="100%">
     &lt;/div>
-    &lt;div class="tabs-panel" id="panel4c">
-      &lt;p class="lead">La violencia es el último recurso del incompetente&lt;/p>
+    &lt;div class="tabs-panel" id="panel5">
+      &lt;p>Cinco&lt;/p>
+      &lt;p class="lead">Si el conocimiento puede crear problemas, no es con la ignorancia con lo que podremos resolverlos&lt;/p>
     &lt;/div>
   &lt;/div>
   </pre>
   <br>
-  <ul class="tabs" data-active-collapse="true" data-tabs id="collapsing-tabs">
-    <li class="tabs-title is-active"><a href="#panel1c" aria-selected="true">Tab 1</a></li>
-    <li class="tabs-title"><a href="#panel2c">Tab 2</a></li>
-    <li class="tabs-title"><a href="#panel3c">Tab 3</a></li>
-    <li class="tabs-title"><a href="#panel4c">Tab 4</a></li>
+  <h6>Tengo pestañas en small y large, pero soy un acordeón en medium</h6>
+  <ul class="tabs" data-responsive-accordion-tabs="tabs medium-accordion large-tabs" id="example-tabs">
+    <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a></li>
+    <li class="tabs-title"><a href="#panel2">Tab 2</a></li>
+    <li class="tabs-title"><a href="#panel3">Tab 3</a></li>
+    <li class="tabs-title"><a href="#panel4">Tab 4</a></li>
+    <li class="tabs-title"><a href="#panel5">Tab 5</a></li>
   </ul>
-
-  <div class="tabs-content" data-tabs-content="collapsing-tabs">
-    <div class="tabs-panel is-active" id="panel1c">
-      <blockquote>«Ellos no van a escuchar. ¿Sabes por qué? Porque tienen ciertas nociones fijas sobre el pasado. En sus ojos, cualquier cambio sería una blasfemia incluso si se tratara de la verdad. Ellos no quieren la verdad, ellos quieren la tradición».
+  <div class="tabs-content" data-tabs-content="example-tabs">
+    <div class="tabs-panel is-active" id="panel1">
+      <p>Uno</p>
+      <p class="lead">Mírame soy un panel muy cool que contiene texto</p>
+    </div>
+    <div class="tabs-panel" id="panel2">
+      <p>Dos</p>
+      <img class="thumbnail" src="assets/img/img-terminus.jpg" width="100%">
+    </div>
+    <div class="tabs-panel" id="panel3">
+      <p>Tres</p>
+      <blockquote>«El antiintelectualismo ha sido el constante hilo que ha devanado su camino a través de nuestra vida política y cultural, nutrido por la falsa noción de que la democracia significa mi ignorancia es tan buena como tu conocimiento».
         <cite>Isaac Asimov</cite></blockquote>
     </div>
-    <div class="tabs-panel" id="panel2c">
-      <p class="lead">Tus supuestos son tus ventanas al mundo. Límpiales una vez cada tanto o la luz ya no entrará.</p>
-    </div>
-    <div class="tabs-panel" id="panel3c">
+    <div class="tabs-panel" id="panel4">
+      <p>Cuatro</p>
       <img class="thumbnail" src="assets/img/nave-1.jpg" width="100%">
     </div>
-    <div class="tabs-panel" id="panel4c">
-      <p class="lead">La violencia es el último recurso del incompetente</p>
+    <div class="tabs-panel" id="panel5">
+      <p>Cinco</p>
+      <p class="lead">Si el conocimiento puede crear problemas, no es con la ignorancia con lo que podremos resolverlos</p>
     </div>
   </div>
   <br>
