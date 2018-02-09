@@ -1,0 +1,155 @@
+<!doctype html>
+<html class="no-js" lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLamadas o Alertas</title>
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+  </head>
+  <body class="contenedor">
+    <!-- /////// Botón para ir al principio -->
+    <a class="hide-for-small-only" href="#inicio">
+      <i class="fa fa-chevron-circle-up fa-2x ir-arriba"></i>
+    </a>
+    <!-- */Botón para ir al principio -->
+
+    <!-- /////// Botón para Menú Off-Canvas -->
+    <a class="hidden-xs hidden-sm" data-toggle="menu-offcanvas">
+      <i class="fa fa-bars fa-2x menu-btn"></i>
+    </a>
+    <!-- */Botón para Menú Off-Canvas -->
+
+    <!-- /////// Menú Off-Canvas -->
+    <div class="off-canvas-wrapper">
+      <div id="menu-offcanvas" class="off-canvas position-left" data-off-canvas data-transition="overlap">
+      <ul class="vertical menu mt-3">
+        <li><a href="index.html" title="Inicio"><i class="fa fa-home"></i> Inicio</a></li>
+        <li><a href="#basico" title="Lo básico">Lo básico</a></li>
+        <li><a href="#color" title="Color">Color</a></li>
+        <li><a href="#talla" title="Dimensionamiento">Dimensionamiento</a></li>
+        <li><a href="#cerrables" title="Haciendo cerrables">Haciendo cerrables</a></li>
+      </ul>
+      </div><!-- /.menu-offcanvas -->
+    </div><!-- /.off-canvas-wrapper -->
+    <!-- /.Menú Off-Canvas -->
+
+<div id="llamadas" class="off-canvas-content mt-3" data-off-canvas-content>
+
+  <center id="basico"><h3>Lo básico</h3></center>
+  <pre>
+    &lt;div class="callout">
+      &lt;h5>Esta es una llamada.&lt;/h5>
+      &lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione amet, pariatur perspiciatis eos explicabo.&lt;/p>
+      &lt;a>Que la Fuerza te acompañe&lt;/a>
+    &lt;/div>
+  </pre>
+  <br>
+  <div class="callout">
+    <h5>Esta es una llamada.</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione amet, pariatur perspiciatis eos explicabo.</p>
+    <a>Que la Fuerza te acompañe</a>
+  </div>
+  <br>
+  <hr>
+
+  <center id="color"><h3>Color</h3></center>
+  <pre>
+    &lt;div class="callout warning">
+      &lt;h5>Esta es una llamada con color warning.&lt;/h5>
+      &lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione amet, pariatur perspiciatis eos explicabo.&lt;/p>
+      &lt;a>Que la Fuerza te acompañe&lt;/a>
+    &lt;/div>
+  </pre>
+  <br>
+  <small>
+    Se pueden colorear utilizando las clases .secondary , .primary , .success , .warning o .alert . Los enlaces dentro de la leyenda
+    se teñirán para que coincida con el color de la llamada.</small>
+    <br><br>
+  <div class="callout warning">
+    <h5>Esta es una llamada con color warning.</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione amet, pariatur perspiciatis eos explicabo.</p>
+    <a>Que la Fuerza te acompañe</a>
+  </div>
+  <br>
+  <hr>
+
+  <center id="talla"><h3>Dimensionamiento</h3></center>
+  <pre>
+    &lt;div class="callout small">
+      . . . / / . . .
+    &lt;/div>
+
+    &lt;div class="callout large">
+      . . . / / . . .
+    &lt;/div>
+  </pre>
+  <br>
+  <div class="callout small">
+    <h5>Esta es una llamada pequeña / small.</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione amet, pariatur perspiciatis eos explicabo.</p>
+    <a>Que la Fuerza te acompañe</a>
+  </div>
+  <br>
+  <div class="callout large">
+    <h5>Esta es una llamada grande / large.</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione amet, pariatur perspiciatis eos explicabo.</p>
+    <a>Que la Fuerza te acompañe</a>
+  </div>
+  <br>
+  <hr>
+
+  <center id="cerrables"><h3>Haciendo cerrables</h3></center>
+  <pre>
+    &lt;div class="alert callout" data-closable>
+      . . . / / . . .
+      &lt;button class="close-button" aria-label="Cerrar" type="button" data-close>
+        &lt;span aria-hidden="true">&times;&lt;/span>
+      &lt;/button>
+    &lt;/div>
+
+    &lt;div class="success callout" data-closable="slide-out-right">
+      . . . / / . . .
+      &lt;button class="close-button" aria-label="Cerrar" type="button" data-close>
+        &lt;span aria-hidden="true">&times;&lt;/span>
+      &lt;/button>
+    &lt;/div>
+  </pre>
+  <br>
+  <div class="callout alert" data-closable>
+    <h5>Esta es una llamada con color warning.</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione amet, pariatur perspiciatis eos explicabo.</p>
+    <button class="close-button" aria-label="Cerrar" type="button" data-close>
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <a>Que la Fuerza te acompañe</a>
+  </div>
+  <br>
+  <div class="callout warning" data-closable="slide-out-right">
+    <h5>Esta es una llamada con color warning.</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione amet, pariatur perspiciatis eos explicabo.</p>
+    <button class="close-button" aria-label="Cerrar" type="button" data-close>
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <a>Que la Fuerza te acompañe</a>
+  </div>
+  <br>
+  <hr>
+
+
+
+
+</div><!-- /.id llamadas -->
+
+    <!--*****************
+     CORE JS
+    ******************-->
+    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="assets/js/vendor/what-input.js"></script>
+    <script src="assets/js/vendor/foundation.js"></script>
+    <script src="assets/js/app.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,207 @@
+<!doctype html>
+<html class="no-js" lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objeto multimedia</title>
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+  </head>
+  <body class="contenedor">
+    <!-- /////// Botón para ir al principio -->
+    <a class="hide-for-small-only" href="#inicio">
+      <i class="fa fa-chevron-circle-up fa-2x ir-arriba"></i>
+    </a>
+    <!-- */Botón para ir al principio -->
+
+    <!-- /////// Botón para Menú Off-Canvas -->
+    <a class="hidden-xs hidden-sm" data-toggle="menu-offcanvas">
+      <i class="fa fa-bars fa-2x menu-btn"></i>
+    </a>
+    <!-- */Botón para Menú Off-Canvas -->
+
+    <!-- /////// Menú Off-Canvas -->
+    <div class="off-canvas-wrapper">
+      <div id="menu-offcanvas" class="off-canvas position-left" data-off-canvas data-transition="overlap">
+      <ul class="vertical menu mt-3">
+        <li><a href="index.html" title="Inicio"><i class="fa fa-home"></i> Inicio</a></li>
+        <li><a href="#basico" title="Lo básico">Lo básico</a></li>
+        <li><a href="#alinear" title="Alineación de la Sección">Alineación de la Sección</a></li>
+        <li><a href="#apilar" title="Apilar al reducir">Apilar al reducir</a></li>
+        <li><a href="#anidar" title="Anidamiento de objetos multimedia">Anidamiento de objetos multimedia</a></li>
+      </ul>
+      </div><!-- /.menu-offcanvas -->
+    </div><!-- /.off-canvas-wrapper -->
+    <!-- /.Menú Off-Canvas -->
+
+<div id="medios" class="off-canvas-content mt-3" data-off-canvas-content>
+
+  <center id="basico"><h3>Lo básico</h3></center>
+  <pre>
+  &lt;div class="media-object">
+    &lt;div class="media-object-section">
+      &lt;div class="thumbnail">
+        &lt;img src="assets/img/avatar-1.jpg">
+      &lt;/div>
+    &lt;/div>
+    &lt;div class="media-object-section">
+      &lt;h4>Los sueños se sienten reales mientras estamos en ellos.&lt;/h4>
+      &lt;p>Una idea es como un virus, resistente, altamente contagiosa. La semilla más pequeña de una idea puede crecer. Puede crecer para definirte o destruirte.&lt;/p>
+    &lt;/div>
+  &lt;/div>
+  </pre>
+  <br>
+  <div class="media-object">
+    <div class="media-object-section">
+      <div class="thumbnail">
+        <img src="assets/img/avatar-1.jpg">
+      </div>
+    </div>
+    <div class="media-object-section">
+      <h4>Los sueños se sienten reales mientras estamos en ellos.</h4>
+      <p>Una idea es como un virus, resistente, altamente contagiosa. La semilla más pequeña de una idea puede crecer. Puede crecer para definirte o destruirte.</p>
+    </div>
+  </div>
+  <br>
+  <hr>
+
+  <center id="alinear"><h3>Alineación de la Sección</h3></center>
+  <pre>
+  &lt;div class="media-object">
+    &lt;div class="media-object-section middle">
+      &lt;div class="thumbnail">
+        &lt;img src= "assets/img/avatar-2.jpg">
+      &lt;/div>
+    &lt;/div>
+    &lt;div class="media-object-section">
+      &lt;h4>¿Por qué es tan importante soñar?&lt;/h4>
+      &lt;p>¿Cuál es el parásito más resistente? ¿Bacterias? ¿Un virus? ¿Un gusano intestinal? Una idea. Resistente ... muy contagiosa. Una vez que una idea se ha apoderado del cerebro es casi imposible de erradicar. Una idea que está completamente formada, completamente entendida, que se adhiere; Justo ahí en algún lado.&lt;/p>
+    &lt;/div>
+    &lt;div class="media-object-section bottom">
+      &lt;div class="thumbnail">
+        &lt;img src= "assets/img/avatar-3.jpg">
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+  </pre>
+  <br>
+  <div class="media-object">
+    <div class="media-object-section middle">
+      <div class="thumbnail">
+        <img src= "assets/img/avatar-2.jpg">
+      </div>
+    </div>
+    <div class="media-object-section">
+      <h4>¿Por qué es tan importante soñar?</h4>
+      <p>¿Cuál es el parásito más resistente? ¿Bacterias? ¿Un virus? ¿Un gusano intestinal? Una idea. Resistente ... muy contagiosa. Una vez que una idea se ha apoderado del cerebro es casi imposible de erradicar. Una idea que está completamente formada, completamente entendida, que se adhiere; Justo ahí en algún lado.</p>
+    </div>
+    <div class="media-object-section bottom">
+      <div class="thumbnail">
+        <img src= "assets/img/avatar-3.jpg">
+      </div>
+    </div>
+  </div>
+  <br>
+  <hr>
+
+  <center id="apilar"><h3>Apilar al reducir</h3></center>
+  <pre>
+  &lt;div class="media-object stack-for-small">
+    &lt;div class="media-object-section">
+      &lt;div class="thumbnail">
+        &lt;img src= "assets/img/planeta-1.jpg" width="100%">
+      &lt;/div>
+    &lt;/div>
+    &lt;div class="media-object-section">
+      &lt;h4>Puedo apilar.&lt;/h4>
+      &lt;p>REDUCE el ancho del navegador para verme apilar. Hago trucos para golosinas para perros, pero no soy un perro.&lt;/p>
+    &lt;/div>
+  &lt;/div>
+  </pre>
+  <br>
+  <div class="media-object stack-for-small">
+    <div class="media-object-section">
+      <div class="thumbnail">
+        <img src= "assets/img/planeta-1.jpg" width="100%">
+      </div>
+    </div>
+    <div class="media-object-section">
+      <h4>Puedo apilar.</h4>
+      <p>REDUCE el ancho del navegador para verme apilar. Hago trucos para golosinas para perros, pero no soy un perro.</p>
+    </div>
+  </div>
+  <br>
+  <hr>
+
+  <center id="anidar"><h3>Anidamiento de objetos multimedia</h3></center>
+  <pre>
+  &lt;div class="media-object">
+    &lt;div class="media-object-section">
+      &lt;div class="thumbnail">
+        &lt;img src= "assets/img/avatar-1.jpg" width="100%">
+      &lt;/div>
+    &lt;/div>
+    &lt;div class="media-object-section">
+      &lt;h4>Soy el Primero&lt;/h4>
+      &lt;p>Lorem ipsum dolor sit amet, ...// //... id est laborum.&lt;/p>
+      &lt;!-- Nested media object starts here -->
+      &lt;div class="media-object">
+        &lt;div class="media-object-section">
+          &lt;div class="thumbnail">
+            &lt;img src= "assets/img/avatar-2.jpg" width="100%">
+          &lt;/div>
+        &lt;/div>
+        &lt;div class="media-object-section">
+          &lt;h4>Soy el Segundo&lt;/h4>
+          &lt;p>Lorem ipsum dolor sit amet, ...// //... odio.&lt;/p>
+        &lt;/div>
+      &lt;/div>
+      &lt;!-- And ends here -->
+    &lt;/div>
+  &lt;/div>
+  </pre>
+  <br>
+  <div class="media-object">
+    <div class="media-object-section">
+      <div class="thumbnail">
+        <img src= "assets/img/avatar-1.jpg" width="100%">
+      </div>
+    </div>
+    <div class="media-object-section">
+      <h4>Soy el Primero</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <!-- Nested media object starts here -->
+      <div class="media-object">
+        <div class="media-object-section">
+          <div class="thumbnail">
+            <img src= "assets/img/avatar-2.jpg" width="100%">
+          </div>
+        </div>
+        <div class="media-object-section">
+          <h4>Soy el Segundo</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas magni, quam mollitia voluptatum in, animi suscipit tempora ea consequuntur non nulla vitae doloremque. Eius rerum, cum earum quae eveniet odio.</p>
+        </div>
+      </div>
+      <!-- And ends here -->
+    </div>
+  </div>
+  <br>
+  <hr>
+
+
+
+
+</div><!-- /.id medios -->
+
+    <!--*****************
+     CORE JS
+    ******************-->
+    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="assets/js/vendor/what-input.js"></script>
+    <script src="assets/js/vendor/foundation.js"></script>
+    <script src="assets/js/app.js"></script>
+
+  </body>
+</html>
