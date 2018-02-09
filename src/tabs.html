@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reveal / Modals</title>
+    <title>Pestañas / Tabs</title>
     <link rel="stylesheet" href="assets/css/font-awesome.css">
     <link rel="stylesheet" href="assets/css/foundation.css">
     <link rel="stylesheet" href="assets/css/app.css">
@@ -23,66 +23,7 @@
     <!-- */Botón para Menú Off-Canvas -->
 
     <!-- MENU -->
-    <section id="menu-container">
-  <div class="contenedor">
-    <ul class="menu dropdown align-center" data-dropdown-menu>
-
-      <li><a href="#" title="General">General</a>
-        <ul class="menu">
-          <li><a href="grilla.html" title="Grilla">Grilla Flex</a></li>
-        </ul>
-      </li>
-
-      <li><a href="#" title="Tipografía">Tipografía</a>
-        <ul class="menu">
-          <li><a href="tipografia.html" title="Tipografía Básica">Tipografía Básica</a></li>
-          <li><a href="tipografia2.html" title="Tipografía Básica">Tipografía Auxiliar</a></li>
-        </ul>
-      </li>
-
-      <li><a href="#" title="Controles">Controles</a>
-        <ul class="menu">
-          <li><a href="botones.html" title="Botones">Botones</a></li>
-          <li><a href="grupo-botones.html" title="Grupo de Botones">Grupo de Botones</a></li>
-          <li><a href="boton-cerrar.html" title="Botón Cerrar">Botón Cerrar</a></li>
-          <li><a href="slider.html" title="Control deslizante">Control deslizante</a></li>
-          <li><a href="switch.html" title="Interruptores">Interruptores</a></li>
-        </ul>
-      </li>
-
-      <li><a href="#" title="Navegación">Navegación</a>
-        <ul class="menu">
-          <li><a href="menu.html" title="Menú">Menú</a></li>
-          <li><a href="menu-desplegable.html" title="Menú Desplegable">Menú Desplegable</a></li>
-          <li><a href="menu-drilldown.html" title="Menú Drilldown">Menú Drilldown</a></li>
-          <li><a href="menu-acordeon.html" title="Menú Acordeón">Menú Acordeón</a></li>
-          <li><a href="barra.html" title="Barra Superior">Barra Superior</a></li>
-          <li><a href="menu-responsivo.html" title="Menú Responsivo">Menú Responsivo</a></li>
-        </ul>
-      </li>
-
-      <li><a href="#" title="Contenedores">Contenedores</a>
-        <ul class="menu">
-          <li><a href="acordeon.html" title="Acordeón">Acordeón</a></li>
-          <li><a href="desplegable.html" title="Desplegable">Desplegable</a></li>
-          <li><a href="llamadas.html" title="Llamadas">Llamadas</a></li>
-          <li><a href="tarjetas.html" title="Tarjetas o Cards">Tarjetas o Cards</a></li>
-          <li><a href="medios.html" title="Objetos Multimedia">Objetos Multimedia</a></li>
-          <li><a href="canvas-off.html" title="Fuera del lienzo / Off-Canvas">Fuera del lienzo / Off-Canvas</a></li>
-          <li><a href="reveal.html" title="Reveal / Modals">Reveal / Modals</a></li>
-          <li><a href="tabs.html" title="Pestañas / Tabs">Pestañas / Tabs</a></li>
-          <li><a href="tablas.html" title="Tablas">Tablas</a></li>
-        </ul>
-      </li>
-
-      <li><a href="#" title="Complementos / Plugins">Complementos / Plugins</a>
-        <ul class="menu">
-          <li><a href="sticky.html" title="Sticky / Pegajoso">Sticky / Pegajoso</a></li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-</section>    
+    @include('./menu_ppal.html')    
     <!-- /.MENU -->
 
     <!-- /////// Menú Off-Canvas -->
@@ -91,41 +32,27 @@
       <ul class="vertical menu mt-3">
         <li><a href="index.html" title="Inicio"><i class="fa fa-home"></i> Inicio</a></li>
         <li><a href="#basico" title="Lo básico">Lo básico</a></li>        
-        <li><a href="#talla" title="Tamaño">Tamaño</a></li>        
-        <li><a href="#anidado" title="Modo anidado">Modo anidado</a></li>        
-        <li><a href="#apilado" title="Sin superposición">Sin superposición</a></li>        
+       
         <li><a href="#animado" title="Animado">Animado</a></li>        
       </ul>
       </div><!-- /.menu-offcanvas -->
     </div><!-- /.off-canvas-wrapper -->
     <!-- /.Menú Off-Canvas -->
 
-<div id="reveal" class="off-canvas-content contenedor mt-3" data-off-canvas-content>
+<div id="tabs" class="off-canvas-content contenedor mt-3" data-off-canvas-content>
 
   <center id="basico"><h3>Lo básico</h3></center>
   <pre>
-  &lt;p>&lt;button class="button large" data-open="exampleModal1">Púlsame para ver un Modal&lt;/button>&lt;/p>
-  &lt;br>
-  &lt;div class="reveal" id="exampleModal1" data-reveal>
-    &lt;h1>Increible. Lo tengo&lt;/h1>
-    &lt;p class="lead">Estoy muy cómodo&lt;/p>
-    &lt;p>Soy un buen párrafo que vive dentro de un modal aún más genial ¡Ganador!&lt;/p>
-    &lt;button class="close-button" data-close aria-label="Close modal" type="button">
-      &lt;span aria-hidden="true">&times;&lt;/span>
-    &lt;/button>
-  &lt;/div>
+  &lt;ul class="tabs" data-tabs id="example-tabs">
+    &lt;li class="tabs-title is-active">&lt;a href="#panel1" aria-selected="true">Tab 1&lt;/a>&lt;/li>
+    &lt;li class="tabs-title">&lt;a data-tabs-target="panel2" href="#panel2">Tab 2&lt;/a>&lt;/li>
+  &lt;/ul>
   </pre>
   <br>
-  <p><button class="button large" data-open="exampleModal1">Púlsame para ver un Modal</button></p>
-  <br>
-  <div class="reveal" id="exampleModal1" data-reveal>
-    <h1>Increible. Lo tengo</h1>
-    <p class="lead">Estoy muy cómodo</p>
-    <p>Soy un buen párrafo que vive dentro de un modal aún más genial ¡Ganador!</p>
-    <button class="close-button" data-close aria-label="Close modal" type="button">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
+  <ul class="tabs" data-tabs id="example-tabs">
+    <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a></li>
+    <li class="tabs-title"><a data-tabs-target="panel2" href="#panel2">Tab 2</a></li>
+  </ul>
   <hr>
 
   <center id="talla"><h3>Tamaño</h3></center>
@@ -276,7 +203,7 @@
 
   
 
-</div><!-- /.id reveal -->
+</div><!-- /.id tabs -->
 
     <!--*****************
      CORE JS 
