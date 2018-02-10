@@ -66,49 +66,18 @@
   <p class="show-for-large-only">Tu estás <em>definitivamente</em> en una pantalla grande.</p>
   <hr>
 
-  <center id="avanzado"><h3>Diseño Avanzado</h3></center>
+  <center id="ocultar"><h3> Ocultar por tamaño de pantalla </h3></center>
   <pre>
-  &lt;div class="title-bar" data-responsive-toggle="menu-responsivo" data-hide-for="medium"&gt;
-    &lt;button class="menu-icon" type="button" data-toggle="menu-responsivo"&gt;&lt;/button&gt;
-    &lt;div class="title-bar-title"&gt; Menú&lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;div id="menu-responsivo" class="top-bar row"&gt;
-    &lt;-- // Contenido del Menú // --&gt;      
-  &lt;/div&gt;
+  &lt;p class="hide-for-medium">Ejemplo 1: Tu &lt;em>no estás&lt;/em> en una pantalla mediana.&lt;/p>
+  &lt;p class="hide-for-large">Ejemplo 2: Tu &lt;em>no estás&lt;/em> en una pantalla grande.&lt;/p>
+  &lt;p class="show-for-large">Si estás leyendo esto, estás en una pantalla grande o extra grande y no puedes ver ninguno de los ejemplos anteriores.&lt;/p>
   </pre>
   <br>
-  <small><strong>Nota:</strong> Debes reducir el tamaño de la ventana de tu navegador para que puedas apreciar la alternacia entre el menú para móviles y el menú convencional.</small>
-  <br><br>
-  
-  <div class="title-bar" data-responsive-toggle="menu-responsivo" data-hide-for="medium">
-    <button class="menu-icon" type="button" data-toggle="menu-responsivo"></button>
-    <div class="title-bar-title"> Menú</div>
-  </div>
-
-  <div id="menu-responsivo" class="top-bar row">
-    <div class="top-bar-left">
-      <ul class="dropdown menu" data-dropdown-menu>
-        <li class="menu-text">Logotipo</li>
-        <li>
-          <a href="javascript:void(0);">Uno</a>
-          <ul class="menu vertical">
-            <li><a href="javascript:void(0);">Alfa</a></li>
-            <li><a href="javascript:void(0);">Beta</a></li>
-            <li><a href="javascript:void(0);">Gamma</a></li>
-          </ul>
-        </li>
-        <li><a href="javascript:void(0);">Dos</a></li>
-        <li><a href="javascript:void(0);">Tres</a></li>
-      </ul>
-    </div>
-    <div class="top-bar-right">
-      <ul class="menu">
-        <li><input type="search" placeholder="Buscar"></li>
-        <li><a type="button"><i class="fa fa-search"></i></a></li>
-      </ul>
-    </div>
-  </div>  
+  <small>Utiliza las clases de visibilidad de .hide para indicar qué elementos deberían desaparecer en función del tamaño de pantalla del dispositivo. </small>
+  <br><br>  
+  <p class="hide-for-medium">Ejemplo 1: Tu <em>no estás</em> en una pantalla mediana.</p>
+  <p class="hide-for-large">Ejemplo 2: Tu <em>no estás</em> en una pantalla grande.</p>
+  <p class="show-for-large">Si estás leyendo esto, estás en una pantalla grande o extra grande y no puedes ver ninguno de los ejemplos anteriores.</p>
   <br>
   <hr>
 
