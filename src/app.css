@@ -12,7 +12,7 @@
 /******************************
 ESTILOS PROPIOS DEL TEMA
 *******************************/
-#acordeon {
+#acordeon, .acordeon {
 	& .accordion-title::before {
 		position: absolute;
 		top: 50%;
@@ -20,10 +20,20 @@ ESTILOS PROPIOS DEL TEMA
 		margin-top: -1.5rem;
 		content: '\f065';
 		font-family: 'FontAwesome';
-		font-size: 3rem;
+		font-size: 2.5rem;
 	}
 	& .is-active > .accordion-title::before {
 		content: '\f066';
+	}
+	& .accordion-content {
+		padding: 1rem;
+		border: none;
+		border-bottom: 0;
+		background-color: transparent;
+		color: #333;
+	}
+	.accordion {
+		background: color(white a(50%));
 	}
 }
 #barra {
@@ -56,6 +66,10 @@ ESTILOS PROPIOS DEL TEMA
 }
 #introduccion {
 	background-image: url("../img/fantasy-1920.jpg");
+	background-size: cover;
+	background-position: fixed;
+
+	padding: 7rem 0;
 }
 #grilla{
 
@@ -116,6 +130,7 @@ ESTILOS PROPIOS DEL TEMA
 		font-size: responsive 1.4rem 1.6rem;
 	}
 }
+
 #social-container {
 	background-color: #1c3643;
 	padding: 0.5rem;
@@ -124,6 +139,7 @@ ESTILOS PROPIOS DEL TEMA
 			color: var(--colorSec);
 	}
 }
+
 #tarjetas {
 
 	& .card {
