@@ -44,7 +44,7 @@ ESTILOS PROPIOS DEL TEMA
 		color: #fefefe;
 	}
 }
-#acordeon,#barra,#botones,#desplegable,#flotar,#formularios,#grilla,#llamadas,#medios,#menu,#offcanvas,#slider,#reveal,#sticky,#tabs,#table,#tipografia,#visibilidad {
+#acordeon,#barra,#botones,#desplegable,#flotar,#formularios,#grilla,#llamadas,#medios,#menu,#offcanvas,#slider,#suave,#reveal,#sticky,#tabs,#table,#tipografia,#visibilidad {
 	& pre {
 		background: lightcyan;
 	  	border: 1px solid cadetblue;
@@ -53,6 +53,9 @@ ESTILOS PROPIOS DEL TEMA
 	& small {
 		color: var(--colorGrisOscuro);
 	}
+}
+#introduccion {
+	background-image: url("../img/fantasy-1920.jpg");
 }
 #grilla{
 
@@ -89,11 +92,11 @@ ESTILOS PROPIOS DEL TEMA
 	}
 }
 #menu-container {
-	background-color: #48a19d;
+	background-color: #000144;
 
 	& .is-dropdown-submenu > li {
 	width: 100%;
-	background: #48a19d;
+	background: #000144;
 }
 	& li {
 

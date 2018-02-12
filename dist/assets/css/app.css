@@ -251,15 +251,18 @@ ESTILOS PROPIOS DEL TEMA
 		background: #4682B4;
 		color: #fefefe;
 	}
-#acordeon pre, #barra pre, #botones pre, #desplegable pre, #flotar pre, #formularios pre, #grilla pre, #llamadas pre, #medios pre, #menu pre, #offcanvas pre, #slider pre, #reveal pre, #sticky pre, #tabs pre, #table pre, #tipografia pre, #visibilidad pre {
+#acordeon pre, #barra pre, #botones pre, #desplegable pre, #flotar pre, #formularios pre, #grilla pre, #llamadas pre, #medios pre, #menu pre, #offcanvas pre, #slider pre, #suave pre, #reveal pre, #sticky pre, #tabs pre, #table pre, #tipografia pre, #visibilidad pre {
 		background: lightcyan;
 	  	border: 1px solid cadetblue;
 	  	padding: 10px;
 	  	padding: 1rem;
 	}
-#acordeon small, #barra small, #botones small, #desplegable small, #flotar small, #formularios small, #grilla small, #llamadas small, #medios small, #menu small, #offcanvas small, #slider small, #reveal small, #sticky small, #tabs small, #table small, #tipografia small, #visibilidad small {
+#acordeon small, #barra small, #botones small, #desplegable small, #flotar small, #formularios small, #grilla small, #llamadas small, #medios small, #menu small, #offcanvas small, #slider small, #suave small, #reveal small, #sticky small, #tabs small, #table small, #tipografia small, #visibilidad small {
 		color: #444;
 	}
+#introduccion {
+	background-image: url("../img/fantasy-1920.jpg");
+}
 #grilla .row {
 	  background: lightcyan;
 	  border: 1px solid cadetblue;
@@ -287,11 +290,11 @@ ESTILOS PROPIOS DEL TEMA
 		margin-top: -3px;
 	}
 #menu-container {
-	background-color: #48a19d;
+	background-color: #000144;
 }
 #menu-container .is-dropdown-submenu > li {
 	width: 100%;
-	background: #48a19d;
+	background: #000144;
 }
 #menu-container li a {
 			color: white;
