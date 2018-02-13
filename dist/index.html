@@ -50,6 +50,9 @@
       <li><a href="#" title="General">General</a>
         <ul class="menu">
           <li><a href="grilla.html" title="Grilla">Grilla Flex</a></li>
+          <li><a href="formularios.html" title="Formularios">Formularios</a></li>
+          <li><a href="visibilidad.html" title="Clases de visibilidad">Clases de Visibilidad</a></li>
+          <li><a href="flotar.html" title="Clases de visibilidad">Clases de Flotación</a></li>
         </ul>
       </li>
 
@@ -96,8 +99,15 @@
         </ul>
       </li>
 
+      <li><a href="#" title="Medios">Medios</a>
+        <ul class="menu">
+          <li><a href="badge.html" title="Insignia / Badge">Insignia / Badge</a></li>
+        </ul>
+      </li>
+
       <li><a href="#" title="Complementos / Plugins">Complementos / Plugins</a>
         <ul class="menu">
+          <li><a href="suave.html" title="Desplazamiento Suave">Desplazamiento Suave</a></li>
           <li><a href="sticky.html" title="Sticky / Pegajoso">Sticky / Pegajoso</a></li>
         </ul>
       </li>
@@ -106,13 +116,83 @@
 </section>    
     <!-- /.MENU -->
 
-    <div class="contenedor">
-      <p>Una muestra de Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <section id="introduccion">
+      <div class="contenedor">
+        <div class="row">
+          <div class="medium-6 column">
+            <div class="semi p-2">
+              <p class="lead">La idea de este material es servir de apoyo para que aprendamos a usar uno de los frameworks (entornos o marcos de trabajo) para el diseño frontend (interfaz) más utilizados en la industria actualmente, como lo es <b>Foundation</b>.</p>
+            </div>
+            <br>
+            <div class="acordeon">
+              <ul class="accordion" data-accordion data-allow-all-closed="true">
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title"><h5>Frameworks frontend</h5></a>
+
+                  <!-- Contenido del panel del acordeón. -->
+                  <div class="accordion-content" data-tab-content>
+                    <p>Un framework, es un entorno o marco de trabajo, es decir un conjunto estandarizado de conceptos, prácticas y criterios para enfocar un tipo de problemática particular que sirve como referencia, para enfrentar y resolver nuevos problemas de índole similar.</p>
+                    <p>Hay una creciente variedad de frameworks está disponible para diseñadores y desarrolladores front-end o de interfaces, listos para tomar parte en la construcción de prototipos y la implementación. Con tantas opciones, podrías simplemente escoger el más popular lo que que podría no ser lo mejor para tu proyecto particular.</p>
+                    <p>Como ya dijimos este material mostrará uno de los más utilizados actualmente.</p>
+                  </div>
+                </li>
+
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title"><h5>Origen de Foundation</h5></a>
+
+                  <!-- Contenido del panel del acordeón. -->
+                  <div class="accordion-content" data-tab-content>
+                    <p>Surge como un proyecto de ZURB para desarrollar código de interfaz de usuario más rápido y mejor. En octubre 2011, ZURB liberó Foundation 2.0 como código abierto bajo licencia de MIT License.1​ En junio 2012 ZURB liberó una actualización importante, Foundation 3.0.2​ En febrero 2013 ZURB liberó otra actualización importante, Foundation 4.0.3​ En noviembre 2013 ZURB liberó otra actualización importante, Foundation 5.0. El equipo está trabajando en la próxima versión de Foundation para Sitios la cuál tendría que ser liberado en la primavera del 2015. Foundation para Email fue liberado en septiembre del 2013. Foundation para Aplicaciones fue liberado en diciembre del 2014.</p>
+                    <p>Foundation fue diseñado para y probado en numerosos dispositivos y navegadores. Es el primer framework mobile first responsive construido con Sass/SCSS dando buenas prácticas a diseñadores para el desarrollo rápido.</p>
+                  </div>
+                </li>
+              </ul>              
+            </div><!-- /. acordeon -->
+          </div><!-- /.medium-6 column -->
+
+          <div class="medium-6 column">
+            <div class="semi p-2">              
+              <h2>Qué es Foundation</h2>
+              <p>Foundation es un framework de interfaz responsiva.</p>
+              <p>Proporciona una cuadrícula responsiva e incluye componentes de interfaz de usuario HTML y CSS, plantillas, y fragmentos de código, incluyendo tipografía, formularios, botones, barras de navegación y otros componentes de interfaz usuario, así como extensiones de Javascript opcionales.</p>
+              <p class="lead">Foundation está mantenida por <a href="https://foundation.zurb.com/" target="_blank">Zurb.com</a> y es un proyecto de código abierto.</p>
+            </div>
+          </div><!-- /.medium-6 column -->          
+        </div><!-- /. row -->
+
+        <div class="row">
+          <div class="small-12 column">
+            <div class="acordeon">
+              <ul class="accordion" data-accordion data-allow-all-closed="true">
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title"><h5>Uso de Foundation</h5></a>
+
+                  <!-- Contenido del panel del acordeón. -->
+                  <div class="accordion-content" data-tab-content>
+                    <p>Hay tres niveles de integración para Foundation: CSS, SASS, y Ruby on Rails con la Gema de Rails de Foundation.</p>
+                    <b>CSS</b>
+                    <p>Para usar Foundation CSS, los paquetes por defecto o de CSS personalizado se pueden descargar desde la página de descarga e instalados en las carpetas del servidor web apropiados. Foundation está integrado entonces en el marco de página HTML</p>
+                    <b>SASS</b>
+                    <p>El instalador de Foundation SASS usas Ruby, NodeJS, y Git para instalar los fuentes de Fundation. Foundation entonces proporciona una CLI para modificar y compilar el código fuente a CSS para usarlo en el marco de página de HTML.</p>
+                    <b>Gema de Rails para Foundation</b>
+                    <p>La gema de Rails para Foundation puede ser instalada agregando "gem 'fundation-rails'" a Rails Gemfile.</p>
+                  </div>
+                </li>
+              </ul>              
+            </div><!-- /. acordeon -->
+          </div><!-- /.medium-6 column -->    
+        </div><!-- /. row -->
+      </div>      
+    </section>
+
+    <div class="alert callout" data-closable>
+      <div class="contenedor">
+        <small><b>Muy importante:</b> El material contenido en este sitio es producto de anotaciones y traducciones personales del autor, y no pretende en nigún momento sustituir la documentación oficial de Foundation, la cual recomienda ampliamente si se desea comprender mejor esta interesante herramienta de trabajo.</small>
+        <p><a href="https://foundation.zurb.com/sites/docs/" target="_blank"> Ver la documetación oficial</a></p>
+      </div>
+      <button class="close-button" aria-label="Cerrar" type="button" data-close>
+        <span aria-hidden="true">x</span>
+      </button>
     </div>
 
 
