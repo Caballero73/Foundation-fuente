@@ -87,6 +87,7 @@
       <li><a href="#" title="Medios">Medios</a>
         <ul class="menu">
           <li><a href="badge.html" title="Insignia / Badge">Insignia / Badge</a></li>
+          <li><a href="orbit.html" title="Orbit / Carrusel">Orbit / Carrusel</a></li>
         </ul>
       </li>
 
@@ -123,7 +124,15 @@
   </pre>
   <br>
   <span class="badge">1</span>  
-  <br>
+  <br><br>
+  <pre>
+  &lt;span class="lead" aria-describedby="messageCount">Mensajes no leidos&lt;/span>
+  &lt;span class="badge" id="messageCount">3&lt;/span>
+  </pre>
+  <small>Una insignia generalmente describirá otro elemento en la página. Para unir los dos elementos, otorgue a la insignia una ID única y haga referencia a esa ID en un atributo aria-describedby en el elemento principal.</small>
+  <br><br>
+  <span class="lead" aria-describedby="messageCount">Mensajes no leidos</span>
+  <span class="badge" id="messageCount">3</span>
   <hr>
 
   <center id="colores" class="mt-3"><h3>Colores</h3></center>
