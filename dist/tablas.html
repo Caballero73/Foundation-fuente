@@ -8,6 +8,27 @@
     <link rel="stylesheet" href="assets/css/font-awesome.css">
     <link rel="stylesheet" href="assets/css/foundation.css">
     <link rel="stylesheet" href="assets/css/app.css">
+    <style type="text/css">
+      table tbody tr {
+        border-bottom: 0;
+        background-color: #ddd;
+      }
+      table tbody tr:nth-child(2n) {
+        border-bottom: 0;
+        background-color: #ccc;
+      }
+      table.unstriped tbody tr:nth-child(2n) {
+        border-bottom: 0;
+        background-color: transparent;
+      }
+      table thead tr, table tfoot tr {
+        background: #bbb;
+      }
+      table.unstriped thead tr, table tfoot tr {
+        background: transparent;
+      }
+    </style>
+
   </head>
   <body>
     <!-- /////// Botón para ir al principio -->
@@ -224,7 +245,7 @@
   <br>
   <hr>
 
-  <center id="cebrado"><h3>Cebrado</h3></center>
+  <center id="cebrado"><h3>Quitar Cebrado</h3></center>
   <pre>
   &lt;table class="unstriped"&gt;
     &lt;thead&gt;
