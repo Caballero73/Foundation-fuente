@@ -4,10 +4,13 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú Despleglable</title>
+    <title>Insignia / Badge</title>
     <link rel="stylesheet" href="assets/css/font-awesome.css">
     <link rel="stylesheet" href="assets/css/foundation.css">
     <link rel="stylesheet" href="assets/css/app.css">
+    <style type="text/css">
+      .badge {font-size: 2rem}
+    </style>
   </head>
   <body>
     <!-- /////// Botón para ir al principio -->
@@ -104,71 +107,66 @@
       <div id="menu-offcanvas" class="off-canvas position-left" data-off-canvas data-transition="overlap">
       <ul class="vertical menu mt-3" data-smooth-scroll>
         
-        <li><a href="#horizontal" title="Horizontal">Horizontal</a></li>
-        <li><a href="#vertical" title="Vertical">Vertical</a></li>        
+        <li><a href="#basico" title="Básico">Básico</a></li>
+        <li><a href="#colores" title="Colores">Colores</a></li>
+        <li><a href="#iconos" title="Iconos">Iconos</a></li>
+
       </ul>
       </div><!-- /.menu-offcanvas -->
     </div><!-- /.off-canvas-wrapper -->
     <!-- */Menú Off-Canvas -->
 
-<div id="menu" class="off-canvas-content contenedor mt-3" data-off-canvas-content>
+<div id="insignia" class="off-canvas-content contenedor" data-off-canvas-content>
 
-  <center id="horizontal"><h3>Horizontal</h3></center>
+  <center id="basico" class="mt-3"><h3>Básico</h3></center>
   <pre>
-  &lt;ul class="dropdown menu" data-dropdown-menu&gt;
-    &lt;li&gt;&lt;a href="#"&gt;Uno&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#"&gt;Dos&lt;/a&gt;&lt;/li&gt;
-      &lt;ul class="menu"&gt;
-        &lt;li&gt;&lt;a href="#"&gt;Alfa&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;Beta&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;li&gt;&lt;a href="#"&gt;Tres&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#"&gt;Cuatro&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
+  &lt;span class="badge">1&lt;/span>
   </pre>
   <br>
-  <ul class="dropdown menu" data-dropdown-menu>
-    <li><a href="javascript:void(0);">Uno</a></li>
-    <li><a href="javascript:void(0);">Dos</a>
-      <ul class="menu">
-        <li><a href="javascript:void(0);">Alfa</a></li>
-        <li><a href="javascript:void(0);">Beta</a></li>
-      </ul>
-    </li>
-    <li><a href="javascript:void(0);">Tres</a></li>
-    <li><a href="javascript:void(0);">Cuatro</a></li>
-  </ul>
+  <span class="badge">1</span>  
+  <br><br>
+  <pre>
+  &lt;span class="lead" aria-describedby="messageCount">Mensajes no leidos&lt;/span>
+  &lt;span class="badge" id="messageCount">3&lt;/span>
+  </pre>
+  <small>Una insignia generalmente describirá otro elemento en la página. Para unir los dos elementos, otorgue a la insignia una ID única y haga referencia a esa ID en un atributo aria-describedby en el elemento principal.</small>
+  <br><br>
+  <span class="lead" aria-describedby="messageCount">Mensajes no leidos</span>
+  <span class="badge" id="messageCount">3</span>
+  <hr>
+
+  <center id="colores" class="mt-3"><h3>Colores</h3></center>
+  <pre>
+  &lt;span class="badge primary">1&lt;/span>
+  &lt;span class="badge secondary">2&lt;/span>
+  &lt;span class="badge success">3&lt;/span>
+  &lt;span class="badge alert">A&lt;/span>
+  &lt;span class="badge warning">B&lt;/span>
+  </pre>
+  <br>
+  <span class="badge primary">1</span>
+  <span class="badge secondary">2</span>
+  <span class="badge success">3</span>
+  <span class="badge alert">A</span>
+  <span class="badge warning">B</span>
   <br>
   <hr>
 
-  <center id="vertical"><h3>Vertical</h3></center>
+  <center id="iconos" class="mt-3"><h3>Iconos</h3></center>
   <pre>
-  &lt;ul class="dropdown vertical menu" data-dropdown-menu style="max-width: 200px;"&gt;
-    &lt;li&gt;&lt;a href="#"&gt;Uno&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#"&gt;Dos&lt;/a&gt;&lt;/li&gt;
-      &lt;ul class="menu"&gt;
-        &lt;li&gt;&lt;a href="#"&gt;Alfa&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;Beta&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;li&gt;&lt;a href="#"&gt;Tres&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#"&gt;Cuatro&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
+  &lt;span class="badge secondary">&lt;i class="fa fa-code">&lt;/i>&lt;/span>
+  &lt;span class="badge success">&lt;i class="fa fa-bug">&lt;/i>&lt;/span>
+  &lt;span class="badge alert">&lt;i class="fa fa-fa">&lt;/i>&lt;/span>
   </pre>
   <br>
-  <ul class="dropdown vertical menu" data-dropdown-menu style="max-width: 200px;">
-    <li><a href="javascript:void(0);">Uno</a></li>
-    <li><a href="javascript:void(0);">Dos</a>
-      <ul class="menu">
-        <li><a href="javascript:void(0);">Alfa</a></li>
-        <li><a href="javascript:void(0);">Beta</a></li>
-      </ul>
-    </li>
-    <li><a href="javascript:void(0);">Tres</a></li>
-    <li><a href="javascript:void(0);">Cuatro</a></li>
-  </ul>
+  <span class="badge secondary"><i class="fa fa-code"></i></span>
+  <span class="badge success"><i class="fa fa-bug"></i></span>
+  <span class="badge alert"><i class="fa fa-fa"></i></span>
   <br>
   <hr>
-</div><!-- /.id menu -->
+    
+
+</div><!-- /.id insignia -->
 
     <!--*****************
      CORE JS 
