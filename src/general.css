@@ -195,6 +195,18 @@ cite {
   background-color: color(white a(50%));
 }
 
+.tooltip {
+  position: absolute;
+  top: calc(100% + 0.6495rem);
+  z-index: 1200;
+  max-width: 20rem;
+  padding: 0.75rem;
+  border-radius: 3px;
+  background-color: #00365d;
+  font-size: 80%;
+  color: #fefefe;
+}
+
 .white {color: white !important}
 
 /* /.ESTILOS GENERALES */

@@ -54,8 +54,8 @@ ESTILOS PROPIOS DEL TEMA
 		color: #fefefe;
 	}
 }
-#acordeon,#barra,#botones,#desplegable,#flotar,#formularios,#grilla,#incrustado,#insignia,#llamadas,
-#medios,#menu,#offcanvas,#slider,#suave,#reveal,#sticky,#tabs,#table,#tipografia,#visibilidad {
+#acordeon,#barra,#botones,#desplegable,#flotar,#formularios,#grilla,#incrustado,#insignia,#llamadas,#medios,#menu,#miniatura,
+#offcanvas,#slider,#suave,#reveal,#sticky,#tabs,#table,#tooltips,#tipografia,#visibilidad {
 	& pre {
 		background: lightcyan;
 	  	border: 1px solid cadetblue;
