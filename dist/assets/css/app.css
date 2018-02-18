@@ -286,13 +286,13 @@ ESTILOS PROPIOS DEL TEMA
 		background: #00557F;
 		color: #fefefe;
 	}
-#acordeon pre, #barra pre, #botones pre, #desplegable pre, #flotar pre, #formularios pre, #grilla pre, #incrustado pre, #insignia pre, #llamadas pre, #medios pre, #menu pre, #miniatura pre, #offcanvas pre, #slider pre, #suave pre, #reveal pre, #sticky pre, #tabs pre, #table pre, #tooltips pre, #tipografia pre, #visibilidad pre {
+#acordeon pre, #barra pre, #botones pre, #desplegable pre, #ecualizador pre, #flotar pre, #formularios pre, #grilla pre, #incrustado pre, #insignia pre, #llamadas pre, #medios pre, #menu pre, #miniatura pre, #offcanvas pre, #slider pre, #suave pre, #reveal pre, #sticky pre, #tabs pre, #table pre, #tooltips pre, #tipografia pre, #visibilidad pre {
 		background: lightcyan;
 	  	border: 1px solid cadetblue;
 	  	padding: 10px;
 	  	padding: 1rem;
 	}
-#acordeon small, #barra small, #botones small, #desplegable small, #flotar small, #formularios small, #grilla small, #incrustado small, #insignia small, #llamadas small, #medios small, #menu small, #miniatura small, #offcanvas small, #slider small, #suave small, #reveal small, #sticky small, #tabs small, #table small, #tooltips small, #tipografia small, #visibilidad small {
+#acordeon small, #barra small, #botones small, #desplegable small, #ecualizador small, #flotar small, #formularios small, #grilla small, #incrustado small, #insignia small, #llamadas small, #medios small, #menu small, #miniatura small, #offcanvas small, #slider small, #suave small, #reveal small, #sticky small, #tabs small, #table small, #tooltips small, #tipografia small, #visibilidad small {
 		color: #444;
 	}
 #introduccion {
