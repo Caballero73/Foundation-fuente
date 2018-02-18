@@ -1,0 +1,154 @@
+<!doctype html>
+<html class="no-js" lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Barra de progreso</title>
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <style type="text/css">
+      .progress, .progress-meter {
+        height: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- /////// Botón para ir al principio -->
+    <a class="hide-for-small-only" href="#inicio">
+      <i class="fa fa-chevron-circle-up fa-2x ir-arriba"></i>
+    </a>
+    <!-- */Botón para ir al principio -->
+
+    <!-- MENU -->
+    @include('./menu_ppal.html')    
+    <!-- /.MENU -->
+
+    <!-- /////// Botón para Menú Off-Canvas -->
+    <a class="hidden-xs hidden-sm" data-toggle="menu-offcanvas">
+      <i class="fa fa-bars fa-2x menu-btn"></i>
+    </a>
+    <!-- */Botón para Menú Off-Canvas -->
+
+    <!-- /////// Menú Off-Canvas -->
+    <div class="off-canvas-wrapper">
+      <div id="menu-offcanvas" class="off-canvas position-left" data-off-canvas data-transition="overlap">
+      <ul class="vertical menu mt-3" data-smooth-scroll>
+        
+        <li><a href="#basico" title="Barra Básica">Barra Básica</a></li>
+        <li><a href="#color" title="Colores">Colores</a></li>
+        <li><a href="#texto" title="Con texto">Con texto</a></li>
+        <li><a href="#progress" title="Barra de progreso nativa">Barra de progreso nativa</a></li>
+        <li><a href="#meter" title="Barra de medición nativa">Barra de medición nativa</a></li>
+      </ul>
+      </div><!-- /.menu-offcanvas -->
+    </div><!-- /.off-canvas-wrapper -->
+    <!-- */Menú Off-Canvas -->
+
+<div id="barra" class="off-canvas-content contenedor mt-3" data-off-canvas-content>
+
+  <center id="basico"><h3>Barra Básica</h3></center>
+  <pre>
+  &lt;div class="progress" role="progressbar" tabindex="0" aria-valuenow="50"
+  aria-valuemin="0" aria-valuetext="50 percent" aria-valuemax="100">
+    &lt;div class="progress-meter" style="width: 50%">&lt;/div>
+  &lt;/div>
+  </pre>
+  <br>
+  <div class="progress" role="progressbar" tabindex="0" aria-valuenow="50" aria-valuemin="0" aria-valuetext="50 percent" aria-valuemax="100">
+    <div class="progress-meter" style="width: 50%"></div>
+  </div>
+  <br>
+  <hr>
+
+  <center id="color"><h3>Colores</h3></center>
+  <pre>
+  &lt;div class="secondary progress" role="progressbar" tabindex="0" aria-valuenow="25" aria-valuemin="0" aria-valuetext="25 percent" aria-valuemax="100">
+    &lt;div class="progress-meter" style="width: 25%">&lt;/div>
+  &lt;/div>
+
+  &lt;div class="success progress">
+    &lt;div class="progress-meter" style="width: 50%">&lt;/div>
+  &lt;/div>
+
+  &lt;div class="warning progress">
+    &lt;div class="progress-meter" style="width: 50%">&lt;/div>
+  &lt;/div>
+
+  &lt;div class="alert progress">
+    &lt;div class="progress-meter" style="width: 75%">&lt;/div>
+  &lt;/div>
+  </pre>
+  <br>
+  <div class="secondary progress" role="progressbar" tabindex="0" aria-valuenow="25" aria-valuemin="0" aria-valuetext="25 percent" aria-valuemax="100">
+    <div class="progress-meter" style="width: 25%"></div>
+  </div>
+
+  <div class="success progress">
+    <div class="progress-meter" style="width: 50%"></div>
+  </div>
+
+  <div class="warning progress">
+    <div class="progress-meter" style="width: 50%"></div>
+  </div>
+
+  <div class="alert progress">
+    <div class="progress-meter" style="width: 75%"></div>
+  </div>
+  <br>
+  <hr>
+
+  <center id="texto"><h3>Con texto</h3></center>
+  <pre>
+  &lt;div class="progress" role="progressbar" tabindex="0" aria-valuenow="20" aria-valuemin="0" aria-valuetext="25 percent" aria-valuemax="100">
+    &lt;span class="progress-meter" style="width: 25%">
+      &lt;p class="progress-meter-text">25%&lt;/p>
+    &lt;/span>
+  &lt;/div>
+  </pre>
+  <br>
+  <div class="progress" role="progressbar" tabindex="0" aria-valuenow="20" aria-valuemin="0" aria-valuetext="25 percent" aria-valuemax="100">
+    <span class="progress-meter" style="width: 25%">
+      <p class="progress-meter-text">25%</p>
+    </span>
+  </div>
+  <br>
+  <hr>
+
+  <center id="progress"><h3>Barra de progreso nativa</h3></center>
+  <pre>
+  &lt;progress max="100" value="75">&lt;/progress>
+  </pre>
+  <br>
+  <progress max="100" value="75" style="width: 100%"></progress>
+  <br>
+  <hr>
+
+  <center id="meter"><h3>Barra de medición nativa</h3></center>
+  <pre>
+  &lt;meter value="30" min="0" low="33" high="66" optimum="100" max="100">&lt;/meter>&lt;br>
+  &lt;meter value="50" min="0" low="33" high="66" optimum="100" max="100">&lt;/meter>&lt;br>
+  &lt;meter value="100" min="0" low="33" high="66" optimum="100" max="100">&lt;/meter>&lt;br>
+  </pre>
+  <br>
+  <meter value="30" min="0" low="33" high="66" optimum="100" max="100" style="width: 100%"></meter><br>
+  <meter value="50" min="0" low="33" high="66" optimum="100" max="100" style="width: 100%"></meter><br>
+  <meter value="100" min="0" low="33" high="66" optimum="100" max="100" style="width: 100%"></meter><br>
+  <br>
+  <hr>
+
+
+
+</div><!-- /.id barra -->
+
+    <!--*****************
+     CORE JS 
+    ******************-->
+    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="assets/js/vendor/what-input.js"></script>
+    <script src="assets/js/vendor/foundation.js"></script>
+    <script src="assets/js/app.js"></script>
+
+  </body>
+</html>

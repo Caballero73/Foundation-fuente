@@ -1,0 +1,230 @@
+<!doctype html>
+<html class="no-js" lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecualizador / Equalizer</title>
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+  </head>
+  <body>
+    <!-- //////// Botón para ir al principio -->
+    <a class="hide-for-small-only" href="#inicio">
+      <i class="fa fa-chevron-circle-up fa-2x ir-arriba"></i>
+    </a>
+    <!-- */Botón para ir al principio -->
+
+    <!-- /////// Botón para Menú Off-Canvas -->
+    <a class="hidden-xs hidden-sm" data-toggle="menu-offcanvas">
+      <i class="fa fa-bars fa-2x menu-btn"></i>
+    </a>
+    <!-- */Botón para ir al principio -->
+
+    <!-- MENU -->
+    @include('./menu_ppal.html')    
+    <!-- /.MENU -->
+
+    <!-- /////// Botón para Menú Off-Canvas -->
+    <div class="off-canvas-wrapper">
+      <div id="menu-offcanvas" class="off-canvas position-left" data-off-canvas data-transition="overlap">
+      <ul class="vertical menu mt-3" data-smooth-scroll>
+        
+        <li><a href="#basico" title="Básico">Básico</a></li>
+        <li><a href="#anidado" title="Anidando">Anidando</a></li>
+        <li><a href="#fila" title="Igualar por fila">Igualar por fila</a></li>
+
+      </ul>
+      </div><!-- /.menu-offcanvas -->
+    </div><!-- /.off-canvas-wrapper -->
+    <!-- */Menú Off-Canvas -->
+
+<div id="ecualizador" class="off-canvas-content contenedor" data-off-canvas-content>
+
+  <center id="basico" class="mt-3"><h3>Básico</h3></center>
+  <pre>
+  &lt;div class="row" data-equalizer data-equalize-on="medium" id="test-eq">
+    &lt;div class="medium-4 columns">
+      &lt;div class="callout" data-equalizer-watch>
+        &lt;img src= "assets/img/avatar-1.jpg">
+      &lt;/div>
+    &lt;/div>
+    &lt;div class="medium-4 columns">
+      &lt;div class="callout" data-equalizer-watch>
+        &lt;p>Un psicólogo y matemático genial prevé el derrumbamiento del Imperio...&lt;/p>
+      &lt;/div>
+    &lt;/div>
+    &lt;div class="medium-4 columns">
+      &lt;div class="callout" data-equalizer-watch>
+        &lt;img src= "assets/img/avatar-2.jpg">
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+  </pre>
+  <small>Para configurar un grupo de ecualizador, necesita un contenedor, que obtiene el atributo data-equalizer , y luego una serie de elementos secundarios, que obtienen el atributo data-equalizer-watch . Todos los elementos secundarios se redimensionarán para tener la misma altura.</small>
+  <br><br>
+  <div class="row" data-equalizer data-equalize-on="medium" id="test-eq">
+    <div class="medium-4 columns">
+      <div class="callout text-center" data-equalizer-watch>
+        <img src= "assets/img/avatar-1.jpg">
+      </div>
+    </div>
+    <div class="medium-4 columns">
+      <div class="callout text-center" data-equalizer-watch>
+        <p>Un psicólogo y matemático genial prevé el derrumbamiento del Imperio...</p>
+      </div>
+    </div>
+    <div class="medium-4 columns">
+      <div class="callout text-center" data-equalizer-watch>
+        <img src= "assets/img/avatar-2.jpg">
+      </div>
+    </div>
+  </div>
+  <br>
+  <hr>
+
+  <center id="anidado" class="mt-3"><h3>Anidando</h3></center>
+  <pre>
+  &lt;div class="row" data-equalizer="foo">
+    &lt;div class="medium-4 columns">
+      &lt;div class="callout" data-equalizer-watch="foo" data- equalizer="bar"
+      data-equalize-on-stack="true">
+        &lt;h3>Panel Padre&lt;/h3>
+        &lt;div class="callout" data-equalizer-watch="bar">&lt;/div>
+        &lt;div class="callout" data-equalizer-watch="bar">&lt;/div>
+        &lt;div class="callout" data-equalizer-watch="bar">&lt;/div>
+      &lt;/div>
+    &lt;/div>
+    &lt;div class="medium-4 columns">
+      &lt;div class="callout panel" data-equalizer-watch="foo">&lt;/div>
+    &lt;/div>
+    &lt;div class="medium-4 columns">
+      &lt;div class="callout" data-equalizer-watch="foo">&lt;/div>
+    &lt;/div>
+  &lt;/div> 
+  </pre>
+  <small>Para usar un ecualizador dentro de otro, cada contenedor necesita una identificación única, asignada con el atributo <code>data-equalizer</code> y luego cada elemento de <code>data-equalizer-watch</code> debería tener un valor que coincida con su elemento primario.</small>
+  <br><br>
+  <div class="row" data-equalizer="foo">
+    <div class="medium-4 columns">
+      <div class="callout" data-equalizer-watch="foo" data-equalizer="bar" data-equalize-on-stack="true">
+        <h3>Panel Padre</h3>
+        <div class="callout" data-equalizer-watch="bar">Las tres llamadas en este panel se igualarán, incluso cuando estén apiladas, por que tiene data-equalize-on-stack="true".</div>
+        <div class="callout" data-equalizer-watch="bar"><h5>HARI SELDON</h5>
+        Nació el año 11988 de la Era Galáctica; falleció en 12069. Las anécdotas sobre su inteligencia son innumerables, y algunas contradictorias.</div>
+        <div class="callout" data-equalizer-watch="bar">TRÁNTOR: Al comienzo del decimotercer milenio, esta tendencia alcanzó su punto culminante.</div>
+      </div>
+    </div>
+    <div class="medium-4 columns">
+      <div class="callout panel" data-equalizer-watch="foo">
+        <p class="lead">Estos paneles se igualaran entre ellos con el más alto y sus contenidos se alinean arriba por defecto.</p>
+      </div>
+    </div>
+    <div class="medium-4 columns">
+      <div class="callout" data-equalizer-watch="foo">
+        <h3>TÉRMINUS</h3>
+        Su situación (consultar el mapa) era muy extraña para el papel que estaba llamado a desempeñar en la historia galáctica, pero, al mismo tiempo, tal como muchos escritores no se han cansado de repetir, inevitable. Localizado en el mismo borde de la espiral galáctica, un único planeta de un sol aislado, pobre en recursos y muy insignificante envalor económico, nunca fue colonizado durante los cinco siglos después de su descubrimiento, hasta el aterrizaje de los enciclopedistas.
+      </div>
+    </div>
+  </div> 
+  <br>
+  <hr>
+
+  <center id="fila" class="mt-3"><h3> Igualar por fila </h3></center>
+  <pre>
+  &lt;div class="row small-up-1 medium-up-2 large-up-4" data-equalizer data-equalize-by-row="true">
+
+    &lt;div class="column">
+      &lt;div class="callout text-center" data-equalizer-watch>
+        &lt;img src="assets/img/180x180.png" class="thumbnail" alt="...">
+        &lt;p>Se prevé el derrumbamiento del Imperio.&lt;/p>     
+      &lt;/div>
+    &lt;/div>
+    . . . / / . . .
+
+    &lt;div class="column">
+      &lt;div class="callout primary" data-equalizer-watch>
+        "La violencia es el último recurso del incompetente".
+        &lt;cite>Salvor Hardin&lt;/cite>    
+      &lt;/div>
+    &lt;/div>
+    . . . / / . . .
+
+    &lt;/div>    
+  &lt;/div>
+  </pre>
+  <small>El ecualizador divide los elementos del <code>data-equalizer-watch</code> en grupos verificando sus desplazamientos verticales y agrupando los que tienen el mismo desplazamiento en una "fila".<br><br> 
+  Tenga en cuenta en qué configura el <code>data-equalizer-watch</code> , si la posición superior es diferente, el ecualizador lo interpretará como una nueva "fila" y ecualizará en consecuencia. </small>
+  <br><br>
+  <div class="row small-up-1 medium-up-2 large-up-4" data-equalizer data-equalize-by-row="true">
+
+    <div class="column">
+      <div class="callout text-center" data-equalizer-watch>
+        <img src="assets/img/180x180.png" class="thumbnail" alt="">
+        <p>Se prevé el derrumbamiento del Imperio.</p>     
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="callout secondary" data-equalizer-watch>
+        <h5>HARI SELDON</h5>
+        Nació el año 11988 de la Era Galáctica; falleció en 12069. Las anécdotas sobre su inteligencia son innumerables, y algunas contradictorias.   
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="callout text-center" data-equalizer-watch>
+        <img src="assets/img/180x200.png" class="thumbnail" alt="">
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="callout primary" data-equalizer-watch>
+        <h5>TRÁNTOR</h5>
+        Al comienzo del decimotercer milenio, esta tendencia alcanzó su punto culminante. 
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="callout primary" data-equalizer-watch>
+        "La violencia es el último recurso del incompetente".
+        <cite>Salvor Hardin</cite>    
+      </div>
+    </div>
+    <div class="column">
+      <div class="callout alert" data-equalizer-watch>
+        "Vale la pena ser obvio, especialmente si eres famoso por tu sutileza."
+        <cite>Salvor Hardin</cite>    
+      </div>
+    </div>
+    <div class="column">
+      <div class="callout success" data-equalizer-watch>
+        "Para triunfar, el solo planteamiento es insuficiente".
+        <cite>Salvor Hardin</cite>    
+      </div>
+    </div>
+    <div class="column">
+      <div class="callout secondary" data-equalizer-watch>
+        "Nunca permitas que el sentido de la moral te impida hacer lo que está bien".
+        <cite>Salvor Hardin</cite>    
+      </div>
+    </div>
+    
+  </div>
+  <br>
+  <hr>
+    
+
+</div><!-- /.id ecualizador -->
+
+    <!--*****************
+     CORE JS 
+    ******************-->
+    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="assets/js/vendor/what-input.js"></script>
+    <script src="assets/js/vendor/foundation.js"></script>
+    <script src="assets/js/app.js"></script>
+
+  </body>
+</html>

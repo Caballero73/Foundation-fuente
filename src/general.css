@@ -12,7 +12,7 @@ body {
 	font-family: var(--fontTexto);
 }
 .row {
-  max-width: 85rem;
+  max-width: 100%;
 }
 a {
   cursor: pointer;
@@ -69,9 +69,21 @@ cite {
   font-size: responsive 1rem 1.5rem;
 }
 .contenedor {
-  max-width: 90rem !important;
+  max-width: 65vw !important;
   margin-left: auto;
   margin-right: auto;
+
+  @media (--laptop-x) {max-width: 80vw !important;}
+
+  @media (--laptop-s) {max-width: 85vw !important;}
+
+  @media (--tablet-h) {max-width: 85vw !important;}
+
+  @media (--tablet-v) {max-width: 87vw !important;}
+
+  @media (--mobile-x) {max-width: 90vw !important;}
+
+  @media (--mobile-s) {max-width: 90vw !important;}
 }
 .dropdown.menu > li.is-dropdown-submenu-parent > a::after {
   right: 0px;
@@ -176,11 +188,23 @@ cite {
 
 .off-canvas.is-transition-overlap.is-open {
   box-shadow: 0 0 10px rgba(10, 10, 10, 0.7);
-  background: darkgray;
+  background: var(--colorGrisClaro);
 }
 
 .semi {
   background-color: color(white a(50%));
+}
+
+.tooltip {
+  position: absolute;
+  top: calc(100% + 0.6495rem);
+  z-index: 1200;
+  max-width: 20rem;
+  padding: 0.75rem;
+  border-radius: 3px;
+  background-color: #00365d;
+  font-size: 80%;
+  color: #fefefe;
 }
 
 .white {color: white !important}
