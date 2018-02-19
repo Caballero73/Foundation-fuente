@@ -8,6 +8,32 @@
     <link rel="stylesheet" href="assets/css/font-awesome.css">
     <link rel="stylesheet" href="assets/css/foundation.css">
     <link rel="stylesheet" href="assets/css/app.css">
+    <style type="text/css">
+      input::placeholder, textarea::placeholder {
+        color: #222;
+      }
+      [type="text"], [type="password"], [type="date"], [type="datetime"], [type="datetime-local"], [type="month"], [type="week"], [type="email"], [type="number"], [type="search"], [type="tel"], [type="time"], [type="url"], [type="color"], textarea {
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        height: 3.438rem;
+        margin: 0 0 1rem;
+        padding: 0.5rem;
+        border: 1px solid #cacaca;
+        border-radius: 3px;
+        background-color: #fefefe;
+        box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
+        font-family: inherit;
+        font-size: 1.6rem;
+        font-weight: normal;
+        line-height: 1.5;
+        color: #333;
+        transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      }
+    </style>
   </head>
   <body>
     <!-- //////// Botón para ir al principio -->
@@ -30,11 +56,11 @@
     <div class="off-canvas-wrapper">
       <div id="menu-offcanvas" class="off-canvas position-left" data-off-canvas data-transition="overlap">
       <ul class="vertical menu mt-3" data-smooth-scroll>
-        
-        <li><a href="#basico" title="Básico">Básico</a></li>
-        <li><a href="#anidado" title="Anidando">Anidando</a></li>
-        <li><a href="#fila" title="Igualar por fila">Igualar por fila</a></li>
-
+        <li><a href="#clase" title="Alternar una clase de CSS">Alternar una clase de CSS</a></li>
+        <li><a href="#animacion" title="Alternar con animación">Alternar con animación</a></li>
+        <li><a href="#cerrable" title="Marcar como cerrable">Marcar como cerrable</a></li>
+        <li><a href="#enfoque" title="Alternar con el enfoque">Alternar con el enfoque</a></li>
+        <li><a href="#multiple" title="Objetivos múltiples">Objetivos múltiples</a></li>
       </ul>
       </div><!-- /.menu-offcanvas -->
     </div><!-- /.off-canvas-wrapper -->
@@ -54,8 +80,8 @@
   &lt;/ul>
   </pre>
   <br>
-  <p>El valor de data-toggler es la clase que desea alternar. También dale al elemento una ID única para que pueda ser el objetivo.</p>
-  <p>Luego, agregue data-toggle a cualquier elemento, con el ID del objetivo como el valor del atributo. Ahora, cada vez que haga clic en este elemento, la clase activará y desactivará el objetivo.</p>
+  <p>El valor de <code>data-toggler</code> es la clase que desea alternar. También dale al elemento una ID única para que pueda ser el objetivo.</p>
+  <p>Luego, agregue <code>data-toggle</code> a cualquier elemento, con el ID del objetivo como el valor del atributo. Ahora, cada vez que haga clic en este elemento, la clase activará y desactivará el objetivo.</p>
   <br>
   <p><a class="button large" data-toggle="menuBar">Expandir!</a></p>
   <ul class="menu" id="menuBar" data-toggler=".expanded">
@@ -78,7 +104,7 @@
   </pre>
   <br>
   <p>En vez de alternar una clase puede alternar la visibilidad. Cuando se activa, el elemento entra o sale de la vista con una clase Motion UI.</p> 
-  <p>En lugar de data-toggler , agregue el atributo data-animate . El valor del atributo es el de la animación que desea, seguido de la animación de salida . </p>
+  <p>En lugar de <code>data-toggler</code> , agregue el atributo <code>data-animate</code> . El valor del atributo es el de la animación que desea, seguido de la animación de salida . </p>
   <br>
   <p><a class="button large" data-toggle="panel">Clic para Animar</a></p>
 
@@ -89,22 +115,94 @@
   <br>
   <hr>
 
-  <center id="animacion" class="mt-3"><h3>Alternar con animación</h3></center>
+  <center id="cerrable" class="mt-3"><h3>Marcar como cerrable</h3></center>
   <pre>
-  &lt;p>&lt;a class="button large" data-toggle="panel">Clic para Animar&lt;/a>&lt;/p>
-
-  &lt;div class="callout" id="panel" data-toggler data-animate="hinge-in-from-top fade-out">
-    &lt;h4>TERMINUS&lt;/h4>
-    &lt;p>Localizado en el mismo borde ...//... los enciclopedistas...&lt;/p>
+  &lt;div class="callout" data-closable>
+    &lt;button class="close-button" data-close>&times;&lt;/button>
+    &lt;p>... Lo habían hecho. Al cabo de otros cinco años se publicaría el primer volumen de la obra más monumental que la Galaxia había concebido nunca...&lt;/p>
   &lt;/div>
   </pre>
   <br>
-  <p>En vez de alternar una clase puede alternar la visibilidad. Cuando se activa, el elemento entra o sale de la vista con una clase Motion UI.</p> 
-  <p>En lugar de data-toggler , agregue el atributo data-animate . El valor del atributo es el de la animación que desea, seguido de la animación de salida . </p>
+  <p>Para crear un elemento que pueda cerrarse una vez, agregue el atributo <code>data-closable</code> . A continuación, agregue un disparador de clic dentro del elemento usando <code>data-close</code> .</p>
   <br>
   <div class="callout" data-closable>
     <button class="close-button" data-close>&times;</button>
     <p>... Lo habían hecho. Al cabo de otros cinco años se publicaría el primer volumen de la obra más monumental que la Galaxia había concebido nunca...</p>
+  </div>
+  <br>
+
+  <center class="mt-3"><h5>Otra opción: Cerrar con animación alternativa</h5></center>
+  <pre>
+  &lt;div class="callout" data-closable="slide-out-right">
+    &lt;button class="close-button" data-close>&times;&lt;/button>
+    &lt;p>... Lo habían hecho. Al cabo de otros cinco años se publicaría el primer volumen de la obra más monumental que la Galaxia había concebido nunca...&lt;/p>
+  &lt;/div>
+  </pre>
+  <br>
+  <p>También <code>data-closable</code> se puede configurar con una animación de salida personalizada. </p>
+  <br>
+  <div class="callout" data-closable="slide-out-right">
+    <button class="close-button" data-close>&times;</button>
+    <p>... Lo habían hecho. Al cabo de otros cinco años se publicaría el primer volumen de la obra más monumental que la Galaxia había concebido nunca...</p>
+  </div>
+  <br>
+  <hr>
+
+  <center id="enfoque" class="mt-3"><h3>Alternar con el enfoque</h3></center>
+  <pre>
+  &lt;input type="text" data-toggle-focus="form-callout" placeholder="Clic aquí para revelar contenido extra">
+
+  &lt;div class="secondary callout is-hidden" id="form-callout" data-toggler="is-hidden">
+    &lt;p>Esto sólo es visible cuando el campo de arriba tiene foco (focus).&lt;/p>
+  &lt;/div>
+  </pre>
+  <br>
+  <p>El atributo de <code>data-toggle</code> solo cambia las clases / visibilidad al hacer clic. Pero puedes usar <code>data-toggle-focus</code> cuando un elemento se enfoca o desenfoca.</p>
+  <br>
+  <input type="text" data-toggle-focus="form-callout" placeholder="Clic aquí para revelar contenido extra">
+
+  <div class="secondary callout is-hidden" id="form-callout" data-toggler="is-hidden">
+    <p>Esto sólo es visible cuando el campo de arriba tiene foco (focus).</p>
+  </div>
+  <br>
+  <hr>
+
+  <center id="multiple" class="mt-3"><h3>Objetivos múltiples</h3></center>
+  <pre>
+  &lt;button class="button large" data-toggle="planeta1 planeta2 planeta3">Hacer clic para alternar todos juntos&lt;/button>
+  &lt;br>&lt;br>
+  &lt;div class="row">
+    &lt;div class="small-4 columns">
+      &lt;img class="thumbnail" id="planeta1" data-toggler data-animate="hinge-in-from-top spin-out" src="assets/img/01.jpg" alt="Foto Planeta." aria-expanded="true">
+    &lt;/div>
+
+    &lt;div class="small-4 columns">
+      &lt;img class="thumbnail" id="planeta2" data-toggler data-animate="hinge-in-from-top spin-out" src="assets/img/02.jpg" alt="Foto Planeta." aria-expanded="true">
+    &lt;/div>
+
+    &lt;div class="small-4 columns">
+      &lt;img class="thumbnail" id="planeta3" data-toggler data-animate="hinge-in-from-top spin-out" src="assets/img/03.jpg" alt="Foto Planeta." aria-expanded="true">
+    &lt;/div>
+  &lt;/div>
+  </pre>
+  <br>
+  <p>¡Los atributos de <code> data-toggle data-close data-open </code> ahora pueden apuntar a múltiples elementos! La sintaxis es simple; simplemente pase una lista separada por espacios al atributo <b>data-x</b> .</p>
+  <p>Luego, los elementos con ids de <code>planeta1 , planeta2 y planeta3</code> activarán cada vez que se haga clic en su botón (o en cualquier otro elemento que elija).</p>
+  <br>
+  <button class="button large" data-toggle="planeta1 planeta2 planeta3">Hacer clic para alternar todos juntos</button>
+  <br><br>
+  <div class="row">
+    <div class="small-4 columns">
+      <img class="thumbnail" id="planeta1" data-toggler data-animate="hinge-in-from-top spin-out" src="assets/img/01.jpg" alt="Foto Planeta." aria-expanded="true">
+    </div>
+
+    <div class="small-4 columns">
+      <img class="thumbnail" id="planeta2" data-toggler data-animate="hinge-in-from-top spin-out" src="assets/img/02.jpg" alt="Foto Planeta." aria-expanded="true">
+    </div>
+
+    <div class="small-4 columns">
+      <img class="thumbnail" id="planeta3" data-toggler data-animate="hinge-in-from-top spin-out" src="assets/img/03.jpg" alt="Foto Planeta." aria-expanded="true">
+    </div>
   </div>
   <br>
   <hr>
