@@ -1,8 +1,121 @@
-&lt;ul class="orbit-container">
-  &lt;li class="orbit-slide">
-    &lt;div style="background: dodgerblue;color:white;padding:3rem">
-      &lt;h3 class="text-center white">Este fondo es color dodgerblue&lt;/h3>
-      &lt;p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde harum rem, beatae ipsa consectetur quisquam. Rerum ratione, delectus atque tempore sed, suscipit ullam, beatae distinctio cupiditate ipsam eligendi tempora expedita.&lt;/p>
-    &lt;/div>
-  &lt;/li>
-&lt;/ul>
+<!doctype html>
+<html class="no-js" lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alternar / Toggler</title>
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+  </head>
+  <body>
+    <!-- //////// Botón para ir al principio -->
+    <a class="hide-for-small-only" href="#inicio">
+      <i class="fa fa-chevron-circle-up fa-2x ir-arriba"></i>
+    </a>
+    <!-- */Botón para ir al principio -->
+
+    <!-- /////// Botón para Menú Off-Canvas -->
+    <a class="hidden-xs hidden-sm" data-toggle="menu-offcanvas">
+      <i class="fa fa-bars fa-2x menu-btn"></i>
+    </a>
+    <!-- */Botón para ir al principio -->
+
+    <!-- MENU -->
+    @include('./menu_ppal.html')    
+    <!-- /.MENU -->
+
+    <!-- /////// Botón para Menú Off-Canvas -->
+    <div class="off-canvas-wrapper">
+      <div id="menu-offcanvas" class="off-canvas position-left" data-off-canvas data-transition="overlap">
+      <ul class="vertical menu mt-3" data-smooth-scroll>
+        
+        <li><a href="#basico" title="Básico">Básico</a></li>
+        <li><a href="#anidado" title="Anidando">Anidando</a></li>
+        <li><a href="#fila" title="Igualar por fila">Igualar por fila</a></li>
+
+      </ul>
+      </div><!-- /.menu-offcanvas -->
+    </div><!-- /.off-canvas-wrapper -->
+    <!-- */Menú Off-Canvas -->
+
+<div id="alternar" class="off-canvas-content contenedor" data-off-canvas-content>
+
+  <center id="clase" class="mt-3"><h3>Alternar una clase de CSS</h3></center>
+  <pre>
+  &lt;p>&lt;a class="button large" data-toggle="menuBar">Expandir!&lt;/a>&lt;/p>
+
+  &lt;ul class="menu" id="menuBar" data-toggler=".expanded">
+    &lt;li>&lt;a href="#">Uno&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="#">Dos&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="#">Tres&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="#">Cuatro&lt;/a>&lt;/li>
+  &lt;/ul>
+  </pre>
+  <br>
+  <p>El valor de data-toggler es la clase que desea alternar. También dale al elemento una ID única para que pueda ser el objetivo.</p>
+  <p>Luego, agregue data-toggle a cualquier elemento, con el ID del objetivo como el valor del atributo. Ahora, cada vez que haga clic en este elemento, la clase activará y desactivará el objetivo.</p>
+  <br>
+  <p><a class="button large" data-toggle="menuBar">Expandir!</a></p>
+  <ul class="menu" id="menuBar" data-toggler=".expanded">
+    <li><a href="javascript:void(0);">Uno</a></li>
+    <li><a href="javascript:void(0);">Dos</a></li>
+    <li><a href="javascript:void(0);">Tres</a></li>
+    <li><a href="javascript:void(0);">Cuatro</a></li>
+  </ul>
+  <br>
+  <hr>
+
+  <center id="u_html" class="mt-3"><h3>Usar con HTML</h3></center>
+  <pre>
+  &lt;img data-interchange="[assets/img/int-small.jpg, small], 
+  [assets/img/int-medium.jpg, medium], [assets/img/int-large.jpg, large]">
+  </pre>
+  <br>
+  <p>También puede intercambiar fragmentos enteros de HTML. Esto le permite cargar componentes amigables para dispositivos móviles en pantallas pequeñas o versiones más avanzadas en pantallas grandes.</p>
+  <p>En el siguiente ejemplo, hemos aplicado <code>data-interchange</code> a un elemento &lt;div> lugar de a un &lt;img> , y las rutas son a archivos HTML en lugar de imágenes.</p>
+  <br>
+  <div data-interchange="[interchange-small.html, small], [interchange-medium.html, medium], [interchange-large.html, large]"></div>
+  <br>
+  <hr>
+
+  <center id="u_html" class="mt-3"><h3>Usar con HTML</h3></center>
+  <pre>
+  &lt;div class="bg-int" data-interchange="[assets/img/bg-small.jpg, small], [assets/img/bg-medium.jpg, medium], [assets/img/bg-large.jpg, large]">
+    &lt;div>
+      "La violencia es el último recurso del incompetente".
+      &lt;cite>Salvor Hardin&lt;/cite>
+      &lt;hr>
+      &lt;small>Texto sobre un DIV cuyo background es intercambiable&lt;/small>
+      &lt;br>
+    &lt;/div> 
+  &lt;/div>
+  </pre>
+  <br>
+  <p>Al usar Interchange en un elemento que no sea &lt;img> , puede pasar una ruta de imagen en lugar de una ruta HTML, y la propiedad <code>background-image</code> del elemento se establecerá en la ruta de la media query correspondiente. </p>
+  <br>
+  <div class="bg-int" data-interchange="[assets/img/bg-small.jpg, small], [assets/img/bg-medium.jpg, medium], [assets/img/bg-large.jpg, large]">
+    <div>
+      "La violencia es el último recurso del incompetente".
+      <cite>Salvor Hardin</cite>
+      <hr>
+      <small>Texto sobre un DIV cuyo background es intercambiable</small>
+      <br>
+    </div> 
+  </div>
+  <br>
+  <hr>    
+
+</div><!-- /.id alternar -->
+
+    <!--*****************
+     CORE JS 
+    ******************-->
+    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="assets/js/vendor/what-input.js"></script>
+    <script src="assets/js/vendor/foundation.js"></script>
+    <script src="assets/js/app.js"></script>
+
+  </body>
+</html>
