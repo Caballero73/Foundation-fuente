@@ -67,45 +67,47 @@
   <br>
   <hr>
 
-  <center id="u_html" class="mt-3"><h3>Usar con HTML</h3></center>
+  <center id="animacion" class="mt-3"><h3>Alternar con animación</h3></center>
   <pre>
-  &lt;img data-interchange="[assets/img/int-small.jpg, small], 
-  [assets/img/int-medium.jpg, medium], [assets/img/int-large.jpg, large]">
-  </pre>
-  <br>
-  <p>También puede intercambiar fragmentos enteros de HTML. Esto le permite cargar componentes amigables para dispositivos móviles en pantallas pequeñas o versiones más avanzadas en pantallas grandes.</p>
-  <p>En el siguiente ejemplo, hemos aplicado <code>data-interchange</code> a un elemento &lt;div> lugar de a un &lt;img> , y las rutas son a archivos HTML en lugar de imágenes.</p>
-  <br>
-  <div data-interchange="[interchange-small.html, small], [interchange-medium.html, medium], [interchange-large.html, large]"></div>
-  <br>
-  <hr>
+  &lt;p>&lt;a class="button large" data-toggle="panel">Clic para Animar&lt;/a>&lt;/p>
 
-  <center id="u_html" class="mt-3"><h3>Usar con HTML</h3></center>
-  <pre>
-  &lt;div class="bg-int" data-interchange="[assets/img/bg-small.jpg, small], [assets/img/bg-medium.jpg, medium], [assets/img/bg-large.jpg, large]">
-    &lt;div>
-      "La violencia es el último recurso del incompetente".
-      &lt;cite>Salvor Hardin&lt;/cite>
-      &lt;hr>
-      &lt;small>Texto sobre un DIV cuyo background es intercambiable&lt;/small>
-      &lt;br>
-    &lt;/div> 
+  &lt;div class="callout" id="panel" data-toggler data-animate="hinge-in-from-top fade-out">
+    &lt;h4>TERMINUS&lt;/h4>
+    &lt;p>Localizado en el mismo borde ...//... los enciclopedistas...&lt;/p>
   &lt;/div>
   </pre>
   <br>
-  <p>Al usar Interchange en un elemento que no sea &lt;img> , puede pasar una ruta de imagen en lugar de una ruta HTML, y la propiedad <code>background-image</code> del elemento se establecerá en la ruta de la media query correspondiente. </p>
+  <p>En vez de alternar una clase puede alternar la visibilidad. Cuando se activa, el elemento entra o sale de la vista con una clase Motion UI.</p> 
+  <p>En lugar de data-toggler , agregue el atributo data-animate . El valor del atributo es el de la animación que desea, seguido de la animación de salida . </p>
   <br>
-  <div class="bg-int" data-interchange="[assets/img/bg-small.jpg, small], [assets/img/bg-medium.jpg, medium], [assets/img/bg-large.jpg, large]">
-    <div>
-      "La violencia es el último recurso del incompetente".
-      <cite>Salvor Hardin</cite>
-      <hr>
-      <small>Texto sobre un DIV cuyo background es intercambiable</small>
-      <br>
-    </div> 
+  <p><a class="button large" data-toggle="panel">Clic para Animar</a></p>
+
+  <div class="callout" id="panel" data-toggler data-animate="hinge-in-from-top fade-out">
+    <h4>TERMINUS</h4>
+    <p>Localizado en el mismo borde de la espiral galáctica, un único planeta de un sol aislado, pobre en recursos y muy insignificante envalor económico, nunca fue colonizado durante los cinco siglos después de su descubrimiento, hasta el aterrizaje de los enciclopedistas...</p>
   </div>
   <br>
-  <hr>    
+  <hr>
+
+  <center id="animacion" class="mt-3"><h3>Alternar con animación</h3></center>
+  <pre>
+  &lt;p>&lt;a class="button large" data-toggle="panel">Clic para Animar&lt;/a>&lt;/p>
+
+  &lt;div class="callout" id="panel" data-toggler data-animate="hinge-in-from-top fade-out">
+    &lt;h4>TERMINUS&lt;/h4>
+    &lt;p>Localizado en el mismo borde ...//... los enciclopedistas...&lt;/p>
+  &lt;/div>
+  </pre>
+  <br>
+  <p>En vez de alternar una clase puede alternar la visibilidad. Cuando se activa, el elemento entra o sale de la vista con una clase Motion UI.</p> 
+  <p>En lugar de data-toggler , agregue el atributo data-animate . El valor del atributo es el de la animación que desea, seguido de la animación de salida . </p>
+  <br>
+  <div class="callout" data-closable>
+    <button class="close-button" data-close>&times;</button>
+    <p>... Lo habían hecho. Al cabo de otros cinco años se publicaría el primer volumen de la obra más monumental que la Galaxia había concebido nunca...</p>
+  </div>
+  <br>
+  <hr>
 
 </div><!-- /.id alternar -->
 
