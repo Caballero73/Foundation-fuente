@@ -223,6 +223,19 @@ cite {
   background-color: #ffffff;
   background-color: rgba(255, 255, 255, 0.5);
 }
+.tooltip {
+  position: absolute;
+  top: calc(100% + 0.6495rem);
+  z-index: 1200;
+  max-width: 200px;
+  max-width: 20rem;
+  padding: 7.5px;
+  padding: 0.75rem;
+  border-radius: 3px;
+  background-color: #00365d;
+  font-size: 80%;
+  color: #fefefe;
+}
 .white {color: white !important}
 /* /.ESTILOS GENERALES */
 /******************************
@@ -273,15 +286,43 @@ ESTILOS PROPIOS DEL TEMA
 		background: #00557F;
 		color: #fefefe;
 	}
-#acordeon pre, #barra pre, #botones pre, #desplegable pre, #flotar pre, #formularios pre, #grilla pre, #insignia pre, #llamadas pre, #medios pre, #menu pre, #offcanvas pre, #slider pre, #suave pre, #reveal pre, #sticky pre, #tabs pre, #table pre, #tipografia pre, #visibilidad pre {
+#acordeon pre, #alternar pre, #barra pre, #botones pre, #desplegable pre, #ecualizador pre, #flotar pre, #formularios pre, #grilla pre, #incrustado pre, #intercambiar pre, #insignia pre, #llamadas pre, #medios pre, #menu pre, #miniatura pre, #offcanvas pre, #slider pre, #suave pre, #reveal pre, #sticky pre, #tabs pre, #table pre, #tooltips pre, #tipografia pre, #visibilidad pre {
 		background: lightcyan;
 	  	border: 1px solid cadetblue;
 	  	padding: 10px;
 	  	padding: 1rem;
 	}
-#acordeon small, #barra small, #botones small, #desplegable small, #flotar small, #formularios small, #grilla small, #insignia small, #llamadas small, #medios small, #menu small, #offcanvas small, #slider small, #suave small, #reveal small, #sticky small, #tabs small, #table small, #tipografia small, #visibilidad small {
+#acordeon small, #alternar small, #barra small, #botones small, #desplegable small, #ecualizador small, #flotar small, #formularios small, #grilla small, #incrustado small, #intercambiar small, #insignia small, #llamadas small, #medios small, #menu small, #miniatura small, #offcanvas small, #slider small, #suave small, #reveal small, #sticky small, #tabs small, #table small, #tooltips small, #tipografia small, #visibilidad small {
 		color: #444;
 	}
+#intercambiar .bg-int {
+	  display: -webkit-box;
+	  display: -ms-flexbox;
+	  display: flex;
+	  -webkit-box-align: center;
+	      -ms-flex-align: center;
+	          align-items: center;
+	  -webkit-box-pack: center;
+	      -ms-flex-pack: center;
+	          justify-content: center;
+	  height: 50vh;
+	}
+#intercambiar .bg-int div {
+	  	color: white !important;
+	  	font-size: 30px;
+	  	font-size: 3rem;
+	  	text-align: center;
+	  	text-shadow: 0px 0px 4px #333;
+	  	width: 90%;
+	  }
+#intercambiar .bg-int div cite {
+			color: white !important;
+		}
+#intercambiar .bg-int div small {
+	  		color: white !important;
+	  		font-size: 18px;
+	  		font-size: 1.8rem;
+	  	}
 #introduccion {
 	background-image: url("../img/fantasy-1920.jpg");
 	background-size: cover;

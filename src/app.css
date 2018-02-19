@@ -54,8 +54,10 @@ ESTILOS PROPIOS DEL TEMA
 		color: #fefefe;
 	}
 }
-#acordeon,#barra,#botones,#desplegable,#flotar,#formularios,#grilla,#insignia,#llamadas,
-#medios,#menu,#offcanvas,#slider,#suave,#reveal,#sticky,#tabs,#table,#tipografia,#visibilidad {
+#acordeon,#alternar,#barra,#botones,#desplegable,#ecualizador,#flotar,#formularios,
+#grilla,#incrustado,#intercambiar,#insignia,#llamadas,#medios,#menu,#miniatura,
+#offcanvas,#slider,#suave,#reveal,#sticky,#tabs,#table,#tooltips,#tipografia,
+#visibilidad {
 	& pre {
 		background: lightcyan;
 	  	border: 1px solid cadetblue;
@@ -63,6 +65,32 @@ ESTILOS PROPIOS DEL TEMA
 	}
 	& small {
 		color: var(--colorGrisOscuro);
+	}
+}
+#intercambiar {
+
+	& .bg-int {
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  height: 50vh;
+
+	  & div {
+	  	color: white !important;
+	  	font-size: 3rem;
+	  	text-align: center;
+	  	text-shadow: 0px 0px 4px #333;
+	  	width: 90%;
+
+		& cite {
+			color: white !important;
+		}
+
+	  	& small {
+	  		color: white !important;
+	  		font-size: 1.8rem;
+	  	}
+	  }
 	}
 }
 #introduccion {
