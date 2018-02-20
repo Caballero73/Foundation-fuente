@@ -113,6 +113,7 @@
       <div id="menu-offcanvas" class="off-canvas position-left" data-off-canvas data-transition="overlap">
       <ul class="vertical menu mt-3" data-smooth-scroll>        
         <li><a href="#basico" title="Lo básico">Lo básico</a></li>
+        <li><a href="#personalizada" title="Personalizar la descarga de Foundation">Personalizar la descarga de Foundation</a></li>
         <li><a href="#complementaria" title="Información complementaria">Información complementaria</a></li>
       </ul>
       </div><!-- /.menu-offcanvas -->
@@ -140,25 +141,31 @@
   <hr>
 
   <center id="personalizada"><h3>Personalizar la descarga de Foundation</h3></center>
-  <p class="lead">Elija las características que desee o tenga toda la enchilada.</p>
-  <h4 class="mt-3">Escoja sus componentes</h4>
-  <div class="row">
-    <div class="small-12 medium-6 column"><img src="assets/img/elegir01-todo.png" alt="Imagen de elegir todo"></div>
-    <div class="small-12 medium-6 column"></div>
-    <div class="small-12 medium-6 column"></div>
-    <div class="small-12 medium-6 column"></div>
-    <div class="small-12 medium-6 column"></div>
-    <div class="small-12 medium-6 column"></div>
-    <div class="small-12 medium-6 column"></div>
-    <div class="small-12 medium-6 column"></div>
-    <div class="small-12 medium-6 column"></div>
-    <div class="small-12 medium-6 column"></div>
-    <div class="small-12 medium-6 column"></div>
-    <div class="small-12 medium-6 column"></div>
-    <div class="small-12 medium-6 column"></div>
-    <div class="small-12 medium-6 column"></div>
-    <div class="small-12 medium-6 column"></div>
+  <p class="lead text-center">Elija las características que desee o tenga toda la enchilada.</p>
+  <center class="mt-3"><h4>Escoja sus componentes</h4></center>
+  <div class="row callout">
+    <div class="small-12 medium-5 column"><img src="assets/img/elegir01-todo.png" alt="Imagen de elegir todo"></div>
+    <div class="small-12 medium-7 column"><p>Al marcar esta casilla de verificación se agregará a la descarga todas las clases de todos los componentes contemplados en Foundation, a excepción de las <b>Prototyping Helpers (clases de prototipado)</b>, las cuales deben ser seleccionadas de forma reiterativa.</p></div>
   </div>
+  <div class="callout">
+    <img src="assets/img/elegir02-grilla.png" alt="Imagen elegir grilla" align="left">
+    <p>Con estas opciones podemos definir que tipo de grilla queremos usar para nuestro proyecto, o si no queremos ninguna grilla.</p>
+    <p>En general, flex y float usan los mismo nombres para las clases, (salvo excepciones), en cambio, el tipo XY usan otros muy distintos, por ejemplo en vez de row usan grid-x, y en vez de column usan cell (solo por nombrar algunas).</p>
+    <p>Es importante señalar que para este ejercicio seleccionamos la opción <b>Grid: Flex Grid</b>, para poder trabajar con Flexbox, ya que es más versatil y moderno.</p>
+  </div>
+  <div class="row callout">
+    <div class="small-12 medium-6 column"><img src="assets/img/elegir03-componentes.png" alt="Imagen de elegir componentes"></div>
+    <div class="small-12 medium-6 column"><p>Con estas casillas de verificación podemos escoger de <b>manera individual</b> que clases de las contempladas en Foundation se agregará a la descarga.</p>
+    <p>Esta selección debe obedecer al diseño previo de nuestro proyecto, ya que si bien es cierto que la limitación de clases hará más ligero nuestro CSS, una vez que se descarge el paquete de archivos, no podrán agregarse nuevas clases de manera automática, limitando así la capacidad de nuestro CSS.</p></div>
+  </div>
+
+  <center class="mt-3"><h4>Establezca sus valores predeterminados</h4></center>
+  <div class="row callout">
+    <div class="small-12 medium-6 column"><img src="assets/img/elegir04-columnas.png" alt="Imagen de configurar columnas"></div>
+    <div class="small-12 medium-6 column"><p>Con estas casillas de verificación podemos escoger de <b>manera individual</b> que clases de las contempladas en Foundation se agregará a la descarga.</p>
+    <p>Esta selección debe obedecer al diseño previo de nuestro proyecto, ya que si bien es cierto que la limitación de clases hará más ligero nuestro CSS, una vez que se descarge el paquete de archivos, no podrán agregarse nuevas clases de manera automática, limitando así la capacidad de nuestro CSS.</p></div>
+  </div>
+
   <br>
   <hr>
 
@@ -170,7 +177,7 @@
     <li>Grilla usando flex </li>
   </ul>
   <p>En general, flex y float usan los mismo nombres para las clases, (salvo excepciones), en cambio,  el tipo XY usan otros muy distintos, por ejemplo en vez de row usan grid-x, y en vez de column usan cell (solo por nombrar algunas).</p>
-  <p class="lead">Es importante señalar que para este ejercicio seleccionamos la opción <b>Grid: Flex Grid</b>, para poder trabajar con Flexbox, ya que es más versatil y moderno.</p>
+  <p>Es importante señalar que para este ejercicio seleccionamos la opción <b>Grid: Flex Grid</b>, para poder trabajar con Flexbox, ya que es más versatil y moderno.</p>
   <div class="alert callout">
     <p>Nota: La grilla con Flexbox solo se admite en Chrome, Firefox, Safari 6+, IE10 +, iOS 7+ y Android 4.4+. Flexbox es compatible con Android 2, pero no lo suficientemente confiable.</p>
   </div>
