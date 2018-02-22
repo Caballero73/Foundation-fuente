@@ -54,8 +54,8 @@ ESTILOS PROPIOS DEL TEMA
 		color: #fefefe;
 	}
 }
-#acordeon,#barra,#botones,#desplegable,#ecualizador,#flotar,#formularios,#grilla,
-#incrustado,#intercambiar,#insignia,#llamadas,#medios,#menu,#miniatura,
+#acordeon,#alternar,#barra,#botones,#desplegable,#ecualizador,#flotar,#formularios,
+#grilla,#incrustado,#inicio,#intercambiar,#insignia,#llamadas,#medios,#menu,#miniatura,
 #offcanvas,#slider,#suave,#reveal,#sticky,#tabs,#table,#tooltips,#tipografia,
 #visibilidad {
 	& pre {
