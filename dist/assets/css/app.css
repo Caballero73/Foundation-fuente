@@ -29,9 +29,7 @@ body {
   font-size: calc(1.20465rem + 0.46512vw);
 	font-family: sans-serif;
 }
-.row {
-  max-width: 100%;
-}
+.row {max-width: 100%;}
 a {
   cursor: pointer;
   text-decoration: none;

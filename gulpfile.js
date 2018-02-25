@@ -28,7 +28,7 @@ gulp.task('css', function () {
     cssnext({browsers:'last 5 versions'}),
     mqpacker
   ]
-  return gulp.src('./src/app.css')
+  return gulp.src('./src/css/app.css')
     .pipe(postcss(processors))
     .pipe(gulp.dest('./dist/assets/css'))
     .pipe(browserSync.stream())
@@ -47,7 +47,7 @@ gulp.task('fileinclude', function() {
 
 // Tarea para vigilar los cambios
 gulp.task('watch', function () {
-  gulp.watch('./src/*.css', ['css']).on('change', browserSync.reload)
+  gulp.watch('./src/css/*.css', ['css']).on('change', browserSync.reload)
   gulp.watch('./src/*.html', ['fileinclude']).on('change', browserSync.reload)
 })
 
