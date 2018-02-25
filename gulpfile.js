@@ -6,6 +6,7 @@ var cssnested = require('postcss-nested')
 var mqpacker = require('css-mqpacker')
 var rucksack = require('rucksack-css')
 var fileinclude = require('gulp-file-include')
+var csswring = require('csswring')
 var cssnext = require('postcss-cssnext')
 var browserSync = require('browser-sync').create()
 
@@ -26,7 +27,8 @@ gulp.task('css', function () {
     cssnested,
     rucksack(),
     cssnext({browsers:'last 5 versions'}),
-    mqpacker
+    mqpacker,
+    csswring()
   ]
   return gulp.src('./src/css/app.css')
     .pipe(postcss(processors))
@@ -49,6 +51,7 @@ gulp.task('fileinclude', function() {
 gulp.task('watch', function () {
   gulp.watch('./src/css/*.css', ['css']).on('change', browserSync.reload)
   gulp.watch('./src/*.html', ['fileinclude']).on('change', browserSync.reload)
+  gulp.watch('./src/partials/*.html', ['fileinclude']).on('change', browserSync.reload)
 })
 
 gulp.task('default', ['watch', 'fileinclude', 'css', 'serve'])

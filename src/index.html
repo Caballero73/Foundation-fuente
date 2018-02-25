@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frontend con Foundation</title>
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/foundation-icons.css">
     <link rel="stylesheet" type="text/css" href="assets/css/foundation.css">
     <link rel="stylesheet" type="text/css" href="assets/css/app.css">
   </head>
@@ -19,13 +20,13 @@
     <!-- LOGO -->
     <section id="logo-container">
       <div class="callout text-center">
-        <h1>Frontend con Foundation</h1>
+        <h1>Frontend con <i class="fi-social-zurb"></i>Foundation</h1>
       </div>
     </section>
     <!-- /.LOGO -->
 
     <!-- MENU -->
-    @include('./menu_ppal.html')    
+    @include('./partials/menu_ppal.html')    
     <!-- /.MENU -->
 
     <section id="introduccion">
@@ -33,7 +34,7 @@
         <div class="row">
           <div class="small-12 medium-6 column">
             <div class="semi p-2">
-              <p class="lead">La idea de este material es servir de apoyo para que aprendamos a usar uno de los frameworks (entornos o marcos de trabajo) para el diseño frontend (interfaz) más utilizados en la industria actualmente, como lo es <b>Foundation</b>.</p>
+              <p class="lead">El objetivo de este material es servir de apoyo para que aprendamos a usar uno de los frameworks (entornos o marcos de trabajo) para el diseño frontend (interfaz) más utilizados en la industria actualmente, como lo es <b>Foundation</b>.</p>
             </div>
             <br>
             <div class="acordeon">
@@ -98,7 +99,7 @@
     </section>
 
     <!-- FOOTER -->
-    @include('./footer.html')    
+    @include('./partials/footer.html')
     <!-- /.FOOTER -->
 
     <div class="alert callout" data-closable>
