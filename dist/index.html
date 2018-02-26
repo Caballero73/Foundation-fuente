@@ -1,0 +1,231 @@
+<!doctype html>
+<html class="no-js" lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend con Foundation</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/foundation-icons.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/foundation.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/app.css">
+  </head>
+  <body>
+    <!-- /////// Botón para ir al principio -->
+    <a class="hide-for-small-only" href="#inicio">
+      <i class="fa fa-chevron-circle-up fa-2x ir-arriba"></i>
+    </a>
+    <!-- */Botón para ir al principio -->
+
+    <!-- LOGO -->
+    <section id="logo-container">
+      <div class="callout text-center">
+        <h1>Frontend con <i class="fi-social-zurb"></i>Foundation</h1>
+      </div>
+    </section>
+    <!-- /.LOGO -->
+
+    <!-- MENU -->
+    <!-- Este es el menú principal de nuestro proyecto
+    El cual aparecerá en todas las secciones del mismo -->
+    <section id="menu-container">
+      <div class="contenedor">
+        <ul class="menu dropdown align-center" data-dropdown-menu>
+
+          <li><a href="index.html" target="_top" title="Inicio"><i class="fa fa-home"></i></a></li>
+
+          <li><a href="#" title="General">General</a>
+            <ul class="menu">
+              <li><a href="inicio.html" title="Preparación">Preparación inicial</a></li>
+              <li><a href="grilla.html" title="Grilla">Grilla Flex</a></li>
+              <li><a href="formularios.html" title="Formularios">Formularios</a></li>
+              <li><a href="visibilidad.html" title="Clases de visibilidad">Clases de Visibilidad</a></li>
+              <li><a href="flotar.html" title="Clases de visibilidad">Clases de Flotación</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#" title="Tipografía">Tipografía</a>
+            <ul class="menu">
+              <li><a href="tipografia.html" title="Tipografía Básica">Tipografía Básica</a></li>
+              <li><a href="tipografia2.html" title="Tipografía Básica">Tipografía Auxiliar</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#" title="Controles">Controles</a>
+            <ul class="menu">
+              <li><a href="botones.html" title="Botones">Botones</a></li>
+              <li><a href="grupo-botones.html" title="Grupo de Botones">Grupo de Botones</a></li>
+              <li><a href="boton-cerrar.html" title="Botón Cerrar">Botón Cerrar</a></li>
+              <li><a href="slider.html" title="Control deslizante">Control deslizante</a></li>
+              <li><a href="switch.html" title="Interruptores">Interruptores</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#" title="Navegación">Navegación</a>
+            <ul class="menu">
+              <li><a href="menu.html" title="Menú">Menú</a></li>
+              <li><a href="menu-desplegable.html" title="Menú Desplegable">Menú Desplegable</a></li>
+              <li><a href="menu-drilldown.html" title="Menú Drilldown">Menú Drilldown</a></li>
+              <li><a href="menu-acordeon.html" title="Menú Acordeón">Menú Acordeón</a></li>
+              <li><a href="barra.html" title="Barra Superior">Barra Superior</a></li>
+              <li><a href="menu-responsivo.html" title="Menú Responsivo">Menú Responsivo</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#" title="Contenedores">Contenedores</a>
+            <ul class="menu">
+              <li><a href="acordeon.html" title="Acordeón">Acordeón</a></li>
+              <li><a href="desplegable.html" title="Desplegable">Desplegable</a></li>
+              <li><a href="llamadas.html" title="Llamadas">Llamadas</a></li>
+              <li><a href="tarjetas.html" title="Tarjetas o Cards">Tarjetas o Cards</a></li>
+              <li><a href="medios.html" title="Objetos Multimedia">Objetos Multimedia</a></li>
+              <li><a href="canvas-off.html" title="Fuera del lienzo / Off-Canvas">Fuera del lienzo / Off-Canvas</a></li>
+              <li><a href="reveal.html" title="Reveal / Modals">Reveal / Modals</a></li>
+              <li><a href="tablas.html" title="Tablas">Tablas</a></li>
+              <li><a href="tabs.html" title="Pestañas / Tabs">Pestañas / Tabs</a></li>
+              <li><a href="accordion_tabs.html" title="Pestañas de Acordeón">Pestañas y Acordeón</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#" title="Medios">Medios</a>
+            <ul class="menu">
+              <li><a href="badge.html" title="Insignia / Badge">Insignia / Badge</a></li>
+              <li><a href="incrustar.html" title="Incrustado Responsivo / Responsive Embed">Incrustado Responsivo / Responsive Embed</a></li>
+              <li><a href="etiqueta.html" title="Etiqueta / Label">Etiqueta / Label</a></li>
+              <li><a href="orbit.html" title="Orbit / Carrusel">Orbit / Carrusel</a></li>
+              <li><a href="barra_progreso.html" title=" Barra de progreso"> Barra de progreso</a></li>
+              <li><a href="miniatura.html" title="Miniatura / Thumbnail">Miniatura / Thumbnail</a></li>
+              <li><a href="tooltip.html" title="Información de Herramientas / Tooltip">Información de Herramientas / Tooltip</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#" title="Complementos / Plugins">Plugins</a>
+            <ul class="menu">
+              <li><a href="ecualizar.html" title="Ecualizador / Equalizer">Ecualizador / Equalizer</a></li>
+              <li><a href="intercambiar.html" title="Intercambiar / Interchange">Intercambiar / Interchange</a></li>
+              <li><a href="alternar.html" title="Alternar / Toggler">Alternar / Toggler</a></li>
+              <li><a href="suave.html" title="Desplazamiento Suave / Smooth Scroll">Desplazamiento Suave / Smooth Scroll</a></li>
+              <li><a href="sticky.html" title="Sticky / Pegajoso">Sticky / Pegajoso</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#"><i class="fa fa-cloud-download"></i> Guía </a>
+            <ul class="menu">
+              <li><a href="https://www.dropbox.com/s/9h8k7z0xek4fj54/Frontend%20con%20Foundation%20-%20Notas%20personales.odt?dl=0" target="_blank">
+                <span aria-describedby="masActual">Ver ... </span>
+                <span class="label" id="masActual" style="font-size: 1.4rem">Más actualizado</span>
+              </a></li>
+              <li><a href="assets/media/frontend_con_foundation.zip" target="_blank">Descargar .ZIP</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>    
+    <!-- /.MENU -->
+
+    <section id="introduccion">
+      <div class="contenedor">
+        <div class="row">
+          <div class="small-12 medium-6 column">
+            <div class="semi p-2">
+              <p class="lead"><b>Hola Mundo...</b> El objetivo de este material es servir de apoyo para que aprendamos a usar uno de los frameworks (entornos o marcos de trabajo) para el diseño frontend (interfaz) más utilizados en la industria actualmente, como lo es <b>Foundation</b>.</p>
+            </div>
+            <br>
+            <div class="acordeon">
+              <ul class="accordion" data-accordion data-allow-all-closed="true">
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title"><h5>Frameworks frontend</h5></a>
+
+                  <!-- Contenido del panel del acordeón. -->
+                  <div class="accordion-content" data-tab-content>
+                    <p>Un framework, es un entorno o marco de trabajo, es decir un conjunto estandarizado de conceptos, prácticas y criterios para enfocar un tipo de problemática particular que sirve como referencia, para enfrentar y resolver nuevos problemas de índole similar.</p>
+                    <p>Hay una creciente variedad de frameworks está disponible para diseñadores y desarrolladores front-end o de interfaces, listos para tomar parte en la construcción de prototipos y la implementación. Con tantas opciones, podrías simplemente escoger el más popular lo que que podría no ser lo mejor para tu proyecto particular.</p>
+                    <p>Como ya dijimos este material mostrará uno de los más utilizados actualmente.</p>
+                  </div>
+                </li>
+
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title"><h5>Origen de Foundation</h5></a>
+
+                  <!-- Contenido del panel del acordeón. -->
+                  <div class="accordion-content" data-tab-content>
+                    <p>Surge como un proyecto de ZURB para desarrollar código de interfaz de usuario más rápido y mejor. En octubre 2011, ZURB liberó Foundation 2.0 como código abierto bajo licencia de MIT License.1​ En junio 2012 ZURB liberó una actualización importante, Foundation 3.0.2​ En febrero 2013 ZURB liberó otra actualización importante, Foundation 4.0.3​ En noviembre 2013 ZURB liberó otra actualización importante, Foundation 5.0. El equipo está trabajando en la próxima versión de Foundation para Sitios la cuál tendría que ser liberado en la primavera del 2015. Foundation para Email fue liberado en septiembre del 2013. Foundation para Aplicaciones fue liberado en diciembre del 2014.</p>
+                    <p>Foundation fue diseñado para y probado en numerosos dispositivos y navegadores. Es el primer framework mobile first responsive construido con Sass/SCSS dando buenas prácticas a diseñadores para el desarrollo rápido.</p>
+                  </div>
+                </li>
+              </ul>              
+            </div><!-- /. acordeon -->
+          </div><!-- /.medium-6 column -->
+
+          <div class="small-12 medium-6 column">
+            <div class="semi p-2">              
+              <h2>Qué es Foundation</h2>
+              <p>Foundation es un framework de interfaz responsiva.</p>
+              <p>Proporciona una cuadrícula responsiva e incluye componentes de interfaz de usuario HTML y CSS, plantillas, y fragmentos de código, incluyendo tipografía, formularios, botones, barras de navegación y otros componentes de interfaz usuario, así como extensiones de Javascript opcionales.</p>
+              <p class="lead">Foundation está mantenida por <a href="https://foundation.zurb.com/" target="_blank">Zurb.com</a> y es un proyecto de código abierto.</p>
+            </div>
+          </div><!-- /.medium-6 column -->          
+        </div><!-- /. row -->
+
+        <div class="row">
+          <div class="small-12 column">
+            <div class="acordeon">
+              <ul class="accordion" data-accordion data-allow-all-closed="true">
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title"><h5>Uso de Foundation</h5></a>
+
+                  <!-- Contenido del panel del acordeón. -->
+                  <div class="accordion-content" data-tab-content>
+                    <p>Hay tres niveles de integración para Foundation: CSS, SASS, y Ruby on Rails con la Gema de Rails de Foundation.</p>
+                    <b>CSS</b>
+                    <p>Para usar Foundation CSS, los paquetes por defecto o de CSS personalizado se pueden descargar desde la página de descarga e instalados en las carpetas del servidor web apropiados. Foundation está integrado entonces en el marco de página HTML</p>
+                    <b>SASS</b>
+                    <p>El instalador de Foundation SASS usas Ruby, NodeJS, y Git para instalar los fuentes de Fundation. Foundation entonces proporciona una CLI para modificar y compilar el código fuente a CSS para usarlo en el marco de página de HTML.</p>
+                    <b>Gema de Rails para Foundation</b>
+                    <p>La gema de Rails para Foundation puede ser instalada agregando "gem 'fundation-rails'" a Rails Gemfile.</p>
+                  </div>
+                </li>
+              </ul>              
+            </div><!-- /. acordeon -->
+          </div><!-- /.medium-6 column -->    
+        </div><!-- /. row -->
+      </div>      
+    </section>
+
+    <!-- FOOTER -->
+    <!-- Este es el footer que aparecerá en todas las secciones -->
+    <footer id="social-container">
+      <div class="row align-center text-center">
+        <div class="small-8 medium-4 column" style="color:#cacaca">
+          Enrique José Valerio Gómez - 2018
+        </div>
+        <div class="small-2 medium-1 column">
+          <a href="https://www.linkedin.com/in/enrique-valerio-6b347b126/" target="_blank" title="LinkedIn"><i class="fa fa-linkedin fa-lg"></i></a>
+        </div>
+        <div class="small-2 medium-1 column">
+          <a href="https://github.com/Caballero73/foundation" target="_blank" title="GitHub"><i class="fa fa-github fa-lg"></i></a>
+        </div>
+      </div>
+    </footer>
+    <!-- /.FOOTER -->
+
+    <div class="alert callout" data-closable>
+      <div class="contenedor">
+        <small><b>Muy importante:</b> El material contenido en este sitio es producto de anotaciones y traducciones personales del autor, y no pretende en nigún momento sustituir la documentación oficial de Foundation, la cual recomienda ampliamente si se desea comprender mejor esta interesante herramienta de trabajo.</small>
+        <p><a href="https://foundation.zurb.com/sites/docs/" target="_blank"> Ver la documetación oficial</a></p>
+      </div>
+      <button class="close-button" aria-label="Cerrar" type="button" data-close>
+        <span aria-hidden="true">x</span>
+      </button>
+    </div>
+
+
+    <!--*****************
+     CORE JS
+    ******************-->
+    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="assets/js/vendor/what-input.js"></script>
+    <script src="assets/js/vendor/foundation.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

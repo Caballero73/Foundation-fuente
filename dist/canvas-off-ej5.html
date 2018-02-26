@@ -1,0 +1,38 @@
+<!doctype html>
+<html class="no-js" lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 4 - Off-Canvas</title>
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+  </head>
+  <body style="padding: 2rem">
+    <div class="off-canvas-wrapper">
+      <button type="button" class="button large" data-toggle="offCanvasLeft">Abrir izquierdo con Overlap</button>
+      <button type="button" class="button large" data-toggle="offCanvasRight">Abrir derecho con Push</button>
+
+      <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas data-transition="overlap" style="padding: 2rem">
+        Contenido del menú o contenido fuera del lienzo de la izquierda
+      </div>
+      <div class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-transition="push" style="padding: 2rem">
+        Contenido del menú o contenido fuera del lienzo de la izquierda
+      </div>
+      <div class="off-canvas-content" data-off-canvas-content>
+        <p class="lead"><b>FUNDACIÓN</b> — Un psicólogo y matemático genial prevé el derrumbamiento del Imperio y el subsiguiente caos, y decide emplear la ciencia psicohistórica (una especie de psicología de masas matemáticamente estructurada) para reducir al mínimo el inevitable período de barbarie que antecederá a la consolidación de un Segundo Imperio. Para ello establece dos Fundaciones,una en cada extremo de la Galaxia, con el fin de preservar el saber humano.</p>
+      </div>      
+    </div><!-- off-canvas-wrapper -->
+  </body>
+
+    <!--*****************
+     CORE JS 
+    ******************-->
+    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="assets/js/vendor/what-input.js"></script>
+    <script src="assets/js/vendor/foundation.js"></script>
+    <script src="assets/js/app.js"></script>
+
+  </body>
+</html>
