@@ -54,7 +54,7 @@ ESTILOS PROPIOS DEL TEMA
 		color: #fefefe;
 	}
 }
-#acordeon,#alternar,#barra,#botones,#desplegable,#ecualizador,#flotar,#formularios,
+#abide,#acordeon,#alternar,#barra,#botones,#desplegable,#ecualizador,#flotar,#formularios,
 #grilla,#incrustado,#inicio,#intercambiar,#insignia,#llamadas,#medios,#menu,#miniatura,
 #offcanvas,#slider,#suave,#reveal,#sticky,#tabs,#table,#tooltips,#tipografia,
 #visibilidad {
@@ -65,6 +65,19 @@ ESTILOS PROPIOS DEL TEMA
 	}
 	& small {
 		color: var(--colorGrisOscuro);
+	}
+}
+#abide {
+	& input::placeholder, textarea::placeholder {
+	  color: var(--colorFuente);
+	}
+
+	& [type="text"], [type="password"], [type="date"], [type="datetime"], [type="datetime-local"], [type="month"], [type="week"], [type="email"], [type="number"], [type="search"], [type="tel"], [type="time"], [type="url"], [type="color"], textarea {
+	  height: 3rem;
+	  font-size: 1.5rem;
+	  font-weight: normal;
+	  line-height: 1.5;
+	  color: var(--colorFuente);
 	}
 }
 #intercambiar {
