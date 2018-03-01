@@ -127,6 +127,7 @@
       <div id="menu-offcanvas" class="off-canvas position-left" data-off-canvas data-transition="overlap">
       <ul class="vertical menu mt-3" data-smooth-scroll>    
         <li><a href="#basico" title="Lo básico">Lo básico</a></li>
+        <li><a href="#fija" title="Navegación fija">Navegación fija</a></li>
       </ul>
       </div><!-- /.menu-offcanvas -->
     </div><!-- /.off-canvas-wrapper -->
@@ -138,7 +139,7 @@
 
   <center id="basico"><h3>Lo básico</h3></center>
   <pre>
-    &lt;!-- Menu -->
+  &lt;!-- Menu -->
   &lt;ul class="menu expanded" data-magellan>
     &lt;li>&lt;a href="#primera">Item 1&lt;/a>&lt;/li>
     &lt;li>&lt;a href="#segunda">Item 2&lt;/a>&lt;/li>
@@ -205,7 +206,51 @@
   <br>
   <hr>
 
-  
+  <center id="fija"><h3>Navegación fija</h3></center>
+  <p>Puede usar Magellan con el complemento Sticky para crear un encabezado de navegación persistente o una barra lateral.</p>
+  <br>
+  <pre>
+  &lt;!-- Menu -->
+  &lt;div data-sticky-container>
+    &lt;div class="top-bar" data-sticky data-margin-top="0" id="example-menu">
+      &lt;div class="top-bar-left">
+        &lt;ul class="menu">
+          &lt;li class="menu-text">Título del Sitio&lt;/li>
+        &lt;/ul>
+      &lt;/div>
+      &lt;div class="top-bar-right">
+        &lt;ul class="menu" data-magellan>
+          &lt;li>&lt;a href="#primera">Primera Sección&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="#segunda">Segunda Sección&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="#tercera">Tercera Sección&lt;/a>&lt;/li>
+        &lt;/ul>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+
+  &lt;!-- Contenido -->
+  &lt;div class="sections">
+    &lt;section id="primera" data-magellan-target="primera">Primera Sección&lt;/section>
+    &lt;section id="segunda" data-magellan-target="segunda">Segunda Sección&lt;/section>
+    &lt;section id="tercera" data-magellan-target="tercera">Tercera Sección&lt;/section>
+  &lt;/div
+  </pre>
+  <br>
+  <p>Este ejemplo a continuación es una versión simplificada de la tabla de contenido en el lado derecho de una página. </p>
+  <br>
+  <pre>
+  &lt;div class="large-3 columns" data-sticky-container>
+    &lt;nav class="columns sticky" data-sticky data-anchor="exampleId" data-sticky-on="large">
+      &lt;ul class="vertical menu" data-magellan>
+        &lt;li>&lt;a href="#primera">Primera Sección&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#segunda">Segunda Sección&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#tercera">Tercera Sección&lt;/a>&lt;/li>
+      &lt;/ul>
+    &lt;/nav>
+  &lt;/div>
+  </pre>
+  <br>
+  <hr>  
 
 </div><!-- /.id magallanes -->
 
