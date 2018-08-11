@@ -2,7 +2,10 @@
 ESTILOS GENERALES: general.css;
 *******************************/
 html {
-	font-size: 10px;
+  font-size: 10px;
+}
+.mia {
+	font-size: responsive 8px 10px;
 }
 /**{border: 1px solid red;}*/
 body {
