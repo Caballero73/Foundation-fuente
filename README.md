@@ -3,6 +3,8 @@
 
 La idea de este ejercicio es que aprendamos a trabajar con uno de los frameworks (entorno de trabajo o marco de trabajo) para el diseño frontend (interfaz) más utilizados en la industria actualmente, como lo es Foundation.
 
+Lo que me motivó en este caso es la poca documentación en español que hay sobre esta interesante herramienta.
+
 ### Herramientas utilizadas
 * HTML5
 * CSS3
